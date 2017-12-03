@@ -1,10 +1,12 @@
 @-moz-document domain("trakt.tv") {
-    /* DARKT 1.0 by Felix
-
+    /* DARKT 1.2 by Felix
+	
+		1.2 (03/12/2017) - some fixes
+		1.1 (03/12/2017) - remove shop
 		1.0 (22/09/2017) - initial release
 */
     /* COLORS */
-     :root {
+    :root {
         --color-DarkBG: #1D1D1D;
         --color-DarkBGv: #272727;
         --color-White: #FFFFFF;
@@ -13,15 +15,15 @@
         --color-Red: #ED1C24;
     }
     /* SCROLLBARS */
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         background-color: #333333;
     }
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 10px;
         height: 10px;
         background-color: #333333;
     }
-     ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         -webkit-border-radius: 2px;
         border-radius: 2px;
         background: #555555;
@@ -32,7 +34,8 @@
     #huckster-desktop-sidenav,
     .grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
     .grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6,
-    .grid-item.huckster-grid-item.col-xlg-4.col-md-6 {
+    .grid-item.huckster-grid-item.col-xlg-4.col-md-6,
+    #header-shop.btn {
         display: none;
     }
     /* SEARCH */
@@ -43,24 +46,24 @@
     header#top-nav #header-search #header-search-query.open::-webkit-input-placeholder {
         color: var(--color-White);
     }
-    span#header-search-type.dropdown.shown>button.btn.btn-default.dropdown-toggle {
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
         border-color: var(--color-DarkBGv);
     }
-    span#header-search-type.dropdown.shown>button.btn.btn-default.dropdown-toggle:focus {
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle:focus {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
         border-color: var(--color-DarkBGv);
         outline-color: var(--color-DarkBGv);
     }
-    span#header-search-type.dropdown.shown.open>ul.dropdown-menu {
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span#header-search-type.dropdown.shown.open>ul.dropdown-menu>li>a {
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li > a {
         color: var(--color-White) !important;
     }
-    span#header-search-type.dropdown.shown.open>ul.dropdown-menu>li:hover>a {
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
     }
@@ -205,24 +208,24 @@ url("https://trakt.tv/auth/signin") {
     div.comment-wrapper.list.subnav.wider.hidden-xs {
         background-color: var(--color-DarkBG);
     }
-    .pagination>li>a,
-    .pagination>li>span {
+    .pagination > li > a,
+    .pagination > li > span {
         color: var(--color-White) !important;
         background-color: var(--color-DarkBG) !important;
         border: 1px solid var(--color-DarkBG) !important;
     }
-    .pagination>.active>a,
-    .pagination>.active>a:hover,
-    .pagination>.active>a:focus,
-    .pagination>.active>span,
-    .pagination>.active>span:hover,
-    .pagination>.active>span:focus {
+    .pagination > .active > a,
+    .pagination > .active > a:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span,
+    .pagination > .active > span:hover,
+    .pagination > .active > span:focus {
         color: var(--color-White) !important;
         background-color: var(--color-Red) !important;
         border: 1px solid var(--color-DarkBG) !important;
     }
-    .pagination>li>a:hover,
-    .pagination>li>span:hover {
+    .pagination > li > a:hover,
+    .pagination > li > span:hover {
         color: var(--color-Red) !important;
         background-color: var(--color-DarkBG) !important;
         border: 1px solid var(--color-DarkBG) !important;
@@ -355,6 +358,12 @@ url("https://trakt.tv/auth/signin") {
     a.btn-list-subscribe {
         color: var(--color-White) !important;
     }
+    .subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--color-DarkBG) 100%);
+    }
+    .subnav-text .text blockquote {
+        background-color: var(--color-DarkBG);
+    }
     /* icons */
     span.icon.trakt-icon-divider {
         color: var(--color-White) !important;
@@ -410,18 +419,18 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         border-color: var(--color-White);
     }
-    span.dropdown.open>button.btn-default.dropdown-toggle {
+    span.dropdown.open > button.btn-default.dropdown-toggle {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
         border-color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu {
+    span.dropdown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.open>ul.dropdown-menu>li>a {
+    span.dropdown.open > ul.dropdown-menu > li > a {
         color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu>li:hover>a {
+    span.dropdown.open > ul.dropdown-menu > li:hover > a {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
     }
@@ -439,16 +448,16 @@ url("https://trakt.tv/auth/signin") {
     .frame-wrapper .sidenav h4 {
         color: var(--color-White);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li>a {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li > a {
         color: var(--color-White);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li.dropdown-header {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li.dropdown-header {
         color: var(--color-White);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li:hover>a {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li:hover > a {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
     }
@@ -484,10 +493,10 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         box-shadow: 0px 0px 20px var(--color-DarkBGv);
     }
-    div.streaming-links>div.title {
+    div.streaming-links > div.title {
         color: var(--color-White);
     }
-    div#activity.loaded>section {
+    div#activity.loaded > section {
         background-color: var(--color-DarkBG);
     }
     .summary-activity .tabs .tab.selected {
@@ -622,16 +631,16 @@ url("https://trakt.tv/auth/signin") {
         border-bottom: solid 1px var(--color-DarkBG) !important;
     }
     /* dropdown menus */
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li>a {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li > a {
         color: var(--color-White);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li.dropdown-header {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li.dropdown-header {
         color: var(--color-White);
     }
-    span.dropdown.filter-dropdown.open>ul.dropdown-menu>li:hover>a {
+    span.dropdown.filter-dropdown.open > ul.dropdown-menu > li:hover > a {
         color: var(--color-White);
         background-color: var(--color-DarkBGv);
     }
@@ -645,13 +654,13 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         border-color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu.for-sortable {
+    span.dropdown.open > ul.dropdown-menu.for-sortable {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.open>ul.dropdown-menu.for-sortable>li>a {
+    span.dropdown.open > ul.dropdown-menu.for-sortable > li > a {
         color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu.for-sortable>li:hover>a {
+    span.dropdown.open > ul.dropdown-menu.for-sortable > li:hover > a {
         background-color: var(--color-DarkBGv);
         color: var(--color-White);
     }
@@ -680,10 +689,10 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         box-shadow: 0px 0px 20px var(--color-DarkBGv);
     }
-    div.streaming-links>div.title {
+    div.streaming-links > div.title {
         color: var(--color-White);
     }
-    div#activity.loaded>section {
+    div#activity.loaded > section {
         background-color: var(--color-DarkBG);
     }
     .summary-activity .tabs .tab.selected {
@@ -816,13 +825,13 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         border-color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu {
+    span.dropdown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.open>ul.dropdown-menu>li>a {
+    span.dropdown.open > ul.dropdown-menu > li > a {
         color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu>li:hover>a {
+    span.dropdown.open > ul.dropdown-menu > li:hover > a {
         background-color: var(--color-DarkBGv);
         color: var(--color-White);
     }
@@ -853,24 +862,24 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-Red);
         border: solid 1px var(--color-Red);
     }
-    .pagination>li>a,
-    .pagination>li>span {
+    .pagination > li > a,
+    .pagination > li > span {
         color: var(--color-White) !important;
         background-color: var(--color-DarkBG) !important;
         border: 1px solid var(--color-DarkBG) !important;
     }
-    .pagination>.active>a,
-    .pagination>.active>a:hover,
-    .pagination>.active>a:focus,
-    .pagination>.active>span,
-    .pagination>.active>span:hover,
-    .pagination>.active>span:focus {
+    .pagination > .active > a,
+    .pagination > .active > a:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span,
+    .pagination > .active > span:hover,
+    .pagination > .active > span:focus {
         color: var(--color-White) !important;
         background-color: var(--color-Red) !important;
         border: 1px solid var(--color-DarkBG) !important;
     }
-    .pagination>li>a:hover,
-    .pagination>li>span:hover {
+    .pagination > li > a:hover,
+    .pagination > li > span:hover {
         color: var(--color-Red) !important;
         background-color: var(--color-DarkBG) !important;
         border: 1px solid var(--color-DarkBG) !important;
@@ -912,13 +921,13 @@ url("https://trakt.tv/auth/signin") {
         background-color: var(--color-DarkBGv);
         border-color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu {
+    span.dropdown.open > ul.dropdown-menu {
         background-color: var(--color-DarkBG);
     }
-    span.dropdown.open>ul.dropdown-menu>li>a {
+    span.dropdown.open > ul.dropdown-menu > li > a {
         color: var(--color-White);
     }
-    span.dropdown.open>ul.dropdown-menu>li:hover>a {
+    span.dropdown.open > ul.dropdown-menu > li:hover > a {
         background-color: var(--color-DarkBGv);
         color: var(--color-White);
     }
