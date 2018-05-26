@@ -1,1 +1,192 @@
-
+/* ==UserStyle==
+@name           Darkt V2
+@version        2.0.0
+@namespace      https://github.com/iFelix18/
+@description    A darker theme for Trakt
+@author         Felix
+@homepageURL    https://github.com/iFelix18/Darkt/
+@supportURL     https://github.com/iFelix18/Darkt/issues/
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
+@license        CC-BY-SA-4.0
+@preprocessor   stylus
+@var checkbox   block-ads 'Block ads' 1
+==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/.*") {
+    /* Darkt V2 by Felix
+    
+            2.0.0 (dd/mm/yyyy) - changelog
+    
+    */
+    /* COLORS */
+     :root {
+        --color-DarkBG: #1D1D1D;
+        --color-Grey: #3A3A3A;
+        --color-White: #FFFFFF;
+        --color-Red: #ED1C24;
+    }
+    /* SCROLLBARS */
+     ::-webkit-scrollbar-corner {
+        background-color: #333333;
+    }
+     ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: #333333;
+    }
+     ::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        background: #555555;
+    }
+    /* SEARCH */
+    input#header-search-query.open {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    input#header-search-query.open::-webkit-input-placeholder {
+        color: var(--color-White) !important;
+    }
+    input#header-search-query.open::-moz-placeholder {
+        color: var(--color-White) !important;
+    }
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle:focus {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu {
+        background-color: var(--color-Grey);
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li > a {
+        color: var(--color-White) !important;
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
+        background-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    /* REMOVE ADS & SHOP */
+    if block-ads {
+        #huckster-desktop-wrapper {
+            display: none !important;
+        }
+        #header-shop,
+        .popover-shop {
+            display: none;
+        }
+    }
+}
+@-moz-document regexp("https?://trakt.tv/auth/join"),
+regexp("https?://trakt.tv/auth/signin"),
+regexp("https?://trakt.tv/auth/password/new") {
+    /* AUTH */
+    /* backgrounds & texts */
+    div#auth-form-wrapper,
+    #auth-form-wrapper .auth-services-wrapper,
+    #auth-form-wrapper .bottom-wrapper {
+        background-color: var(--color-DarkBG);
+        box-shadow: none;
+        color: var(--color-White);
+    }
+    /* inputs */
+    input#user_email.string.email.required.top.form-control,
+    input#user_username.string.required.middle.form-control,
+    input#user_password.password.required.middle.form-control,
+    input#user_password_confirmation.password.required.bottom.form-control {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    input#user_email.string.email.required.top.form-control::-webkit-input-placeholder,
+    input#user_username.string.required.middle.form-control::-webkit-input-placeholder,
+    input#user_password.password.required.middle.form-control::-webkit-input-placeholder,
+    input#user_password_confirmation.password.required.bottom.form-control::-webkit-input-placeholder {
+        color: var(--color-White);
+    }
+    input#user_email.string.email.required.top.form-control::-moz-placeholder,
+    input#user_username.string.required.middle.form-control::-moz-placeholder,
+    input#user_password.password.required.middle.form-control::-moz-placeholder,
+    input#user_password_confirmation.password.required.bottom.form-control::-moz-placeholder {
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control,
+    input#user_password.password.required.bottom.form-control {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control::-webkit-input-placeholder,
+    input#user_password.password.required.bottom.form-control::-webkit-input-placeholder {
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control::-moz-placeholder,
+    input#user_password.password.required.bottom.form-control::-moz-placeholder {
+        color: var(--color-White);
+    }
+    .form-control:focus {
+        border-color: var(--color-White);
+        box-shadow: 0px 0px 4px 1px var(--color-Red);
+        outline: 0;
+    }
+}
+@-moz-document url("https://trakt.tv/dashboard") {
+    /* DASHBOARD */
+    /* backgrounds & texts */
+    section#ondeck-wrapper,
+    section#schedule-wrapper,
+    section#charts-wrapper,
+    section#activity-wrapper,
+    section#network-wrapper,
+    section#recommendations-wrapper {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    div.alert.alert-no-data {
+        background-color: var(--color-DarkBG) !important;
+        color: var(--color-White);
+    }
+    #ondeck-wrapper .posters .titles-link,
+    #ondeck-wrapper .ignore,
+    #charts-wrapper h3,
+    .genre-bars.light .bar label,
+    #recommendations-wrapper .grid-item h4 a {
+        color: var(--color-White);
+    }
+    #ondeck-wrapper .ignore:hover,
+    #recommendations-wrapper .grid-item h4 a:hover {
+        color: var(--color-Red);
+    }
+    /* icons */
+    h2 .feed-icons .feed-icon {
+        color: var(--color-White);
+    }
+    h2 .feed-icons .feed-icon:hover {
+        color: var(--color-Red);
+    }
+    /* posters */
+    .posters .poster {
+        border-left: solid 1px var(--color-DarkBG);
+        border-top: solid 1px var(--color-DarkBG);
+        border-right: solid 1px var(--color-DarkBG);
+    }
+    .posters > div .quick-icons {
+        border-left: solid 1px var(--color-DarkBG);
+        border-right: solid 1px var(--color-DarkBG);
+        border-bottom: solid 1px var(--color-DarkBG);
+    }
+    .quick-icons {
+        background-color: var(--color-Grey)
+    }
+    #network-wrapper .posters .poster-under .user-avatar img,
+    #network-wrapper .posters .action {
+        border: 2px solid var(--color-Grey);
+        background-color: var(--color-Grey);
+    }
+    #network-wrapper .posters .poster-under {
+        background-color: var(--color-Grey);
+    }
+    #network-wrapper .posters .activity-date {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+}
