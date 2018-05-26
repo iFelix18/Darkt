@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.1
+@version        2.0.0-alpha.2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -78,6 +78,11 @@
             display: none;
         }
     }
+    /* BACKGROUND */
+    section {
+        background-color: var(--color-DarkBG) !important;
+        color: var(--color-White) !important;
+    }
 }
 @-moz-document regexp("https?://trakt.tv/auth/join"),
 regexp("https?://trakt.tv/auth/signin"),
@@ -130,7 +135,7 @@ regexp("https?://trakt.tv/auth/password/new") {
         outline: 0;
     }
 }
-@-moz-document url("https://trakt.tv/dashboard") {
+@-moz-document regexp("https?://trakt.tv/dashboard") {
     /* DASHBOARD */
     /* backgrounds & texts */
     section#ondeck-wrapper,
