@@ -69,7 +69,8 @@
     }
     /* REMOVE ADS & SHOP */
     if block-ads {
-        #huckster-desktop-wrapper {
+        #huckster-desktop-wrapper,
+        div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6 {
             display: none !important;
         }
         #header-shop,
@@ -177,15 +178,15 @@ regexp("https?://trakt.tv/auth/password/new") {
     .quick-icons {
         background-color: var(--color-Grey)
     }
-    #network-wrapper .posters .poster-under .user-avatar img,
-    #network-wrapper .posters .action {
-        border: 2px solid var(--color-Grey);
-        background-color: var(--color-Grey);
+    div#network-activities.row.posters.loaded > div > div.poster-under > a > div.user-avatar > img,
+    div#network-activities.row.posters.loaded > div > div.poster-under > div.action.watch {
+        border-color: var(--color-Grey);
     }
-    #network-wrapper .posters .poster-under {
+    div#network-activities.row.posters.loaded > div > div.poster-under {
         background-color: var(--color-Grey);
+        color: var(--color-White);
     }
-    #network-wrapper .posters .activity-date {
+    div#network-activities.row.posters.loaded > div > div.activity-date {
         background-color: var(--color-DarkBG);
         color: var(--color-White);
     }
