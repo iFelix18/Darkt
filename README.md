@@ -1,20 +1,2 @@
-# Darkt
+# Darkt [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css)
 A darker theme for Trakt
-<p align="center">
- <a href="https://github.com/iFelix18/Darkt/blob/master/README.md#screenshot">
-  <img src="https://i.imgur.com/0MeyrMZ.jpg" title="Click to see more screenshots" alt="Darkt"/>
- </a>
-</p>
-
-# Menu
-* [Installation](https://github.com/iFelix18/Darkt/blob/master/README.md#installation)
-* [Screenshot](https://github.com/iFelix18/Darkt/blob/master/README.md#screenshot)
-# Installation
-* Download one of these add-ons for your browser
-  * Stylus (recommended): [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/), or [Opera](https://github.com/schomery/stylish-chrome/).
-  * Osprey: [Chrome](https://chrome.google.com/webstore/detail/osprey/ekjapccimkannnfgcnnoajhfdglobgak).
-  * Stylish: [Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/), and [Opera](https://addons.opera.com/en-gb/extensions/details/stylish/).
-* Go [userstyles.org](https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt), and click on "Install Style" button.
-* Done! From now on it will automatically update.
-
-# Screenshot
