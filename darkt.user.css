@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-beta.1
+@version        2.0.0-alpha.3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -78,11 +78,6 @@
             display: none;
         }
     }
-    /* BACKGROUND */
-    section {
-        background-color: var(--color-DarkBG) !important;
-        color: var(--color-White) !important;
-    }
 }
 @-moz-document regexp("https?://trakt.tv/auth/join"),
 regexp("https?://trakt.tv/auth/signin"),
@@ -135,64 +130,10 @@ regexp("https?://trakt.tv/auth/password/new") {
         outline: 0;
     }
 }
-@-moz-document regexp("https?://trakt.tv/dashboard") {
-    /* DASHBOARD */
-    /* backgrounds & texts */
-    section#ondeck-wrapper,
-    section#schedule-wrapper,
-    section#charts-wrapper,
-    section#activity-wrapper,
-    section#network-wrapper,
-    section#recommendations-wrapper {
-        background-color: var(--color-DarkBG);
-        color: var(--color-White);
-    }
-    div.alert.alert-no-data {
+@-moz-document regexp("https?://trakt.tv/.*") {
+    /* BACKGROUND */
+    section:not([id*="results-top-wrapper"]) {
         background-color: var(--color-DarkBG) !important;
-        color: var(--color-White);
-    }
-    #ondeck-wrapper .posters .titles-link,
-    #ondeck-wrapper .ignore,
-    #charts-wrapper h3,
-    .genre-bars.light .bar label,
-    #recommendations-wrapper .grid-item h4 a {
-        color: var(--color-White);
-    }
-    #ondeck-wrapper .ignore:hover,
-    #recommendations-wrapper .grid-item h4 a:hover {
-        color: var(--color-Red);
-    }
-    /* icons */
-    h2 .feed-icons .feed-icon {
-        color: var(--color-White);
-    }
-    h2 .feed-icons .feed-icon:hover {
-        color: var(--color-Red);
-    }
-    /* posters */
-    .posters .poster {
-        border-left: solid 1px var(--color-DarkBG);
-        border-top: solid 1px var(--color-DarkBG);
-        border-right: solid 1px var(--color-DarkBG);
-    }
-    .posters > div .quick-icons {
-        border-left: solid 1px var(--color-DarkBG);
-        border-right: solid 1px var(--color-DarkBG);
-        border-bottom: solid 1px var(--color-DarkBG);
-    }
-    .quick-icons {
-        background-color: var(--color-Grey)
-    }
-    div#network-activities.row.posters.loaded > div > div.poster-under > a > div.user-avatar > img,
-    div#network-activities.row.posters.loaded > div > div.poster-under > div.action.watch {
-        border-color: var(--color-Grey);
-    }
-    div#network-activities.row.posters.loaded > div > div.poster-under {
-        background-color: var(--color-Grey);
-        color: var(--color-White);
-    }
-    div#network-activities.row.posters.loaded > div > div.activity-date {
-        background-color: var(--color-DarkBG);
-        color: var(--color-White);
+        color: var(--color-White) !important;
     }
 }
