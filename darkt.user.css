@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.4
+@version        2.0.0-alpha.5
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -29,14 +29,14 @@
         background-color: #333333;
     }
      ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
         background-color: #333333;
+        height: 10px;
+        width: 10px;
     }
      ::-webkit-scrollbar-thumb {
+        background: #555555;
         border-radius: 2px;
         -webkit-border-radius: 2px;
-        background: #555555;
     }
     /* SEARCH */
     input#header-search-query.open {
@@ -132,7 +132,7 @@ regexp("https?://trakt.tv/auth/password/new") {
 }
 @-moz-document regexp("https?://trakt.tv/.*") {
     /* BACKGROUNDS & TEXTS */
-    section:not([id*="results-top-wrapper"]) {
+    section:not([id*="results-top-wrapper"]):not([id*="bottom-stats-wrapper"]) {
         background-color: var(--color-DarkBG) !important;
         color: var(--color-White) !important;
     }
@@ -140,21 +140,36 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-DarkBG);
         color: var(--color-White);
     }
+    .comment-wrapper {
+        background-color: var(--color-DarkBG);
+    }
     #ondeck-wrapper .posters .titles-link,
     #ondeck-wrapper .ignore,
     #charts-wrapper h3,
-    #recommendations-wrapper .grid-item h4 a {
+    #recommendations-wrapper .grid-item h4 a,
+    .genre-bars.light .bar label {
+        color: var(--color-White);
+    }
+    h2 .time-spent {
         color: var(--color-White);
     }
     #ondeck-wrapper .ignore:hover,
     #recommendations-wrapper .grid-item h4 a:hover {
         color: var(--color-Red);
     }
-    /* ICONS */
-    h2 .feed-icons .feed-icon {
+    #boxes-wrapper .row .stat-box:nth-child(3),
+    #bottom-stats-wrapper .col-stat.alt {
+        background-color: var(--color-Grey);
         color: var(--color-White);
     }
-    h2 .feed-icons .feed-icon:hover {
+    /* ICONS */
+    h2 .feed-icons .feed-icon,
+    .subnav-wrapper .right .feed-icon,
+    .filter-dropdown .icon.trakt-icon-divider {
+        color: var(--color-White);
+    }
+    h2 .feed-icons .feed-icon:hover,
+    .subnav-wrapper .right .feed-icon:hover {
         color: var(--color-Red);
     }
     /* POSTERS */
@@ -181,6 +196,40 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     div#network-activities.row.posters.loaded > div > div.activity-date {
         background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    /* PAGINATION */
+    .pagination > li > a,
+    ul.pagination .gap a,
+    ul.pagination .gap a:hover,
+    ul.pagination .disabled a,
+    ul.pagination .disabled a:hover,
+    ul.pagination .disabled a:focus {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: var(--color-White);
+    }
+    .pagination > li > a:hover,
+    .pagination > li > a:focus {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: var(--color-Red);
+    }
+    /* DROPDOWN MENUS */
+    .btn-default,
+    .btn-default:hover,
+    .open > .btn-default.dropdown-toggle {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .dropdown-menu {
+        background-color: var(--color-Grey);
+    }
+    .dropdown-menu > li > a {
+        color: var(--color-White);
+    }
+    .dropdown-menu > li:hover > a {
+        background-color: var(--color-Red);
         color: var(--color-White);
     }
 }
