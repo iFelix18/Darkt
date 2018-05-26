@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Darkt V2
+@name           Darkt
 @version        2.0.0
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
@@ -12,7 +12,7 @@
 @var checkbox   block-ads 'Block ads' 1
 ==/UserStyle== */
 @-moz-document regexp("https?://trakt.tv/.*") {
-    /* Darkt V2 by Felix
+    /* Darkt by Felix
     
             2.0.0 (dd/mm/yyyy) - changelog
     
