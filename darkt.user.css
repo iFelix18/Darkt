@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.8
+@version        2.0.0-alpha.9
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -232,6 +232,15 @@ regexp("https?://trakt.tv/auth/password/new") {
         border-color: var(--color-Red);
         color: var(--color-White);
     }
+    .btn-watch,
+    .btn-collect,
+    .btn-list,
+    .btn-comment {
+        background-color: var(--color-DarkBG);
+    }
+    #info-wrapper .info .action-buttons > .btn .side-btn {
+        color: var(--color-White);
+    }
     /* POSTERS */
     .posters .poster {
         border-left: solid 1px var(--color-DarkBG);
@@ -266,12 +275,15 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-Grey);
         box-shadow: none;
     }
+    .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+        box-shadow: none;
+    }
     /* ACTORS */
     #info-wrapper .info #actors .posters ul li .name {
         color: var(--color-White);
     }
     #info-wrapper .info #actors .posters ul li .character {
-        color: var(--color-Red);
+        color: var(--color-White);
     }
     #info-wrapper .info #actors .posters ul:hover li .titles .name,
     #info-wrapper .info #actors .posters ul:hover li .character {
@@ -292,6 +304,18 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-Red);
     }
     .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+        background-color: var(--color-Grey);
+    }
+    /* COMMENTS */
+    #comments .tab-links h3 {
+        color: var(--color-White);
+    }
+    #comments .active h3,
+    #comments .tab-links h3:hover {
+        color: var(--color-Red);
+    }
+    .comment-wrapper.featured .above-comment,
+    .comment-wrapper.featured {
         background-color: var(--color-Grey);
     }
     /* PAGINATION */
