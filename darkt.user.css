@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.6
+@version        2.0.0-alpha.7
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -180,6 +180,22 @@ regexp("https?://trakt.tv/auth/password/new") {
     .comment-wrapper .above-comment .date {
         color: var(--color-White);
     }
+    #info-wrapper .sidebar .sections li a {
+        color: var(--color-White);
+    }
+    #info-wrapper .sidebar .sections li a:hover {
+        color: var(--color-Red);
+    }
+    #info-wrapper .sidebar .sections li a.see-more-link,
+    #info-wrapper .sidebar .sections li a.see-more-link:hover {
+        color: var(--color-White);
+    }
+    .summary-activity .tabs .tab.selected,
+    .users-wrapper {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
     /* ICONS */
     h2 .feed-icons .feed-icon,
     .subnav-wrapper .right .feed-icon,
@@ -202,6 +218,18 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     .comment-wrapper .pill {
         background-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    #info-wrapper .affiliate-links .section a,
+    #info-wrapper .sidebar .external li a {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    #info-wrapper .affiliate-links .section a:hover,
+    #info-wrapper .sidebar .external li a:hover {
+        background-color: var(--color-Red);
+        border-color: var(--color-Red);
         color: var(--color-White);
     }
     /* POSTERS */
@@ -229,6 +257,14 @@ regexp("https?://trakt.tv/auth/password/new") {
     div#network-activities.row.posters.loaded > div > div.activity-date {
         background-color: var(--color-DarkBG);
         color: var(--color-White);
+    }
+    #info-wrapper .sidebar .poster {
+        border: 3px solid var(--color-Grey) !important;
+        box-shadow: none;
+    }
+    #info-wrapper .sidebar .btn-watch-now {
+        background-color: var(--color-Grey);
+        box-shadow: none;
     }
     /* PAGINATION */
     .pagination > li > a,
@@ -263,5 +299,12 @@ regexp("https?://trakt.tv/auth/password/new") {
     .dropdown-menu > li:hover > a {
         background-color: var(--color-Red);
         color: var(--color-White);
+    }
+    /* POPOVER */
+    .popover {
+        background-color: var(--color-Grey);
+    }
+    .popover > .arrow::after {
+        border-top-color: var(--color-Grey) !important;
     }
 }
