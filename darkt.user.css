@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.5
+@version        2.0.0-alpha.6
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -136,7 +136,8 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-DarkBG) !important;
         color: var(--color-White) !important;
     }
-    #schedule-wrapper .alert-no-data {
+    #schedule-wrapper .alert-no-data,
+    .alert-no-data {
         background-color: var(--color-DarkBG);
         color: var(--color-White);
     }
@@ -162,6 +163,23 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-Grey);
         color: var(--color-White);
     }
+    #progress-wrapper .row .main-info .seasons {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .comment-wrapper .interactions a .text-wrapper .under-count {
+        color: var(--color-White);
+    }
+    .comment-wrapper.list .above-comment .user-name h4 a.username {
+        color: var(--color-White);
+    }
+    .comment-wrapper .above-comment {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .comment-wrapper .above-comment .date {
+        color: var(--color-White);
+    }
     /* ICONS */
     h2 .feed-icons .feed-icon,
     .subnav-wrapper .right .feed-icon,
@@ -171,6 +189,20 @@ regexp("https?://trakt.tv/auth/password/new") {
     h2 .feed-icons .feed-icon:hover,
     .subnav-wrapper .right .feed-icon:hover {
         color: var(--color-Red);
+    }
+    .filter-dropdown .metadata .trakt-icon-wand,
+    .filter-dropdown .metadata .caret {
+        color: var(--color-White);
+    }
+    #btn-list-edit-lists {
+        color: var(--color-White);
+    }
+    .custom-list .list-info .user-actions .icon.btn-list-subscribe {
+        color: var(--color-White);
+    }
+    .comment-wrapper .pill {
+        background-color: var(--color-Red);
+        color: var(--color-White);
     }
     /* POSTERS */
     .posters .poster {
