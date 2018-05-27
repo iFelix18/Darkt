@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.7
+@version        2.0.0-alpha.8
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -265,6 +265,34 @@ regexp("https?://trakt.tv/auth/password/new") {
     #info-wrapper .sidebar .btn-watch-now {
         background-color: var(--color-Grey);
         box-shadow: none;
+    }
+    /* ACTORS */
+    #info-wrapper .info #actors .posters ul li .name {
+        color: var(--color-White);
+    }
+    #info-wrapper .info #actors .posters ul li .character {
+        color: var(--color-Red);
+    }
+    #info-wrapper .info #actors .posters ul:hover li .titles .name,
+    #info-wrapper .info #actors .posters ul:hover li .character {
+        color: var(--color-DarkBG);
+    }
+    .actor-tooltip .tooltip-inner {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+        background-color: var(--color-Grey);
     }
     /* PAGINATION */
     .pagination > li > a,
