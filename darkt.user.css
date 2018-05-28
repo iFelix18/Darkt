@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.10
+@version        2.0.0-alpha.11
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -35,17 +35,15 @@
     }
      ::-webkit-scrollbar-thumb {
         background: #555555;
-        border-radius: 2px;
         -webkit-border-radius: 2px;
+        border-radius: 2px;
     }
     /* SEARCH */
     input#header-search-query.open {
         background-color: var(--color-Grey);
         color: var(--color-White);
     }
-    input#header-search-query.open::-webkit-input-placeholder {
-        color: var(--color-White) !important;
-    }
+    input#header-search-query.open::-webkit-input-placeholder,
     input#header-search-query.open::-moz-placeholder {
         color: var(--color-White) !important;
     }
@@ -219,6 +217,27 @@ regexp("https?://trakt.tv/auth/password/new") {
         border-color: var(--color-Grey);
         color: var(--color-White);
     }
+    body.settings .disable-account-wrapper a,
+    .form-group .under-help {
+        color: var(--color-White);
+    }
+    body.settings .notifications-table .table tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+    body.settings .notifications-table td .helper {
+        color: var(--color-White);
+    }
+    div.subnav-wrapper {
+        color: var(--color-White);
+    }
+    .checkin-modal {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        box-shadow: none;
+    }
+    .form-signin h4 {
+        color: var(--color-White);
+    }
     /* ICONS */
     h2 .feed-icons .feed-icon,
     .subnav-wrapper .right .feed-icon,
@@ -260,6 +279,10 @@ regexp("https?://trakt.tv/auth/password/new") {
     .btn-list,
     .btn-comment {
         background-color: var(--color-DarkBG);
+    }
+    .btn-info:hover {
+        background-color: var(--color-Red);
+        border-color: var(--color-Red);
     }
     #info-wrapper .info .action-buttons > .btn .side-btn {
         color: var(--color-White);
@@ -390,5 +413,9 @@ regexp("https?://trakt.tv/auth/password/new") {
     .form-control[readonly] {
         background-color: var(--color-Grey);
         color: var(--color-White);
+    }
+    .form-control:focus {
+        border-color: var(--color-Red);
+        box-shadow: none;
     }
 }
