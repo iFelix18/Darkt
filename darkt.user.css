@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.9
+@version        2.0.0-alpha.10
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -196,6 +196,29 @@ regexp("https?://trakt.tv/auth/password/new") {
         border-color: var(--color-Grey);
         color: var(--color-White);
     }
+    .subnav-wrapper {
+        background-color: var(--color-DarkBG);
+    }
+    #info-wrapper .season-links,
+    #info-wrapper .season-links .links ul li a {
+        color: var(--color-White);
+    }
+    #info-wrapper .season-links .links ul li a.selected {
+        color: var(--color-Red);
+    }
+    #seasons-episodes-sortable .under-info .titles {
+        background-color: var(--color-Grey);
+    }
+    #seasons-episodes-sortable .under-info h3 a {
+        color: var(--color-White);
+    }
+    .panel,
+    .panel-default > .panel-heading,
+    h3.instructions {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
     /* ICONS */
     h2 .feed-icons .feed-icon,
     .subnav-wrapper .right .feed-icon,
@@ -239,6 +262,9 @@ regexp("https?://trakt.tv/auth/password/new") {
         background-color: var(--color-DarkBG);
     }
     #info-wrapper .info .action-buttons > .btn .side-btn {
+        color: var(--color-White);
+    }
+    .subnav-wrapper .left h2 .right a {
         color: var(--color-White);
     }
     /* POSTERS */
@@ -358,5 +384,11 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     .popover > .arrow::after {
         border-top-color: var(--color-Grey) !important;
+    }
+    /* FORMS */
+    .form-control,
+    .form-control[readonly] {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
     }
 }
