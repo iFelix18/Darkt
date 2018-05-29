@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-beta.4
+@version        2.0.0
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
 @homepageURL    https://github.com/iFelix18/Darkt/
 @supportURL     https://github.com/iFelix18/Darkt/issues/
-@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css
 @license        CC-BY-SA-4.0
 @preprocessor   stylus
 @var checkbox   block-ads 'Block ads' 1
@@ -14,7 +14,7 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     /* Darkt by Felix
     
-            2.0.0 (dd/mm/yyyy) - changelog
+            2.0.0 (29/05/2018) - New version 2.0 completely rewritten
     
     */
     /* COLORS */
@@ -68,7 +68,9 @@
     /* REMOVE ADS & SHOP */
     if block-ads {
         #huckster-desktop-wrapper,
-        div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6 {
+        #huckster-desktop-sidenav,
+        div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
+        div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
             display: none !important;
         }
         #header-shop,
@@ -257,11 +259,15 @@ regexp("https?://trakt.tv/auth/password/new") {
     .subnav-text .text[data-readmore][aria-expanded="false"] .shade {
         background-image: linear-gradient(to bottom, transparent 0%, var(--color-DarkBG) 100%)
     }
-    .subnav-text .text blockquote {
+    .subnav-text .text blockquote,
+    .custom-list .list-info .info .overview blockquote {
         background-color: var(--color-Grey);
         color: var(--color-White);
     }
     .streaming-links .title {
+        color: var(--color-White);
+    }
+    body.discover #recent-comments-wrapper #recent-comments-title h4 {
         color: var(--color-White);
     }
     /* ICONS */
@@ -534,6 +540,24 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     .form-control:focus {
         border-color: var(--color-Red);
+        box-shadow: none;
+    }
+    /* APPS & VIP */
+    body.apps #apps-icon-wrapper {
+        background-image: none;
+    }
+    div.col-lg-8.col-lg-offset-2.info-wrapper > h1,
+    div.col-lg-8.col-lg-offset-2.info-wrapper > h2,
+    section#standard-features > div.container > h1,
+    section#standard-features > div.container > h2,
+    section#standard-features > div.container > div > div > div > div > h4 {
+        color: var(--color-Grey);
+    }
+    body.apps #apps-icon-wrapper .apps-icons #iphone .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #ipad .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #applewatch .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #appletv .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #windowsphone .app .icon {
         box-shadow: none;
     }
 }
