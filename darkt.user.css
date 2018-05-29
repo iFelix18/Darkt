@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-beta.3
+@version        2.0.0-beta.4
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -354,7 +354,7 @@ regexp("https?://trakt.tv/auth/password/new") {
         color: var(--color-White);
     }
     #info-wrapper .sidebar .poster {
-        border: none;
+        border: none !important;
         box-shadow: none;
     }
     #info-wrapper .sidebar .btn-watch-now {
