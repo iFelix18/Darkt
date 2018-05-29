@@ -1,0 +1,563 @@
+/* ==UserStyle==
+@name           Darkt
+@version        2.0.0
+@namespace      https://github.com/iFelix18/
+@description    A darker theme for Trakt
+@author         Felix
+@homepageURL    https://github.com/iFelix18/Darkt/
+@supportURL     https://github.com/iFelix18/Darkt/issues/
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css
+@license        CC-BY-SA-4.0
+@preprocessor   stylus
+@var checkbox   block-ads 'Block ads' 1
+==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/.*") {
+    /* Darkt by Felix
+    
+            2.0.0 (29/05/2018) - New version 2.0 completely rewritten
+    
+    */
+    /* COLORS */
+     :root {
+        --color-DarkBG: #1D1D1D;
+        --color-Grey: #3A3A3A;
+        --color-White: #FFFFFF;
+        --color-Red: #ED1C24;
+    }
+    /* SCROLLBARS */
+     ::-webkit-scrollbar-corner {
+        background-color: #333333;
+    }
+     ::-webkit-scrollbar {
+        background-color: #333333;
+        height: 10px;
+        width: 10px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: #555555;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+    /* SEARCH */
+    input#header-search-query.open {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    input#header-search-query.open::-webkit-input-placeholder,
+    input#header-search-query.open::-moz-placeholder {
+        color: var(--color-White) !important;
+    }
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle:focus {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu {
+        background-color: var(--color-Grey);
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li > a {
+        color: var(--color-White) !important;
+    }
+    span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
+        background-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    /* REMOVE ADS & SHOP */
+    if block-ads {
+        #huckster-desktop-wrapper,
+        #huckster-desktop-sidenav,
+        div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
+        div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
+            display: none !important;
+        }
+        #header-shop,
+        .popover-shop {
+            display: none;
+        }
+    }
+}
+@-moz-document regexp("https?://trakt.tv/auth/join"),
+regexp("https?://trakt.tv/auth/signin"),
+regexp("https?://trakt.tv/auth/password/new") {
+    /* AUTH */
+    /* backgrounds & texts */
+    div#auth-form-wrapper,
+    #auth-form-wrapper .auth-services-wrapper,
+    #auth-form-wrapper .bottom-wrapper {
+        background-color: var(--color-DarkBG);
+        box-shadow: none;
+        color: var(--color-White);
+    }
+    /* inputs */
+    input#user_email.string.email.required.top.form-control,
+    input#user_username.string.required.middle.form-control,
+    input#user_password.password.required.middle.form-control,
+    input#user_password_confirmation.password.required.bottom.form-control {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    input#user_email.string.email.required.top.form-control::-webkit-input-placeholder,
+    input#user_username.string.required.middle.form-control::-webkit-input-placeholder,
+    input#user_password.password.required.middle.form-control::-webkit-input-placeholder,
+    input#user_password_confirmation.password.required.bottom.form-control::-webkit-input-placeholder {
+        color: var(--color-White);
+    }
+    input#user_email.string.email.required.top.form-control::-moz-placeholder,
+    input#user_username.string.required.middle.form-control::-moz-placeholder,
+    input#user_password.password.required.middle.form-control::-moz-placeholder,
+    input#user_password_confirmation.password.required.bottom.form-control::-moz-placeholder {
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control,
+    input#user_password.password.required.bottom.form-control {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control::-webkit-input-placeholder,
+    input#user_password.password.required.bottom.form-control::-webkit-input-placeholder {
+        color: var(--color-White);
+    }
+    input#user_login.string.required.top.form-control::-moz-placeholder,
+    input#user_password.password.required.bottom.form-control::-moz-placeholder {
+        color: var(--color-White);
+    }
+    .form-control:focus {
+        border-color: var(--color-White);
+        box-shadow: 0px 0px 4px 1px var(--color-Red);
+        outline: 0;
+    }
+}
+@-moz-document regexp("https?://trakt.tv/.*") {
+    /* BACKGROUNDS & TEXTS */
+    section:not([id*="results-top-wrapper"]):not([id*="bottom-stats-wrapper"]) {
+        background-color: var(--color-DarkBG) !important;
+        color: var(--color-White) !important;
+    }
+    #schedule-wrapper .alert-no-data,
+    .alert-no-data {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .comment-wrapper {
+        background-color: var(--color-DarkBG);
+    }
+    #ondeck-wrapper .posters .titles-link,
+    #ondeck-wrapper .ignore,
+    #charts-wrapper h3,
+    #recommendations-wrapper .grid-item h4 a,
+    .genre-bars.light .bar label {
+        color: var(--color-White);
+    }
+    h2 .time-spent {
+        color: var(--color-White);
+    }
+    #ondeck-wrapper .ignore:hover,
+    #recommendations-wrapper .grid-item h4 a:hover {
+        color: var(--color-Red);
+    }
+    #boxes-wrapper .row .stat-box:nth-child(3),
+    #bottom-stats-wrapper .col-stat.alt {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    #progress-wrapper .row .main-info .seasons {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .comment-wrapper .interactions a .text-wrapper .under-count {
+        color: var(--color-White);
+    }
+    .comment-wrapper.list .above-comment .user-name h4 a.username {
+        color: var(--color-White);
+    }
+    .comment-wrapper .above-comment {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .comment-wrapper .above-comment .date {
+        color: var(--color-White);
+    }
+    #info-wrapper .sidebar .sections li a {
+        color: var(--color-White);
+    }
+    #info-wrapper .sidebar .sections li a:hover {
+        color: var(--color-Red);
+    }
+    #info-wrapper .sidebar .sections li a.see-more-link,
+    #info-wrapper .sidebar .sections li a.see-more-link:hover {
+        color: var(--color-White);
+    }
+    .summary-activity .tabs .tab.selected,
+    .users-wrapper {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .subnav-wrapper {
+        background-color: var(--color-DarkBG);
+    }
+    #info-wrapper .season-links,
+    #info-wrapper .season-links .links ul li a {
+        color: var(--color-White);
+    }
+    #info-wrapper .season-links .links ul li a.selected {
+        color: var(--color-Red);
+    }
+    #seasons-episodes-sortable .under-info .titles {
+        background-color: var(--color-Grey);
+    }
+    #seasons-episodes-sortable .under-info h3 a {
+        color: var(--color-White);
+    }
+    .panel,
+    .panel-default > .panel-heading,
+    h3.instructions {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    body.settings .disable-account-wrapper a,
+    .form-group .under-help {
+        color: var(--color-White);
+    }
+    body.settings .notifications-table .table tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+    body.settings .notifications-table td .helper {
+        color: var(--color-White);
+    }
+    div.subnav-wrapper {
+        color: var(--color-White);
+    }
+    .checkin-modal {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        box-shadow: none;
+    }
+    .form-signin h4 {
+        color: var(--color-White);
+    }
+    .form-signin .btn-group .btn {
+        background-color: var(--color-Grey);
+        border: none;
+        color: var(--color-White);
+        box-shadow: inset 0px 0px 0px 1px var(--color-White);
+    }
+    .form-signin .btn-group .btn.active {
+        background-color: var(--color-DarkBG);
+        border: none;
+        color: var(--color-White);
+    }
+    code {
+        background-color: var(--color-DarkBG);
+        border-color: var(--color-White);
+        color: var(--color-White);
+    }
+    .subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+        background-image: linear-gradient(to bottom, transparent 0%, var(--color-DarkBG) 100%)
+    }
+    .subnav-text .text blockquote,
+    .custom-list .list-info .info .overview blockquote {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .streaming-links .title {
+        color: var(--color-White);
+    }
+    body.discover #recent-comments-wrapper #recent-comments-title h4 {
+        color: var(--color-White);
+    }
+    /* ICONS */
+    h2 .feed-icons .feed-icon,
+    .subnav-wrapper .right .feed-icon,
+    .filter-dropdown .icon.trakt-icon-divider {
+        color: var(--color-White);
+    }
+    h2 .feed-icons .feed-icon:hover,
+    .subnav-wrapper .right .feed-icon:hover {
+        color: var(--color-Red);
+    }
+    .filter-dropdown .metadata .trakt-icon-wand,
+    .filter-dropdown .metadata .caret {
+        color: var(--color-White);
+    }
+    #btn-list-edit-lists {
+        color: var(--color-White);
+    }
+    .custom-list .list-info .user-actions .icon.btn-list-subscribe {
+        color: var(--color-White);
+    }
+    .comment-wrapper .pill {
+        background-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    #info-wrapper .affiliate-links .section a,
+    #info-wrapper .sidebar .external li a {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    #info-wrapper .affiliate-links .section a:hover,
+    #info-wrapper .sidebar .external li a:hover {
+        background-color: var(--color-Red);
+        border-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    .btn-watch,
+    .btn-collect,
+    .btn-list,
+    .btn-comment {
+        background-color: var(--color-DarkBG);
+    }
+    .btn-info:hover {
+        background-color: var(--color-Red);
+        border-color: var(--color-Red);
+    }
+    #info-wrapper .info .action-buttons > .btn .side-btn {
+        color: var(--color-White);
+    }
+    .subnav-wrapper .left h2 .right a {
+        color: var(--color-White);
+    }
+    .checkin-modal .logo-wrapper .user-avatar img {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        box-shadow: none;
+    }
+    .xdsoft_datetimepicker .xdsoft_prev,
+    .xdsoft_datetimepicker .xdsoft_today_button,
+    .xdsoft_datetimepicker .xdsoft_next,
+    .xdsoft_datetimepicker .xdsoft_label i {
+        filter: invert(100%);
+    }
+    /* POSTERS */
+    .posters .poster {
+        border-left: solid 1px var(--color-DarkBG);
+        border-top: solid 1px var(--color-DarkBG);
+        border-right: solid 1px var(--color-DarkBG);
+    }
+    .posters > div .quick-icons {
+        border-left: solid 1px var(--color-DarkBG);
+        border-right: solid 1px var(--color-DarkBG);
+        border-bottom: solid 1px var(--color-DarkBG);
+    }
+    .quick-icons {
+        background-color: var(--color-Grey)
+    }
+    div#network-activities.row.posters.loaded > div > div.poster-under > a > div.user-avatar > img,
+    div#network-activities.row.posters.loaded > div > div.poster-under > div.action.watch {
+        border-color: var(--color-Grey);
+    }
+    div#network-activities.row.posters.loaded > div > div.poster-under {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    div#network-activities.row.posters.loaded > div > div.activity-date {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    #info-wrapper .sidebar .poster {
+        border: none !important;
+        box-shadow: none;
+    }
+    #info-wrapper .sidebar .btn-watch-now {
+        background-color: var(--color-Grey);
+        box-shadow: none;
+    }
+    .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+        box-shadow: none;
+    }
+    /* ACTORS */
+    #info-wrapper .info #actors .posters ul li .name {
+        color: var(--color-White);
+    }
+    #info-wrapper .info #actors .posters ul li .character {
+        color: var(--color-White);
+    }
+    #info-wrapper .info #actors .posters ul:hover li .titles .name,
+    #info-wrapper .info #actors .posters ul:hover li .character {
+        color: var(--color-DarkBG);
+    }
+    .actor-tooltip .tooltip-inner {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+        background-color: var(--color-Red);
+    }
+    .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+        background-color: var(--color-Grey);
+    }
+    /* COMMENTS */
+    #comments .tab-links h3 {
+        color: var(--color-White);
+    }
+    #comments .active h3,
+    #comments .tab-links h3:hover {
+        color: var(--color-Red);
+    }
+    .comment-wrapper.featured .above-comment,
+    .comment-wrapper.featured {
+        background-color: var(--color-Grey);
+    }
+    .new-comment-wrapper textarea,
+    .new-comment-wrapper .formatting-help {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .new-comment-wrapper.update textarea,
+    .new-reply-wrapper .reply-field textarea {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .new-comment-wrapper .under-help .checkboxes .btn-group .btn,
+    .new-comment-wrapper .under-help .checkboxes .btn-group .btn:hover {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .new-comment-wrapper .under-help .checkboxes .btn-group .btn.active {
+        background-color: var(--color-Grey) !important;
+        border-color: var(--color-Grey) !important;
+        color: var(--color-Red) !important;
+    }
+    .new-comment-wrapper.update .under-help .checkboxes .btn-group .btn {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    /* PAGINATION */
+    .pagination > li > a,
+    ul.pagination .gap a,
+    ul.pagination .gap a:hover,
+    ul.pagination .disabled a,
+    ul.pagination .disabled a:hover,
+    ul.pagination .disabled a:focus {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: var(--color-White);
+    }
+    .pagination > li > a:hover,
+    .pagination > li > a:focus {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: var(--color-Red);
+    }
+    /* DROPDOWN MENUS */
+    .btn-default,
+    .btn-default:hover,
+    .open > .btn-default.dropdown-toggle {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .dropdown-menu {
+        background-color: var(--color-Grey);
+    }
+    .dropdown-menu > li > a {
+        color: var(--color-White);
+    }
+    .dropdown-menu > li:hover > a {
+        background-color: var(--color-Red);
+        color: var(--color-White);
+    }
+    /* POPOVER */
+    .popover,
+    .popover-title {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+    }
+    .popover.remove .popover-title {
+        color: var(--color-White) !important;
+    }
+    .popover > .arrow::after {
+        border-top-color: var(--color-Grey) !important;
+    }
+    div.arrow::after {
+        border-bottom-color: var(--color-Grey) !important;
+    }
+    .quick-icons .actions .popover .popover-title,
+    .quick-icons .metadata .popover .popover-title > div.rating-text,
+    div.popover-content > ul.lists li {
+        color: var(--color-White) !important;
+    }
+    .popover .data-wrapper,
+    .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+        background-color: var(--color-Grey);
+    }
+    .popover .data-wrapper input {
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar th,
+    .generic-datepicker .xdsoft_calendar td {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .generic-datepicker .xdsoft_calendar td.xdsoft_current {
+        background-color: var(--color-Red) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
+        color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled {
+        background-color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover {
+        background-color: var(--color-Grey) !important;
+        box-shadow: none !important;
+        color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+        border-color: var(--color-Grey);
+    }
+    .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker {
+        color: var(--color-White);
+    }
+    /* FORMS */
+    .form-control,
+    .form-control[readonly] {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .form-control:focus {
+        border-color: var(--color-Red);
+        box-shadow: none;
+    }
+    /* APPS & VIP */
+    body.apps #apps-icon-wrapper {
+        background-image: none;
+    }
+    div.col-lg-8.col-lg-offset-2.info-wrapper > h1,
+    div.col-lg-8.col-lg-offset-2.info-wrapper > h2,
+    section#standard-features > div.container > h1,
+    section#standard-features > div.container > h2,
+    section#standard-features > div.container > div > div > div > div > h4 {
+        color: var(--color-Grey);
+    }
+    body.apps #apps-icon-wrapper .apps-icons #iphone .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #ipad .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #applewatch .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #appletv .app .icon,
+    body.apps #apps-icon-wrapper .apps-icons #windowsphone .app .icon {
+        box-shadow: none;
+    }
+}
