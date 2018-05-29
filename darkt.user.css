@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-alpha.12
+@version        2.0.0-beta.1
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -254,6 +254,16 @@ regexp("https?://trakt.tv/auth/password/new") {
         border-color: var(--color-White);
         color: var(--color-White);
     }
+    .subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+        background-image: linear-gradient(to bottom, transparent 0%, var(--color-DarkBG) 100%)
+    }
+    .subnav-text .text blockquote {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .streaming-links .title {
+        color: var(--color-White);
+    }
     /* ICONS */
     h2 .feed-icons .feed-icon,
     .subnav-wrapper .right .feed-icon,
@@ -463,6 +473,11 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     div.arrow::after {
         border-bottom-color: var(--color-Grey) !important;
+    }
+    .quick-icons .actions .popover .popover-title,
+    .quick-icons .metadata .popover .popover-title > div.rating-text,
+    div.popover-content > ul.lists li {
+        color: var(--color-White) !important;
     }
     /* FORMS */
     .form-control,
