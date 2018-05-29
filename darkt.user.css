@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0-beta.1
+@version        2.0.0-beta.2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -321,6 +321,12 @@ regexp("https?://trakt.tv/auth/password/new") {
         border-color: var(--color-Grey);
         box-shadow: none;
     }
+    .xdsoft_datetimepicker .xdsoft_prev,
+    .xdsoft_datetimepicker .xdsoft_today_button,
+    .xdsoft_datetimepicker .xdsoft_next,
+    .xdsoft_datetimepicker .xdsoft_label i {
+        filter: invert(100%);
+    }
     /* POSTERS */
     .posters .poster {
         border-left: solid 1px var(--color-DarkBG);
@@ -478,6 +484,47 @@ regexp("https?://trakt.tv/auth/password/new") {
     .quick-icons .metadata .popover .popover-title > div.rating-text,
     div.popover-content > ul.lists li {
         color: var(--color-White) !important;
+    }
+    .popover .data-wrapper,
+    .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+        background-color: var(--color-Grey);
+    }
+    .popover .data-wrapper input {
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar th,
+    .generic-datepicker .xdsoft_calendar td {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .generic-datepicker .xdsoft_calendar td.xdsoft_current {
+        background-color: var(--color-Red) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
+        color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled {
+        background-color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover {
+        background-color: var(--color-Grey) !important;
+        box-shadow: none !important;
+        color: var(--color-Grey) !important;
+    }
+    .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+        border-color: var(--color-Grey);
+    }
+    .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+        background-color: var(--color-Grey);
+        border-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+    .xdsoft_datetimepicker {
+        color: var(--color-White);
     }
     /* FORMS */
     .form-control,
