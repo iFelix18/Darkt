@@ -1,5 +1,6 @@
 # Darkt [![Install directly with Stylus](https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square)](https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css) [![Version](https://img.shields.io/badge/version-2.0-ED1C24.svg?longCache=true&style=flat-square)](https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt) [![GitHub stars](https://img.shields.io/github/stars/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkt/stargazers) [![GitHub issues](https://img.shields.io/github/issues/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkt/issues) [![GitHub license](https://img.shields.io/github/license/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 **_A darker theme for Trakt_**
+
 <p align="center">
  <a href="https://github.com/iFelix18/Darkt/blob/master/README.md#screenshot">
   <img src="https://i.imgur.com/jYMxfKZ.png" title="Click to see more screenshots" alt="Darkt"/>
