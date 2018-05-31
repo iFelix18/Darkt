@@ -1,5 +1,27 @@
-# Darkt [![Version](https://img.shields.io/badge/version-2.0-ED1C24.svg?longCache=true&style=flat-square)](https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt) [![Install directly with Stylus](https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square)](https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css) [![userstyles.org installations](https://img.shields.io/badge/dynamic/json.svg?label=userstyles.org%20installations&url=https%3A%2F%2Fwidget.userstyles.org%2Fstyles%2F148514%2Fdarkt-a-dark-theme-for-trakt.json&query=total_installs&colorB=e51ced&longCache=true&style=flat-square)](https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt) [![GitHub stars](https://img.shields.io/github/stars/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkt/stargazers) [![GitHub issues](https://img.shields.io/github/issues/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkt/issues) [![GitHub license](https://img.shields.io/github/license/iFelix18/Darkt.svg?longCache=true&style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
-**_A dark theme for Trakt_**
+<p align="center">
+  <h1 align="center">Darkt</h1>
+</p>
+<p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/version-2.0.0-ED1C24.svg?longCache=true&style=flat-square" alt="Version">
+  </a>
+  <a href="https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css">
+   <img src="https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square" title="Click here!" alt="Stylus">
+  </a>
+  <a href="https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt">
+   <img src="https://img.shields.io/badge/dynamic/json.svg?label=userstyles.org%20installations&url=https%3A%2F%2Fwidget.userstyles.org%2Fstyles%2F148514%2Fdarkt-a-dark-theme-for-trakt.json&query=total_installs&colorB=e51ced&longCache=true&style=flat-square" alt="Userstyles">
+  </a>
+  <a href="https://github.com/iFelix18/Darkt/stargazers">
+   <img src="https://img.shields.io/github/stars/iFelix18/Darkt.svg?longCache=true&style=flat-square" alt="Stars">
+  </a>
+  <a href="https://github.com/iFelix18/Darkt/issues">
+   <img src="https://img.shields.io/github/issues/iFelix18/Darkt.svg?longCache=true&style=flat-square" alt="Issues">
+  </a>
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+   <img src="https://img.shields.io/github/license/iFelix18/Darkt.svg?longCache=true&style=flat-square" alt="License">
+  </a>
+  <i><h4 align="center">A darker theme for Trakt</h4></i>
+</p>
 
 <p align="center">
  <a href="https://github.com/iFelix18/Darkt/blob/master/README.md#screenshot">
