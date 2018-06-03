@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.0.0
+@version        2.1.0
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -14,7 +14,9 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     /* Darkt by Felix
     
-            2.0.0 (29/05/2018) - New version 2.0 completely rewritten
+            2.1.0 (03/06/2018) - Fixed an icon on watched progress page,
+                               - Updated the stats bar moved below the title.
+            2.0.0 (29/05/2018) - New version 2.0 completely rewritten.
     
     */
     /* COLORS */
@@ -206,7 +208,8 @@ regexp("https?://trakt.tv/auth/password/new") {
     #info-wrapper .season-links .links ul li a.selected {
         color: var(--color-Red);
     }
-    #seasons-episodes-sortable .under-info .titles {
+    #seasons-episodes-sortable .under-info .titles,
+    #seasons-episodes-sortable .episode-stats {
         background-color: var(--color-Grey);
     }
     #seasons-episodes-sortable .under-info h3 a {
@@ -332,6 +335,18 @@ regexp("https?://trakt.tv/auth/password/new") {
     .xdsoft_datetimepicker .xdsoft_next,
     .xdsoft_datetimepicker .xdsoft_label i {
         filter: invert(100%);
+    }
+    span.season-toggle > i.fa.fa-plus,
+    span.season-toggle > i.fa.fa-minus,
+    span.season-toggle > a.season,
+    span.season-toggle > a.ignore {
+        color: var(--color-White) !important;
+    }
+    span.season-toggle > i.fa.fa-plus:hover,
+    span.season-toggle > i.fa.fa-minus:hover,
+    span.season-toggle > a.season:hover,
+    span.season-toggle > a.ignore:hover {
+        color: var(--color-Red) !important;
     }
     /* POSTERS */
     .posters .poster {
