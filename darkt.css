@@ -1,12 +1,14 @@
+@-moz-document regexp("https?://trakt.tv/.*") {
 /* Darkt by Felix
-    
+            
+            2.2.0 (11/06/2018) - Added animations option
+            2.1.1 (11/06/2018) - Some fixes
             2.1.0 (03/06/2018) - Fixed an icon on watched progress page,
                                - Updated the stats bar moved below the title.
             2.0.0 (29/05/2018) - New version 2.0 completely rewritten
     
 */
 
-@-moz-document regexp("https?://trakt.tv/.*") {
 /* COLORS */
  :root {
     --color-DarkBG: #1D1D1D;
@@ -59,8 +61,21 @@ span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
 }
 
 /* REMOVE ADS & SHOP */
+
+/*[[block-ads]]*/
+
+/* ANIMATIONS */
+
+/*[[animations]]*/
+
+/* OPTIONS */
+
+/* block-ads */
+
+/*
 #huckster-desktop-wrapper,
 #huckster-desktop-sidenav,
+.huckster-vip-info,
 div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
 div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
     display: none !important;
@@ -69,6 +84,46 @@ div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
 .popover-shop {
     display: none;
 }
+*/
+
+/* animations */
+
+/*
+#top-brand > a > img {
+    transition: all 0.9s ease;
+}
+#top-brand > a > img:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    40% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    60% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    80% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    100% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+}
+div.grid-item:hover > a > div.poster,
+div.grid-item:hover > div.quick-icons.smaller,
+div.grid-item:hover > div.titles > h4 > div.progress,
+div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"]) > div.grid-item:hover > a > div.fanart,
+div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"]) > div.grid-item:hover > div.quick-icons {
+    animation: bounce 0.3s;
+}
+*/
 }
 
 @-moz-document regexp("https?://trakt.tv/auth/join"), regexp("https?://trakt.tv/auth/signin"), regexp("https?://trakt.tv/auth/password/new") {
@@ -183,6 +238,7 @@ h2 .time-spent {
 #info-wrapper .sidebar .sections li a.see-more-link:hover {
     color: var(--color-White);
 }
+.summary-activity .tabs .tab,
 .summary-activity .tabs .tab.selected,
 .users-wrapper {
     background-color: var(--color-Grey);
@@ -328,18 +384,19 @@ h2 .feed-icons .feed-icon:hover,
 .xdsoft_datetimepicker .xdsoft_label i {
     filter: invert(100%);
 }
-span.season-toggle > i.fa.fa-plus,
-span.season-toggle > i.fa.fa-minus,
+span:not([class="season-toggle link"]):not([class="season-toggle link collapsed"]):not([class="all-toggle link"]) > i.fa.fa-plus,
+span:not([class="season-toggle link expanded"]) > i.fa.fa-minus {
+    color: var(--color-White) !important;
+}
 span.season-toggle > a.season,
 span.season-toggle > a.ignore {
     color: var(--color-White) !important;
 }
-span.season-toggle > i.fa.fa-plus:hover,
-span.season-toggle > i.fa.fa-minus:hover,
 span.season-toggle > a.season:hover,
 span.season-toggle > a.ignore:hover {
     color: var(--color-Red) !important;
 }
+
 /* POSTERS */
 .posters .poster {
     border-left: solid 1px var(--color-DarkBG);
