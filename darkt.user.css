@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        2.2.0
+@version        2.2.1
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -15,10 +15,11 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     /* Darkt by Felix
 
+            2.2.1 (17/06/2018) - Small fixes
             2.2.0 (11/06/2018) - Added animations option
             2.1.1 (11/06/2018) - Some fixes
             2.1.0 (03/06/2018) - Fixed an icon on watched progress page,
-                               - Updated the stats bar moved below the title.
+                               - Updated the stats bar moved below the title
             2.0.0 (29/05/2018) - New version 2.0 completely rewritten.
     
     */
@@ -555,6 +556,13 @@ regexp("https?://trakt.tv/auth/password/new") {
     }
     .popover .data-wrapper input {
         color: var(--color-White);
+    }
+    .popover.with-list h3 {
+        color: var(--color-White);
+    }
+    div.popover-content > ul.lists li > a > i.fa.fa-angle-right {
+        color: var(--color-White);
+        opacity: 1;
     }
     .xdsoft_datetimepicker .xdsoft_calendar th,
     .generic-datepicker .xdsoft_calendar td {
