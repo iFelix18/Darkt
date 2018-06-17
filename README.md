@@ -23,7 +23,7 @@
  ![Series][screenSeries]
 </details>
 
-[version]: https://img.shields.io/badge/version-2.2.0-ED1C24.svg?longCache=true&style=flat-square
+[version]: https://img.shields.io/badge/version-2.2.1-ED1C24.svg?longCache=true&style=flat-square
 [1]: #
 [stylus]: https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square "Click here!"
 [2]: https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css
