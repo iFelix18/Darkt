@@ -1,0 +1,100 @@
+/* ==UserStyle==
+@name           Darkt
+@version        3.0.0-beta1
+@namespace      https://github.com/iFelix18/
+@description    A darker theme for Trakt
+@author         Felix
+@homepageURL    https://git.io/Darkt
+@supportURL     https://github.com/iFelix18/Darkt/issues/
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
+@license        CC-BY-SA-4.0
+@advanced       dropdown    blockads "Block Ads" {
+    ads "No" <<<EOT
+    EOT;
+    noads "Yes" <<<EOT
+    #huckster-desktop-wrapper,
+    #huckster-desktop-sidenav,
+    .huckster-vip-info,
+    div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
+    div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
+        display: none !important;
+    }
+    #header-shop,
+    .popover-shop {
+        display: none;
+    } EOT;
+}
+@advanced       dropdown    animations "Add Animations" {
+    noanima "No" <<<EOT
+    EOT;
+    anima "Yes" <<<EOT
+    /*logo*\/
+    #top-brand>a>img {
+        transition: all .9s ease;
+    }
+    #top-brand>a>img:hover {
+        transform: rotate(360deg);
+    }
+    /*posters & fanarts*\/
+    @keyframes bounce {
+        0%,
+        20%,
+        40% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+        60% {
+            -webkit-transform: translateY(-10px);
+                    transform: translateY(-10px);
+        }
+        80% {
+            -webkit-transform: translateY(-15px);
+                    transform: translateY(-15px);
+        }
+        100% {
+            -webkit-transform: translateY(2px);
+                    transform: translateY(2px);
+        }
+    }
+
+    div.grid-item:hover>a>div.poster,
+    div.grid-item:hover>div.quick-icons.smaller,
+    div.grid-item:hover>div.titles>h4>div.progress,
+    div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"])>div.grid-item:hover>a>div.fanart,
+    div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"])>div.grid-item:hover>div.quick-icons {
+        animation: bounce .3s;
+    } EOT;
+}
+@advanced       text        userid "UserID [see my GitHub for info]" ""
+@advanced       dropdown    lastwatchedbg "\"Last Watched\" background on user profile [UserID required]" {
+    obg "No" <<<EOT
+    EOT;
+    lwbg "Yes" <<<EOT
+    /*profile*\/
+    html .is-self #cover-wrapper .full-bg.enabled {
+        background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+    }
+    /*dashboard*\/
+    html #results-top-wrapper .poster-bg {
+        background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+        background-size: cover !important;
+        background-position: center 25% !important;
+        filter: none !important;
+        opacity: .7 !important;
+    } EOT;
+}
+==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/.*") {
+  /*[[blockads]]*/
+  /*[[animations]]*/
+  /*[[lastwatchedbg]]*/
+  section:not(#results-top-wrapper) {
+    background-color: #1D1D1D !important;
+  }
+  #huckster-desktop-wrapper.light {
+    background-color: #1D1D1D !important;
+  }
+  #huckster-desktop-wrapper.light .huckster-vip-info {
+    background-color: #1D1D1D !important;
+  }
+}

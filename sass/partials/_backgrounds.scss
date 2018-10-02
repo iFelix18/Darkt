@@ -1,0 +1,13 @@
+section {
+    &:not(#results-top-wrapper) {
+        background-color: $DarkBG !important;
+    }
+}
+
+#huckster-desktop-wrapper.light {
+    background-color: $DarkBG !important;
+
+    .huckster-vip-info {
+        background-color: $DarkBG !important;
+    }
+}
