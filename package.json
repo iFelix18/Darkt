@@ -1,0 +1,12 @@
+{
+  "name": "darkt",
+  "version": "3.0.0-beta1",
+  "description": "A darker theme for Trakt",
+  "license": "CC-BY-SA-4.0",
+  "repository": "https://github.com/iFelix18/Darkt/",
+  "homepage": "https://git.io/Darkt",
+  "devDependencies": {
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
