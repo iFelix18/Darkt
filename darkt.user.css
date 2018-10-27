@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        3.0.0-beta2
+@version        3.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -153,6 +153,11 @@ regexp("https?://trakt.tv/auth/password/new") {
 }
 
 @-moz-document regexp("https?://trakt.tv/.*") {
+  /* --- VERSION --- */
+  .trakt:after {
+    white-space: pre !important;
+    content: "\A                Darkt Ver. 3.0.0-beta3" !important;
+  }
   /*[[blockads]]*/
   /*[[animations]]*/
   /*[[lastwatchedbg]]*/
@@ -197,6 +202,9 @@ regexp("https?://trakt.tv/auth/password/new") {
   span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
     background-color: #ED1C24;
     color: #FFF;
+  }
+  #main-search {
+    display: none;
   }
   /* --- BACKGROUNDS & TEXTS --- */
   section:not([id*="results-top-wrapper"]):not([id*="bottom-stats-wrapper"]) {
@@ -348,6 +356,9 @@ regexp("https?://trakt.tv/auth/password/new") {
     background-color: #3A3A3A;
     color: #FFF;
   }
+  .custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
+    background-image: linear-gradient(to bottom, transparent 0%, #1D1D1D 100%);
+  }
   .streaming-links .title,
   body.discover #recent-comments-wrapper #recent-comments-title h4 {
     color: #FFF;
@@ -457,6 +468,10 @@ regexp("https?://trakt.tv/auth/password/new") {
   }
   #info-wrapper .sidebar .poster {
     border: none !important;
+    box-shadow: none;
+  }
+  #info-wrapper .sidebar .streaming-links {
+    background-color: #3A3A3A;
     box-shadow: none;
   }
   #info-wrapper .sidebar .btn-watch-now {

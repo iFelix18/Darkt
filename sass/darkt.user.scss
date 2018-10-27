@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        3.0.0-beta2
+@version        3.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -95,6 +95,7 @@ regexp("https?://trakt.tv/auth/password/new") {
 
 @-moz-document regexp("https?://trakt.tv/.*") {
     @import "partials/_variables.scss";
+    @import "partials/_version.scss";
     /*[[blockads]]*/
     /*[[animations]]*/
     /*[[lastwatchedbg]]*/

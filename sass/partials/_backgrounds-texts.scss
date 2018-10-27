@@ -199,9 +199,15 @@ code {
     }
 }
 
-.custom-list .list-info .info .overview blockquote {
-    background-color: $Grey;
-    color: $White;
+.custom-list .list-info .info .overview {
+    blockquote {
+        background-color: $Grey;
+        color: $White;
+    }
+
+    &[data-readmore][aria-expanded="false"] .shade {
+        background-image: linear-gradient(to bottom, transparent 0%, $DarkBG 100%);
+    }
 }
 
 .streaming-links .title,
