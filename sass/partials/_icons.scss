@@ -1,0 +1,115 @@
+/* --- ICONS --- */
+h2 .feed-icons .feed-icon {
+    color: $White;
+
+    &:hover {
+        color: $Red;
+    }
+}
+
+.subnav-wrapper {
+
+    .right .feed-icon,
+    .left h2 .right a {
+        color: $White;
+    }
+
+    .right .feed-icon:hover {
+        color: $Red;
+    }
+}
+
+.filter-dropdown {
+    .icon.trakt-icon-divider {
+        color: $White;
+    }
+
+    .metadata {
+
+        .trakt-icon-wand,
+        .caret {
+            color: $White;
+        }
+    }
+}
+
+#btn-list-edit-lists {
+    color: $White;
+}
+
+.custom-list .list-info .user-actions .icon.btn-list-subscribe {
+    color: $White;
+}
+
+.comment-wrapper .pill {
+    background-color: $Red;
+    color: $White;
+}
+
+#info-wrapper {
+
+    .affiliate-links .section a,
+    .sidebar .external li a {
+        background-color: $Grey;
+        border-color: $Grey;
+        color: $White;
+
+        &:hover {
+            background-color: $Red;
+            border-color: $Red;
+            color: $White;
+        }
+    }
+
+    .info .action-buttons>.btn .side-btn {
+        color: $White;
+    }
+}
+
+.btn-watch,
+.btn-collect,
+.btn-list,
+.btn-comment {
+    background-color: $DarkBG;
+}
+
+.btn-info:hover {
+    background-color: $Red;
+    border-color: $Red;
+}
+
+.checkin-modal .logo-wrapper .user-avatar img {
+    background-color: $Grey;
+    border-color: $Grey;
+    box-shadow: none;
+}
+
+.xdsoft_datetimepicker {
+
+    .xdsoft_prev,
+    .xdsoft_today_button,
+    .xdsoft_next,
+    .xdsoft_label i {
+        filter: invert(100%);
+    }
+}
+
+span {
+
+    &:not([class="season-toggle link"]):not([class="season-toggle link collapsed"]):not([class="all-toggle link"])>i.fa.fa-plus,
+    &:not([class="season-toggle link expanded"])>i.fa.fa-minus {
+        color: $White !important;
+    }
+
+    &.season-toggle>a {
+
+        &.season,
+        &.ignore {
+            color: $White !important;
+
+            &:hover {
+                color: $Red !important;
+            }
+        }
+    }
+}

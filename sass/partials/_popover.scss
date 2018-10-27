@@ -1,0 +1,110 @@
+/* --- POPOVER --- */
+
+.popover {
+    background-color: $Grey;
+    border-color: $Grey;
+
+    &.remove .popover-title {
+        color: $White !important;
+    }
+
+    >.arrow:after {
+        border-top-color: $Grey !important;
+    }
+
+    .data-wrapper {
+        background-color: $Grey;
+
+        .xdsoft_datetimepicker.xdsoft_inline {
+            background-color: $Grey;
+        }
+
+        input {
+            color: $White;
+        }
+    }
+
+    &.with-list h3 {
+        color: $White;
+    }
+}
+
+.popover-title {
+    background-color: $Grey;
+    border-color: $Grey;
+}
+
+div {
+    &.arrow:after {
+        border-bottom-color: $Grey !important;
+    }
+
+    &.popover-content>ul.lists li {
+        color: $White !important;
+
+        >a>i.fa.fa-angle-right {
+            color: $White;
+            opacity: 1;
+        }
+    }
+}
+
+.quick-icons {
+
+    .actions .popover .popover-title,
+    .metadata .popover .popover-title>div.rating-text {
+        color: $White !important;
+    }
+}
+
+.generic-datepicker .xdsoft_calendar td {
+    background-color: $Grey;
+    border-color: $Grey;
+    color: $White;
+
+    &.xdsoft_current {
+        background-color: $Red !important;
+    }
+}
+
+.xdsoft_datetimepicker {
+    .xdsoft_calendar {
+        th {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+
+        td {
+            &.xdsoft_today {
+                color: $White;
+            }
+
+            &.xdsoft_other_month.xdsoft_disabled {
+                color: $Grey !important;
+            }
+
+            &.xdsoft_current.xdsoft_disabled {
+                background-color: $Grey !important;
+
+                &:hover {
+                    background-color: $Grey !important;
+                    box-shadow: none !important;
+                    color: $Grey !important;
+                }
+            }
+        }
+    }
+
+    .xdsoft_timepicker .xdsoft_time_box {
+        border-color: $Grey;
+
+        >div>div {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+    }
+
+    color: $White;
+}

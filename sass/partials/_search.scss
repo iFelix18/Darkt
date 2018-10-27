@@ -1,0 +1,44 @@
+/* --- SEARCH --- */
+input#header-search-query.open {
+    background-color: $Grey;
+    color: $White;
+
+    &::-webkit-input-placeholder {
+        color: $White !important;
+    }
+
+    &::-moz-placeholder {
+        color: $White !important;
+    }
+}
+
+span#header-search-type.dropdown.shown {
+    >button.btn.btn-default.dropdown-toggle {
+        background-color: $Grey;
+        color: $White;
+
+        &:focus {
+            background-color: $Grey;
+            color: $White;
+        }
+    }
+
+    &.open>ul.dropdown-menu {
+        background-color: $Grey;
+
+        >li {
+            >a {
+                color: $White !important;
+            }
+
+            &:hover>a {
+                background-color: $Red;
+                color: $White;
+            }
+        }
+    }
+}
+
+#main-search {
+    display: none;
+}

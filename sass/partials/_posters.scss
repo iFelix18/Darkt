@@ -1,0 +1,59 @@
+/* --- POSTERS --- */
+.posters {
+    .poster {
+        border-left: solid 1px $DarkBG;
+        border-top: solid 1px $DarkBG;
+        border-right: solid 1px $DarkBG;
+    }
+
+    >div .quick-icons {
+        border-left: solid 1px $DarkBG;
+        border-right: solid 1px $DarkBG;
+        border-bottom: solid 1px $DarkBG;
+    }
+}
+
+.quick-icons {
+    background-color: $Grey;
+}
+
+div#network-activities.row.posters.loaded>div>div {
+    &.poster-under {
+        > {
+
+            a>div.user-avatar>img,
+            div.action.watch {
+                border-color: $Grey;
+            }
+        }
+
+        background-color: $Grey;
+        color: $White;
+    }
+
+    &.activity-date {
+        background-color: $DarkBG;
+        color: $White;
+    }
+}
+
+#info-wrapper .sidebar {
+    .poster {
+        border: none !important;
+        box-shadow: none;
+    }
+
+    .streaming-links {
+        background-color: $Grey;
+        box-shadow: none;
+    }
+
+    .btn-watch-now {
+        background-color: $Grey;
+        box-shadow: none;
+    }
+}
+
+.custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+    box-shadow: none;
+}

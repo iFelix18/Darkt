@@ -1,0 +1,15 @@
+/*profile*/
+
+html .is-self #cover-wrapper .full-bg.enabled {
+    background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+}
+
+/*dashboard*/
+
+html #results-top-wrapper .poster-bg {
+    background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+    background-size: cover !important;
+    background-position: center 25% !important;
+    filter: none !important;
+    opacity: .7 !important;
+}

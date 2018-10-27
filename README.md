@@ -1,50 +1,78 @@
-# Darkt [![Version][version]][1] [![Install directly with Stylus][stylus]][2] [![userstyles.org installations][userstyles]][3] [![GitHub stars][stars]][4] [![GitHub issues][issues]][5] [![GitHub license][license]][6]
-**_A darker theme for Trakt_**
+# Darkt [![Version][version]][1] [![Size][size]][1] [![Install directly with Stylus][stylus]][2] [![GitHub stars][stars]][3] [![GitHub issues][issues]][4] [![GitHub license][license]][5] [![devDependencies][devdependencies]][6]
+**_A darker theme for [Trakt]_**
 
-[![Preview][preview]][13]
+[![Preview]][Screenshots]
 
-# Menu
+## Menu
 * [Installation]
-* [Screenshot]
-# Installation
-* Download one of these add-ons for your browser
-  * Stylus (recommended): [Firefox][7], [Chrome][8],  or [Opera][9].
-  * Stylish: [Firefox][10], [Chrome][11],  or [Opera][12].
-* Click [here][2] to install directly with Stylus, or go to [userstyles.org][3] and click on "Install Style" button to install with Stylish.
-* Done! From now on it will automatically update.
+    * [Options]
+* [Screenshots]
 
-# Screenshot
-<details>
- 
- ![Dashboard][screenDashboard]
- 
- ![Movies][screenMovies]
- 
- ![Series][screenSeries]
+## Installation
+1. Download this add-on for your browser:
+    * Stylus: [Firefox], [Chrome], or [Opera].
+2. To install directly with Stylus, click here:
+
+    [![Install directly with Stylus][Darkt]][2]
+3. Done! From now on it will automatically update.
+
+    ### Options:
+    * **Block Ads**:</br>
+        If activated, blocks all advertising on the site.
+    * **Add Animations**:</br>
+        If activated, when you mouse over the movies and series posters animates them.
+    * **UserID**:</br>
+        1. Go [here][7]
+        2. You will see a code similar to this one:
+            ```html
+            <a target="_blank" href="https://trakt.tv/users/ifelix18"><img width="500" height="40" alt="iFelix18" src="https://widgets.trakt.tv/users/8a610d7bff8k9aacb01d6m42f47371x2/watched/thin@2x.jpg" /></a>
+            ```
+        3. Copy the code after `https://widgets.trakt.tv/users/`, in the example above `8a610d7bff8k9aacb01d6m42f47371x2`
+        4. Paste this code into the theme settings on Stylus.
+        5. Done!
+    * **"Last Watched" background on user profile**:</br>
+        If activated, shows the last movie or series watched as the background of the profile. *User ID* is required to work correctly.
+
+## Screenshots
+<details><summary>Show</summary>
+
+[![Dashboard]][Screenshots]
+
+[![Movies]][Screenshots]
+
+[![Series]][Screenshots]
 </details>
 
-[version]: https://img.shields.io/badge/version-2.2.1-ED1C24.svg?longCache=true&style=flat-square
+[version]: https://flat.badgen.net/badge/version/3.0.0/ED1C24
 [1]: #
-[stylus]: https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square "Click here!"
+[size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/darkt.user.css
+[stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
 [2]: https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css
-[userstyles]: https://img.shields.io/badge/dynamic/json.svg?label=userstyles.org%20installations&url=https%3A%2F%2Fwidget.userstyles.org%2Fstyles%2F148514%2Fdarkt-a-dark-theme-for-trakt.json&query=total_installs&colorB=e51ced&longCache=true&style=flat-square
-[3]: https://userstyles.org/styles/148514/darkt-a-darker-theme-for-trakt
-[stars]: https://img.shields.io/github/stars/iFelix18/Darkt.svg?longCache=true&style=flat-square
-[4]: https://github.com/iFelix18/Darkt/stargazers
-[issues]: https://img.shields.io/github/issues/iFelix18/Darkt.svg?longCache=true&style=flat-square
-[5]: https://github.com/iFelix18/Darkt/issues
-[license]: https://img.shields.io/github/license/iFelix18/Darkt.svg?longCache=true&style=flat-square
-[6]: https://creativecommons.org/licenses/by-sa/4.0/
+[stars]: https://flat.badgen.net/github/stars/iFelix18/Darkt
+[3]: https://github.com/iFelix18/Darkt/stargazers
+[issues]: https://flat.badgen.net/github/open-issues/iFelix18/Darkt
+[4]: https://github.com/iFelix18/Darkt/issues
+[license]: https://flat.badgen.net/github/license/iFelix18/Darkt
+[5]: https://creativecommons.org/licenses/by-sa/4.0/
+[devdependencies]: https://flat.badgen.net/david/dev/iFelix18/Darkt
+[6]: https://david-dm.org/iFelix18/Darkt?type=dev
+
+[Trakt]: https://trakt.tv
+
+[Preview]: https://i.imgur.com/jYMxfKZ.png "Click to see more screenshots"
+
 [Installation]: README.md#installation
-[Screenshot]: README.md#screenshot
-[7]: https://addons.mozilla.org/firefox/addon/styl-us/
-[8]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
-[9]: https://addons.opera.com/extensions/details/stylus/
-[10]: https://addons.mozilla.org/firefox/addon/stylish/
-[11]: https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe
-[12]: https://addons.opera.com/extensions/details/stylish/
-[preview]: https://i.imgur.com/jYMxfKZ.png "Click to see more screenshots"
-[13]: README.md#screenshot
-[screenDashboard]: https://i.imgur.com/ms58jKT.png "Dashboard"
-[screenMovies]: https://i.imgur.com/Mqmkcef.png "Movies"
-[screenSeries]: https://i.imgur.com/SE9EVV0.png "Series"
+[Options]: README.md#options
+[Screenshots]: README.md#screenshots
+
+[Firefox]: https://addons.mozilla.org/firefox/addon/styl-us/
+[Chrome]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
+[Opera]: https://addons.opera.com/extensions/details/stylus/
+
+[Darkt]: https://flat.badgen.net/badge/Darkt/install/00ADAD "Click here!"
+
+[7]: https://trakt.tv/widgets/watched
+
+[Dashboard]: https://i.imgur.com/ms58jKT.png "Dashboard"
+[Movies]: https://i.imgur.com/Mqmkcef.png "Movies"
+[Series]: https://i.imgur.com/SE9EVV0.png "Series"
