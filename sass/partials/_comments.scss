@@ -1,0 +1,66 @@
+/* --- COMMENTS --- */
+
+#comments {
+    .tab-links h3 {
+        color: $White;
+
+        &:hover {
+            color: $Red;
+        }
+    }
+
+    .active h3 {
+        color: $Red;
+    }
+}
+
+.comment-wrapper.featured {
+    background-color: $Grey;
+
+    .above-comment {
+        background-color: $Grey;
+    }
+}
+
+.new-comment-wrapper {
+
+    textarea,
+    .formatting-help {
+        background-color: $Grey;
+        color: $White;
+    }
+
+    .under-help .checkboxes .btn-group .btn {
+        background-color: $Grey;
+        border-color: $Grey;
+        color: $White;
+
+        &:hover {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+
+        &.active {
+            background-color: $Grey !important;
+            border-color: $Grey !important;
+            color: $Red !important;
+        }
+    }
+
+    &.update {
+
+        textarea,
+        .under-help .checkboxes .btn-group .btn {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+    }
+}
+
+.new-reply-wrapper .reply-field textarea {
+    background-color: $Grey;
+    border-color: $Grey;
+    color: $White;
+}

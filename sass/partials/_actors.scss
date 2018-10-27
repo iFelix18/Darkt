@@ -1,0 +1,48 @@
+/* --- ACTORS --- */
+
+#info-wrapper .info #actors .posters ul {
+    li {
+
+        .name,
+        .character {
+            color: $White;
+        }
+    }
+
+    &:hover li {
+
+        .titles .name,
+        .character {
+            color: $DarkBG;
+        }
+    }
+}
+
+.actor-tooltip .tooltip-inner {
+    background-color: $DarkBG;
+    color: $White;
+}
+
+.mCS-rounded-dark.mCSB_scrollTools {
+    .mCSB_dragger {
+
+        .mCSB_dragger_bar {
+            background-color: $Red;
+        }
+
+        &:hover,
+        &:active {
+            .mCSB_dragger_bar {
+                background-color: $Red;
+            }
+        }
+
+        &.mCSB_dragger_onDrag .mCSB_dragger_bar {
+            background-color: $Red;
+        }
+    }
+
+    .mCSB_draggerRail {
+        background-color: $Grey;
+    }
+}

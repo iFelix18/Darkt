@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        3.0.0-beta1
+@version        3.0.0-beta2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -84,10 +84,30 @@
     } EOT;
 }
 ==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/auth/join"),
+regexp("https?://trakt.tv/auth/signin"),
+regexp("https?://trakt.tv/auth/password/new") {
+    @import "partials/auth/_variables.scss";
+    /* --- AUTH --- */
+    @import "partials/auth/_backgrounds-texts.scss";
+    @import "partials/auth/_inputs.scss";
+}
+
 @-moz-document regexp("https?://trakt.tv/.*") {
     @import "partials/_variables.scss";
     /*[[blockads]]*/
     /*[[animations]]*/
     /*[[lastwatchedbg]]*/
-    @import "partials/_backgrounds.scss";
+    @import "partials/_scrollbars.scss";
+    @import "partials/_search.scss";
+    @import "partials/_backgrounds-texts.scss";
+    @import "partials/_icons.scss";
+    @import "partials/_posters.scss";
+    @import "partials/_actors.scss";
+    @import "partials/_comments.scss";
+    @import "partials/_pagination.scss";
+    @import "partials/_dropdown-menus.scss";
+    @import "partials/_popover.scss";
+    @import "partials/_forms.scss";
+    @import "partials/_apps-vip.scss";
 }
