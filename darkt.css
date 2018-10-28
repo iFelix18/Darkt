@@ -1,0 +1,643 @@
+/*  Darkt 3.0.0 by Felix
+
+        A darker theme for Trakt
+
+                homepageURL:    https://git.io/Darkt
+                supportURL:     https://github.com/iFelix18/Darkt/issues/
+                license:        CC-BY-SA-4.0
+*/
+@-moz-document regexp("https?://trakt.tv/auth/join"),
+regexp("https?://trakt.tv/auth/signin"),
+regexp("https?://trakt.tv/auth/password/new") {
+  /* --- AUTH --- */
+  /* backgrounds & texts */
+  div#auth-form-wrapper {
+    background-color: #1D1D1D;
+    box-shadow: none;
+    color: #FFF;
+  }
+  #auth-form-wrapper .auth-services-wrapper,
+  #auth-form-wrapper .bottom-wrapper {
+    background-color: #1D1D1D;
+    box-shadow: none;
+    color: #FFF;
+  }
+  /* inputs */
+  input#user_email.string.email.required.top.form-control, input#user_username.string.required.middle.form-control, input#user_password.password.required.middle.form-control, input#user_password_confirmation.password.required.bottom.form-control {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  input#user_email.string.email.required.top.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_username.string.required.middle.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_password.password.required.middle.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_password_confirmation.password.required.bottom.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_email.string.email.required.top.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  input#user_username.string.required.middle.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  input#user_password.password.required.middle.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  input#user_password_confirmation.password.required.bottom.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  input#user_login.string.required.top.form-control, input#user_password.password.required.bottom.form-control {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  input#user_login.string.required.top.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_password.password.required.bottom.form-control::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  input#user_login.string.required.top.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  input#user_password.password.required.bottom.form-control::-moz-placeholder {
+    color: #FFF;
+  }
+  .form-control:focus {
+    border-color: #FFF;
+    box-shadow: 0 0 4px 1px #ED1C24;
+    outline: 0;
+  }
+}
+
+@-moz-document regexp("https?://trakt.tv/.*") {
+  /* --- VERSION --- */
+  .trakt:after {
+    white-space: pre !important;
+    content: "\A                Darkt Ver. 3.0.0" !important;
+  }
+  /*[[blockads]]*/
+  /*[[animations]]*/
+  /* --- SCROLLBARS --- */
+  ::-webkit-scrollbar-corner {
+    background-color: #333;
+  }
+  ::-webkit-scrollbar {
+    background-color: #333;
+    height: 10px;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 2px;
+  }
+  /* --- SEARCH --- */
+  input#header-search-query.open {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  input#header-search-query.open::-webkit-input-placeholder {
+    color: #FFF !important;
+  }
+  input#header-search-query.open::-moz-placeholder {
+    color: #FFF !important;
+  }
+  span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  span#header-search-type.dropdown.shown > button.btn.btn-default.dropdown-toggle:focus {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  span#header-search-type.dropdown.shown.open > ul.dropdown-menu {
+    background-color: #3A3A3A;
+  }
+  span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li > a {
+    color: #FFF !important;
+  }
+  span#header-search-type.dropdown.shown.open > ul.dropdown-menu > li:hover > a {
+    background-color: #ED1C24;
+    color: #FFF;
+  }
+  #main-search {
+    display: none;
+  }
+  /* --- BACKGROUNDS & TEXTS --- */
+  section:not([id*="results-top-wrapper"]):not([id*="bottom-stats-wrapper"]) {
+    background-color: #1D1D1D !important;
+    color: #FFF !important;
+  }
+  #schedule-wrapper .alert-no-data,
+  .alert-no-data {
+    background-color: #1D1D1D !important;
+    color: #FFF;
+  }
+  .comment-wrapper {
+    background-color: #1D1D1D;
+  }
+  .comment-wrapper .interactions a .text-wrapper .under-count,
+  .comment-wrapper.list .above-comment .user-name h4 a.username {
+    color: #FFF;
+  }
+  .comment-wrapper .above-comment {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  .comment-wrapper .above-comment .date {
+    color: #FFF;
+  }
+  #ondeck-wrapper .posters .titles-link {
+    color: #FFF;
+  }
+  #ondeck-wrapper .ignore {
+    color: #FFF;
+  }
+  #ondeck-wrapper .ignore:hover {
+    color: #ED1C24;
+  }
+  #charts-wrapper h3,
+  .genre-bars.light .bar label {
+    color: #FFF;
+  }
+  #recommendations-wrapper .grid-item h4 a {
+    color: #FFF;
+  }
+  #recommendations-wrapper .grid-item h4 a:hover {
+    color: #ED1C24;
+  }
+  h2 .time-spent {
+    color: #FFF;
+  }
+  #boxes-wrapper .row .stat-box:nth-child(3),
+  #bottom-stats-wrapper .col-stat.alt {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  #progress-wrapper .row .main-info .seasons {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  #info-wrapper .sidebar .sections li a {
+    color: #FFF;
+  }
+  #info-wrapper .sidebar .sections li a:hover {
+    color: #ED1C24;
+  }
+  #info-wrapper .sidebar .sections li a.see-more-link {
+    color: #FFF;
+  }
+  #info-wrapper .sidebar .sections li a.see-more-link:hover {
+    color: #FFF;
+  }
+  #info-wrapper .season-links {
+    color: #FFF;
+  }
+  #info-wrapper .season-links .links ul li a {
+    color: #FFF;
+  }
+  #info-wrapper .season-links .links ul li a.selected {
+    color: #ED1C24;
+  }
+  .summary-activity .tabs .tab,
+  .summary-activity .tabs .tab.selected,
+  .users-wrapper {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .subnav-wrapper {
+    background-color: #1D1D1D;
+  }
+  div.subnav-wrapper {
+    color: #FFF;
+  }
+  #seasons-episodes-sortable .under-info .titles,
+  #seasons-episodes-sortable .episode-stats {
+    background-color: #3A3A3A;
+  }
+  #seasons-episodes-sortable .under-info h3 a {
+    color: #FFF;
+  }
+  .panel,
+  .panel-default > .panel-heading,
+  h3.instructions {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  body.settings .disable-account-wrapper a {
+    color: #FFF;
+  }
+  body.settings .notifications-table .table tbody > tr:hover {
+    background-color: #3A3A3A;
+  }
+  body.settings .notifications-table td .helper {
+    color: #FFF;
+  }
+  .form-group .under-help {
+    color: #FFF;
+  }
+  .checkin-modal {
+    background-color: #3A3A3A;
+    color: #FFF;
+    box-shadow: none;
+  }
+  .form-signin h4 {
+    color: #FFF;
+  }
+  .form-signin .btn-group .btn {
+    background-color: #3A3A3A;
+    border: none;
+    color: #FFF;
+    box-shadow: inset 0 0 0 1px #FFF;
+  }
+  .form-signin .btn-group .btn.active {
+    background-color: #1D1D1D;
+    border: none;
+    color: #FFF;
+  }
+  code {
+    background-color: #1D1D1D;
+    border-color: #FFF;
+    color: #FFF;
+  }
+  .subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+    background-image: linear-gradient(to bottom, transparent 0%, #1D1D1D 100%);
+  }
+  .subnav-text .text blockquote {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .custom-list .list-info .info .overview blockquote {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
+    background-image: linear-gradient(to bottom, transparent 0%, #1D1D1D 100%);
+  }
+  .streaming-links .title,
+  body.discover #recent-comments-wrapper #recent-comments-title h4 {
+    color: #FFF;
+  }
+  /* --- ICONS --- */
+  h2 .feed-icons .feed-icon {
+    color: #FFF;
+  }
+  h2 .feed-icons .feed-icon:hover {
+    color: #ED1C24;
+  }
+  .subnav-wrapper .right .feed-icon,
+  .subnav-wrapper .left h2 .right a {
+    color: #FFF;
+  }
+  .subnav-wrapper .right .feed-icon:hover {
+    color: #ED1C24;
+  }
+  .filter-dropdown .icon.trakt-icon-divider {
+    color: #FFF;
+  }
+  .filter-dropdown .metadata .trakt-icon-wand,
+  .filter-dropdown .metadata .caret {
+    color: #FFF;
+  }
+  #btn-list-edit-lists {
+    color: #FFF;
+  }
+  .custom-list .list-info .user-actions .icon.btn-list-subscribe {
+    color: #FFF;
+  }
+  .comment-wrapper .pill {
+    background-color: #ED1C24;
+    color: #FFF;
+  }
+  #info-wrapper .affiliate-links .section a,
+  #info-wrapper .sidebar .external li a {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  #info-wrapper .affiliate-links .section a:hover,
+  #info-wrapper .sidebar .external li a:hover {
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+    color: #FFF;
+  }
+  #info-wrapper .info .action-buttons > .btn .side-btn {
+    color: #FFF;
+  }
+  .btn-watch,
+  .btn-collect,
+  .btn-list,
+  .btn-comment {
+    background-color: #1D1D1D;
+  }
+  .btn-info:hover {
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+  }
+  .checkin-modal .logo-wrapper .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    box-shadow: none;
+  }
+  .xdsoft_datetimepicker .xdsoft_prev,
+  .xdsoft_datetimepicker .xdsoft_today_button,
+  .xdsoft_datetimepicker .xdsoft_next,
+  .xdsoft_datetimepicker .xdsoft_label i {
+    filter: invert(100%);
+  }
+  span:not([class="season-toggle link"]):not([class="season-toggle link collapsed"]):not([class="all-toggle link"]) > i.fa.fa-plus,
+  span:not([class="season-toggle link expanded"]) > i.fa.fa-minus {
+    color: #FFF !important;
+  }
+  span.season-toggle > a.season, span.season-toggle > a.ignore {
+    color: #FFF !important;
+  }
+  span.season-toggle > a.season:hover, span.season-toggle > a.ignore:hover {
+    color: #ED1C24 !important;
+  }
+  /* --- POSTERS --- */
+  .posters .poster {
+    border-left: solid 1px #1D1D1D;
+    border-top: solid 1px #1D1D1D;
+    border-right: solid 1px #1D1D1D;
+  }
+  .posters > div .quick-icons {
+    border-left: solid 1px #1D1D1D;
+    border-right: solid 1px #1D1D1D;
+    border-bottom: solid 1px #1D1D1D;
+  }
+  .quick-icons {
+    background-color: #3A3A3A;
+  }
+  div#network-activities.row.posters.loaded > div > div.poster-under {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  div#network-activities.row.posters.loaded > div > div.poster-under > a > div.user-avatar > img,
+  div#network-activities.row.posters.loaded > div > div.poster-under > div.action.watch {
+    border-color: #3A3A3A;
+  }
+  div#network-activities.row.posters.loaded > div > div.activity-date {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  #info-wrapper .sidebar .poster {
+    border: none !important;
+    box-shadow: none;
+  }
+  #info-wrapper .sidebar .streaming-links {
+    background-color: #3A3A3A;
+    box-shadow: none;
+  }
+  #info-wrapper .sidebar .btn-watch-now {
+    background-color: #3A3A3A;
+    box-shadow: none;
+  }
+  .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+    box-shadow: none;
+  }
+  /* --- ACTORS --- */
+  #info-wrapper .info #actors .posters ul li .name,
+  #info-wrapper .info #actors .posters ul li .character {
+    color: #FFF;
+  }
+  #info-wrapper .info #actors .posters ul:hover li .titles .name,
+  #info-wrapper .info #actors .posters ul:hover li .character {
+    color: #1D1D1D;
+  }
+  .actor-tooltip .tooltip-inner {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ED1C24;
+  }
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background-color: #ED1C24;
+  }
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #ED1C24;
+  }
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #3A3A3A;
+  }
+  /* --- COMMENTS --- */
+  #comments .tab-links h3 {
+    color: #FFF;
+  }
+  #comments .tab-links h3:hover {
+    color: #ED1C24;
+  }
+  #comments .active h3 {
+    color: #ED1C24;
+  }
+  .comment-wrapper.featured {
+    background-color: #3A3A3A;
+  }
+  .comment-wrapper.featured .above-comment {
+    background-color: #3A3A3A;
+  }
+  .new-comment-wrapper textarea,
+  .new-comment-wrapper .formatting-help {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .new-comment-wrapper .under-help .checkboxes .btn-group .btn {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .new-comment-wrapper .under-help .checkboxes .btn-group .btn:hover {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .new-comment-wrapper .under-help .checkboxes .btn-group .btn.active {
+    background-color: #3A3A3A !important;
+    border-color: #3A3A3A !important;
+    color: #ED1C24 !important;
+  }
+  .new-comment-wrapper.update textarea,
+  .new-comment-wrapper.update .under-help .checkboxes .btn-group .btn {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .new-reply-wrapper .reply-field textarea {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  /* --- PAGINATION --- */
+  .pagination > li > a {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+  }
+  .pagination > li > a:hover, .pagination > li > a:focus {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #ED1C24;
+  }
+  ul.pagination .gap a {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+  }
+  ul.pagination .gap a:hover {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+  }
+  ul.pagination .disabled a {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+  }
+  ul.pagination .disabled a:hover, ul.pagination .disabled a:focus {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+  }
+  /* --- DROPDOWN MENUS --- */
+  .btn-default {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .btn-default:hover {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .open > .btn-default.dropdown-toggle {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .dropdown-menu {
+    background-color: #3A3A3A;
+  }
+  .dropdown-menu > li > a {
+    color: #FFF;
+  }
+  .dropdown-menu > li:hover > a {
+    background-color: #ED1C24;
+    color: #FFF;
+  }
+  /* --- POPOVER --- */
+  .popover {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+  }
+  .popover.remove .popover-title {
+    color: #FFF !important;
+  }
+  .popover > .arrow:after {
+    border-top-color: #3A3A3A !important;
+  }
+  .popover .data-wrapper {
+    background-color: #3A3A3A;
+  }
+  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+    background-color: #3A3A3A;
+  }
+  .popover .data-wrapper input {
+    color: #FFF;
+  }
+  .popover.with-list h3 {
+    color: #FFF;
+  }
+  .popover-title {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+  }
+  div.arrow:after {
+    border-bottom-color: #3A3A3A !important;
+  }
+  div.popover-content > ul.lists li {
+    color: #FFF !important;
+  }
+  div.popover-content > ul.lists li > a > i.fa.fa-angle-right {
+    color: #FFF;
+    opacity: 1;
+  }
+  .quick-icons .actions .popover .popover-title,
+  .quick-icons .metadata .popover .popover-title > div.rating-text {
+    color: #FFF !important;
+  }
+  .generic-datepicker .xdsoft_calendar td {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .generic-datepicker .xdsoft_calendar td.xdsoft_current {
+    background-color: #ED1C24 !important;
+  }
+  .xdsoft_datetimepicker {
+    color: #FFF;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar th {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+    color: #FFF;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
+    color: #3A3A3A !important;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled {
+    background-color: #3A3A3A !important;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover {
+    background-color: #3A3A3A !important;
+    box-shadow: none !important;
+    color: #3A3A3A !important;
+  }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+    border-color: #3A3A3A;
+  }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+  }
+  /* --- FORMS --- */
+  .form-control {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .form-control[readonly] {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+  .form-control:focus {
+    border-color: #ED1C24;
+    box-shadow: none;
+  }
+  /* --- APPS & VIP --- */
+  div.col-lg-8.col-lg-offset-2.info-wrapper > h1,
+  div.col-lg-8.col-lg-offset-2.info-wrapper > h2 {
+    color: #3A3A3A;
+  }
+  section#standard-features > div.container > h1,
+  section#standard-features > div.container > h2,
+  section#standard-features > div.container > div > div > div > div > h4 {
+    color: #3A3A3A;
+  }
+  body.apps #apps-icon-wrapper {
+    background-image: none;
+  }
+  body.apps #apps-icon-wrapper .apps-icons #iphone .app .icon,
+  body.apps #apps-icon-wrapper .apps-icons #ipad .app .icon,
+  body.apps #apps-icon-wrapper .apps-icons #applewatch .app .icon,
+  body.apps #apps-icon-wrapper .apps-icons #appletv .app .icon,
+  body.apps #apps-icon-wrapper .apps-icons #windowsphone .app .icon {
+    box-shadow: none;
+  }
+}
