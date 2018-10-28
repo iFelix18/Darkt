@@ -6,7 +6,7 @@
   "repository": "https://github.com/iFelix18/Darkt/",
   "homepage": "https://git.io/Darkt",
   "devDependencies": {
-    "stylelint": "^9.6.0",
+    "stylelint": "^9.7.0",
     "stylelint-config-standard": "^18.2.0"
   }
 }
