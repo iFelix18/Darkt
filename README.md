@@ -45,7 +45,7 @@
 
 [version]: https://flat.badgen.net/badge/version/3.0.0/ED1C24
 [1]: #
-[downloads]: https://flat.badgen.net/runkit/darkt-downloads-dadge-0qpbco638ygr
+[downloads]: https://flat.badgen.net/runkit/darkt-downloads-uwi9p1h6k5p3
 [size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/darkt.user.css
 [stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
 [2]: https://bit.ly/InstallDarkt
