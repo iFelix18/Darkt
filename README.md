@@ -1,4 +1,4 @@
-# Darkt [![Version][version]][1] [![Downloads][downloads]][1] [![Size][size]][1] [![Install directly with Stylus][stylus]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8] [![Badges][badges]][1]
+# Darkt Develop [WIP] [![Version][version]][1] <!-- [![Downloads][downloads]][1] [![Size][size]][1] --> [![Install directly with Stylus][stylus]][2] <!-- [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8] [![Badges][badges]][1] -->
 **_A darker theme for [Trakt]_**
 
 [![Preview]][Screenshots]
@@ -43,12 +43,12 @@
 [![Series]][Screenshots]
 </details>
 
-[version]: https://flat.badgen.net/runkit/darkt-version-x50gdflybqni
+[version]: https://flat.badgen.net/runkit/darkt-develop-version-2hojcyz9l010
 [1]: #
 [downloads]: https://flat.badgen.net/runkit/darkt-downloads-uwi9p1h6k5p3
 [size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/darkt.user.css
 [stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
-[2]: https://bit.ly/InstallDarkt
+[2]: https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
 [stars]: https://flat.badgen.net/github/stars/iFelix18/Darkt
 [3]: https://github.com/iFelix18/Darkt/stargazers
 [watchers]: https://flat.badgen.net/github/watchers/iFelix18/Darkt
