@@ -1,0 +1,26 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [ "*.user.css", "*/*.user.css", "*.scss", "*/*.scss"],
+  "rules": {
+    "color-hex-case": "upper",
+    "comment-empty-line-before": "never",
+    "comment-whitespace-inside": null,
+    "indentation": [
+      4,
+      {
+        "except": ["param"]
+      }
+    ],
+    "no-descending-specificity": null,
+    "number-leading-zero": "never",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [ "after-single-line-comment", "first-nested" ],
+        "ignore": [ "after-comment", "inside-block" ],
+        "severity": "warning"
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}
