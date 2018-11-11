@@ -43,7 +43,7 @@
 [![Series]][Screenshots]
 </details>
 
-[version]: https://flat.badgen.net/badge/version/3.0.0/ED1C24
+[version]: https://flat.badgen.net/runkit/darkt-version-x50gdflybqni
 [1]: #
 [downloads]: https://flat.badgen.net/runkit/darkt-downloads-uwi9p1h6k5p3
 [size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/darkt.user.css

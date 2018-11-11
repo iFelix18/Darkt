@@ -1,0 +1,9 @@
+@-moz-document regexp("https?://trakt.tv/.*") {
+    @import "partials/variables";
+    @import "partials/version";
+    /*[[blockads]]*/
+    /*[[animations]]*/
+    /*[[lastwatchedbg]]*/
+    @import "partials/auth";
+    @import "partials/subnav-wrapper";
+}

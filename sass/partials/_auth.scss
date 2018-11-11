@@ -1,0 +1,44 @@
+/* --- AUTH --- */
+#auth-form-wrapper {
+    background-color: $DarkBG;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: $White;
+
+    .auth-services-wrapper {
+        background-color: $DarkBG;
+        border-top-color: $DarkBG;
+    }
+
+    .bottom-wrapper {
+        background-color: $DarkBG;
+        border-top-color: $DarkBG;
+    }
+
+    .form-control {
+        background-color: $Grey;
+        color: $White;
+
+        &::-webkit-input-placeholder {
+            color: $White;
+        }
+
+        &:-ms-input-placeholder {
+            color: $White;
+        }
+
+        &::-ms-input-placeholder {
+            color: $White;
+        }
+
+        &::placeholder {
+            color: $White;
+        }
+
+        &:focus {
+            border-color: $Red;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}

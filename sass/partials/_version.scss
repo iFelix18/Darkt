@@ -1,5 +1,7 @@
 /* --- VERSION --- */
-.trakt:after {
-    white-space: pre !important;
-    content: "\A                Darkt Ver. 3.0.0" !important;
+.trakt {
+    &:after {
+        content: "\A                Darkt - Version 3.0.1-0" !important;
+        white-space: pre !important;
+    }
 }

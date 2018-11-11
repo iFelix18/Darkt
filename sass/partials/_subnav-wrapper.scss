@@ -1,0 +1,74 @@
+/* --- SUBNAV WRAPPER --- */
+.subnav-wrapper {
+    background-color: $DarkBG;
+
+    .btn-default {
+        background-color: $Grey;
+        border-color: $Grey;
+        color: $White;
+
+        &:hover {
+            background-color: lighten($Grey, 10%);
+            border-color: lighten($Grey, 10%);
+            color: $White;
+        }
+    }
+
+    .open {
+        > .btn-default {
+            background-color: lighten($Grey, 10%);
+            border-color: lighten($Grey, 10%);
+            color: $White;
+        }
+
+        .dropdown-menu {
+            background-color: $DarkBG;
+            li {
+                a {
+                    color: $White;
+                    &:hover {
+                        background-color: $Grey;
+                    }
+                }
+            }
+            .divider {
+                background-color: $Grey;
+            }
+            .dropdown-header {
+                color: darken($White, 50%);
+            }
+        }
+    }
+
+    .comment-wrapper {
+        background-color: $DarkBG;
+
+        .above-comment {
+            .interactions {
+                a {
+                    color: $Red;
+                    .under-count {
+                        color: $White;
+                    }
+                }
+            }
+        }
+    }
+
+    .trakt-icon-swap-vertical {
+        color: $White;
+    }
+
+    .filter-dropdown {
+        color: $White;
+        .trakt-icon-divider {
+            color: $White;
+        }
+    }
+
+    .right {
+        .feed-icon {
+            color: $White;
+        }
+    }
+}
