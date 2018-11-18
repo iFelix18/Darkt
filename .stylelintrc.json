@@ -1,18 +1,25 @@
 {
   "extends": "stylelint-config-standard",
-  "ignoreFiles": [ "*.user.css", "*/*.user.css", "*.scss", "*/*.scss"],
+  "ignoreFiles": [ "*.user.css", "**/*.user.css"],
+  "plugins": [
+    "stylelint-scss"
+  ],
   "rules": {
+    "indentation": 4,
+    "string-quotes": "double",
+    "no-duplicate-selectors": true,
     "color-hex-case": "upper",
-    "comment-empty-line-before": "never",
-    "comment-whitespace-inside": null,
-    "indentation": [
-      4,
-      {
-        "except": ["param"]
-      }
-    ],
-    "no-descending-specificity": null,
+    "color-hex-length": "short",
+    "color-named": "never",
+    "color-no-hex": null,
+    "selector-no-qualifying-type": null,
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-colon-space-after": "always",
     "number-leading-zero": "never",
+    "function-url-quotes": "always",
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
     "rule-empty-line-before": [
       "always-multi-line",
       {
@@ -21,6 +28,9 @@
         "severity": "warning"
       }
     ],
-    "selector-pseudo-element-colon-notation": "single"
+    "selector-pseudo-element-colon-notation": "single",
+    "media-feature-colon-space-before": "never",
+    "media-feature-colon-space-after": "always",
+    "no-descending-specificity": null
   }
 }

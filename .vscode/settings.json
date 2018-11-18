@@ -5,4 +5,9 @@
     "less.validate": false,
     "scss.validate": false,
     "stylelint.enable": true,
+    "stylelint.configOverrides": {
+      "extends": "./.stylelintrc"
+    },
+    "sasslint.enable": true,
+    "sasslint.configFile": "./.sass-lint.yml",
 }

@@ -1,5 +1,6 @@
 options:
   formatter: stylish
+  merge-default-rules: true
 files:
   include: "**/*.s+(a|c)ss"
 rules:
@@ -18,6 +19,8 @@ rules:
   no-ids:
     - 0
   no-important:
+    - 0
+  no-qualifying-elements:
     - 0
   no-vendor-prefixes:
     - 0

@@ -6,7 +6,6 @@ var bump = require("gulp-bump");
 var concatCss = require("gulp-concat-css");
 var sass = require("gulp-sass");
 var sassLint = require("gulp-sass-lint");
-var replace = require("gulp-string-replace");
 var runSequence = require("run-sequence");
 var timestamp = require("time-stamp");
 
@@ -23,8 +22,6 @@ const error = chalk.red.bold.inverse(timestamp(time) + " Something went wrong!")
 // style the scss files
 gulp.task("style", () =>
     gulp.src("./sass/**/*.scss")
-        .pipe(sassLint())
-        .pipe(sassLint.format())
         .pipe(autoprefixer({
             browsers: [
                 "> 0.2%",
@@ -32,6 +29,9 @@ gulp.task("style", () =>
         ],
             cascade: false
         }))
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
         .pipe(gulp.dest("./sass"))
         .on("end", () =>
             log(end(timestamp(time) + " SCSS styled!"))
