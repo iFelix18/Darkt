@@ -1,0 +1,75 @@
+$Test: #FFA500;
+
+// dashboard
+#huckster-desktop-wrapper {
+
+    &.dark,
+    &.light {
+        background-color: $DarkBG;
+
+        .huckster-vip-info {
+            background-color: $DarkBG;
+            color: $Red;
+        }
+    }
+
+    .huckster-dfp {
+        background-color: $Grey;
+    }
+}
+
+// profile
+body {
+
+    &.users {
+
+        #huckster-desktop-wrapper {
+
+            &.dark {
+                background-color: $DarkBG;
+
+                .huckster-vip-info {
+                    background-color: $DarkBG;
+                }
+            }
+        }
+    }
+}
+
+// history
+#huckster-content-page {
+    background-color: $DarkBG;
+
+    .huckster-vip-info {
+        background-color: $DarkBG;
+        color: $Red;
+    }
+}
+
+// progress
+.watched {
+
+    #huckster-desktop-wrapper {
+
+        &.add-top {
+            background-color: $DarkBG;
+
+            .huckster-vip-info {
+                background-color: $DarkBG;
+                color: $Red;
+            }
+        }
+    }
+}
+// movies
+#overview {
+
+    #huckster-desktop-wrapper {
+        background-color: $DarkBG;
+
+        .huckster-vip-info {
+            background-color: $DarkBG;
+            color: $Red;
+        }
+    }
+}

@@ -1,4 +1,3 @@
-/* --- SUBNAV WRAPPER --- */
 .subnav-wrapper {
     background-color: $DarkBG;
 
@@ -15,6 +14,7 @@
     }
 
     .open {
+
         > .btn-default {
             background-color: lighten($Grey, 10%);
             border-color: lighten($Grey, 10%);
@@ -23,17 +23,22 @@
 
         .dropdown-menu {
             background-color: $DarkBG;
+
             li {
+
                 a {
                     color: $White;
+
                     &:hover {
                         background-color: $Grey;
                     }
                 }
             }
+
             .divider {
                 background-color: $Grey;
             }
+
             .dropdown-header {
                 color: darken($White, 50%);
             }
@@ -44,9 +49,12 @@
         background-color: $DarkBG;
 
         .above-comment {
+
             .interactions {
+
                 a {
                     color: $Red;
+
                     .under-count {
                         color: $White;
                     }
@@ -61,13 +69,29 @@
 
     .filter-dropdown {
         color: $White;
+
         .trakt-icon-divider {
             color: $White;
         }
     }
 
     .right {
+
         .feed-icon {
+            color: $White;
+        }
+
+        // ratigs
+        .trakt-icon-heart {
+            color: $White;
+        }
+    }
+
+    .left {
+
+        // collection
+        .trakt-icon-wand,
+        .caret {
             color: $White;
         }
     }

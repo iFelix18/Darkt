@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-1
+@version        3.0.1-2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -109,10 +109,8 @@
 }
 ==/UserStyle== */
 @-moz-document regexp("https?://trakt.tv/.*")  {
-  /* --- VERSION --- */
-
   .trakt:after {
-    content: "\A                Darkt - Version 3.0.1-1" !important;
+    content: "\A                Darkt - Version 3.0.1-2" !important;
     white-space: pre !important;
   }
 
@@ -121,8 +119,6 @@
   /*[[animations]]*/
 
   /*[[lastwatchedbg]]*/
-
-  /* --- AUTH --- */
 
   #auth-form-wrapper {
     background-color: #1D1D1D;
@@ -167,8 +163,6 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-
-  /* --- SUBNAV WRAPPER --- */
 
   .subnav-wrapper {
     background-color: #1D1D1D;
@@ -238,5 +232,64 @@
 
   .subnav-wrapper .right .feed-icon {
     color: #FFF;
+  }
+
+  .subnav-wrapper .right .trakt-icon-heart {
+    color: #FFF;
+  }
+
+  .subnav-wrapper .left .trakt-icon-wand,
+  .subnav-wrapper .left .caret {
+    color: #FFF;
+  }
+
+  #huckster-desktop-wrapper.dark,
+  #huckster-desktop-wrapper.light {
+    background-color: #1D1D1D;
+  }
+
+  #huckster-desktop-wrapper.dark .huckster-vip-info,
+  #huckster-desktop-wrapper.light .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+  }
+
+  #huckster-desktop-wrapper .huckster-dfp {
+    background-color: #3A3A3A;
+  }
+
+  body.users #huckster-desktop-wrapper.dark {
+    background-color: #1D1D1D;
+  }
+
+  body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
+    background-color: #1D1D1D;
+  }
+
+  #huckster-content-page {
+    background-color: #1D1D1D;
+  }
+
+  #huckster-content-page .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+  }
+
+  .watched #huckster-desktop-wrapper.add-top {
+    background-color: #1D1D1D;
+  }
+
+  .watched #huckster-desktop-wrapper.add-top .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+  }
+
+  #overview #huckster-desktop-wrapper {
+    background-color: #1D1D1D;
+  }
+
+  #overview #huckster-desktop-wrapper .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
   }
 }
