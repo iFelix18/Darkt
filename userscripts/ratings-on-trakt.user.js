@@ -1,19 +1,20 @@
 // Recommended in combination with Darkt, my darker theme for Trakt.
 // More info on: https://git.io/Darkt
-//
+
 // ==UserScript==
 // @name            Ratings on Trakt
 // @name:it         Valutazioni su Trakt
-// @version         1.0.0
+// @author          Felix
 // @namespace       https://github.com/iFelix18
 // @description     Adds ratings from IMDb, Rotten Tomatoes and Metacritic to Trakt
 // @description:it  Aggiunge valutazioni da IMDb, Rotten Tomatoes e Metacritic a Trakt
-// @author          Felix
+// @copyright       2018, Felix (https://github.com/iFelix18)
+// @license         CC-BY-SA-4.0
+// @version         1.0.0
 // @icon            https://trakt.tv/assets/logos/header@2x-09f929ba67b0964596b359f497884cd9.png
-// @homepage        https://github.com/iFelix18/Darkt/tree/master/userscripts
+// @homepageURL     https://github.com/iFelix18/Darkt/blob/master/userscripts/README.md
 // @supportURL      https://github.com/iFelix18/Darkt/issues
 // @updateURL       https://raw.githubusercontent.com/iFelix18/Darkt/master/userscripts/ratings-on-trakt.user.js
-// @license         CC-BY-SA-4.0
 // @include         https://trakt.tv/movies/*
 // @require         https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @require         https://openuserjs.org/src/libs/sizzle/GM_config.min.js
