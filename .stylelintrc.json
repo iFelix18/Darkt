@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-standard",
-  "ignoreFiles": [ "*.user.css", "**/*.user.css"],
+  "ignoreFiles": [ "*.css", "**/*.css"],
   "plugins": [
     "stylelint-scss"
   ],
