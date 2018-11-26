@@ -28,6 +28,6 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.4.0",
     "time-stamp": "^2.2.0",
-    "updates": "^5.1.2"
+    "updates": "^5.3.0"
   }
 }
