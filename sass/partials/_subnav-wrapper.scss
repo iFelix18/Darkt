@@ -1,6 +1,8 @@
 .subnav-wrapper {
+    //background
     background-color: $DarkBG;
 
+    //buttons
     .btn-default {
         background-color: $Grey;
         border-color: $Grey;
@@ -13,6 +15,7 @@
         }
     }
 
+    //buttons open
     .open {
 
         > .btn-default {
@@ -45,6 +48,7 @@
         }
     }
 
+    //counts
     .comment-wrapper {
         background-color: $DarkBG;
 
@@ -63,10 +67,12 @@
         }
     }
 
+    //order icon
     .trakt-icon-swap-vertical {
         color: $White;
     }
 
+    //filter icon
     .filter-dropdown {
         color: $White;
 
@@ -77,21 +83,32 @@
 
     .right {
 
+        //feed-calendar-export icon
         .feed-icon {
             color: $White;
         }
 
-        // ratigs
+        //heart icon [ratigs page]
         .trakt-icon-heart {
+            color: $White;
+        }
+
+        //direction icon [lists page]
+        #sort-direction {
             color: $White;
         }
     }
 
     .left {
 
-        // collection
+        //metdata icon [collection page]
         .trakt-icon-wand,
         .caret {
+            color: $White;
+        }
+
+        //reorder icon [lists page]
+        #btn-list-edit-lists {
             color: $White;
         }
     }

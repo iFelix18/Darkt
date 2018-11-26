@@ -1,6 +1,4 @@
-$Test: #FFA500;
-
-// dashboard
+//dashboard
 #huckster-desktop-wrapper {
 
     &.dark,
@@ -18,7 +16,7 @@ $Test: #FFA500;
     }
 }
 
-// profile
+//profile
 body {
 
     &.users {
@@ -36,7 +34,7 @@ body {
     }
 }
 
-// history
+//history
 #huckster-content-page {
     background-color: $DarkBG;
 
@@ -46,7 +44,7 @@ body {
     }
 }
 
-// progress
+//progress
 .watched {
 
     #huckster-desktop-wrapper {
@@ -61,7 +59,8 @@ body {
         }
     }
 }
-// movies
+
+//movies
 #overview {
 
     #huckster-desktop-wrapper {
@@ -71,5 +70,15 @@ body {
             background-color: $DarkBG;
             color: $Red;
         }
+    }
+}
+
+//search
+#huckster-desktop-sidenav {
+    background-color: $Grey;
+
+    .huckster-vip-info {
+        background-color: $DarkBG;
+        color: $Red;
     }
 }
