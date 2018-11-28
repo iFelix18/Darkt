@@ -1,6 +1,6 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-4" !important;
+        content: "\A                Darkt - Version 3.0.1-5" !important;
         white-space: pre !important;
     }
     /*[[blockads]]*/
@@ -169,6 +169,31 @@
     }
     #huckster-desktop-sidenav .huckster-vip-info {
         background-color: #1D1D1D;
+        color: #ED1C24;
+    }
+    #ondeck-wrapper {
+        background-color: #1D1D1D;
+    }
+    #ondeck-wrapper h2 {
+        color: #FFF;
+    }
+    #ondeck-wrapper h2 .feed-icons .feed-icon {
+        color: #FFF;
+    }
+    #ondeck-wrapper .posters .poster {
+        border-color: #1D1D1D;
+    }
+    #ondeck-wrapper .posters > div .quick-icons {
+        background-color: #3A3A3A;
+        border-color: #1D1D1D;
+    }
+    #ondeck-wrapper .posters .titles-link {
+        color: #FFF;
+    }
+    #ondeck-wrapper .ignore {
+        color: #575757;
+    }
+    #ondeck-wrapper .ignore:hover {
         color: #ED1C24;
     }
 }

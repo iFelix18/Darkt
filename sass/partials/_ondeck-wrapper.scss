@@ -1,0 +1,43 @@
+#ondeck-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+
+        //feed icon
+        .feed-icons {
+            .feed-icon {
+                color: $White;
+            }
+        }
+    }
+
+    //posters
+    .posters {
+        .poster {
+            border-color: $DarkBG;
+        }
+
+        //quick icons
+        >div {
+            .quick-icons {
+                background-color: $Grey;
+                border-color: $DarkBG;
+            }
+        }
+
+        //titles
+        .titles-link {
+            color: $White;
+        }
+    }
+
+    //ignore
+    .ignore {
+        color: darken($White, 66%);
+
+        &:hover {
+            color: $Red;
+        }
+    }
+}
