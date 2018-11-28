@@ -1,0 +1,32 @@
+#schedule-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+
+        //feed icon
+        .feed-icons {
+            .feed-icon {
+                color: $White;
+            }
+        }
+    }
+
+    h3 {
+        color: $White;
+    }
+
+    h5 {
+        color: $White;
+    }
+
+    h6 {
+        color: darken($White, 33%);
+    }
+
+    .schedule-episode {
+        .btn-watch-now {
+            color: $White;
+        }
+    }
+}
