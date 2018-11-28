@@ -31,6 +31,7 @@
     "selector-pseudo-element-colon-notation": "single",
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-combinator-space-before": "never"
   }
 }
