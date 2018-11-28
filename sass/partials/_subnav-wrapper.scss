@@ -97,6 +97,16 @@
         #sort-direction {
             color: $White;
         }
+
+        //eye [widget page]
+        .trakt-icon-eye {
+            color: $White;
+        }
+
+        //wand [widget page]
+        .trakt-icon-wand {
+            color: $White;
+        }
     }
 
     .left {
@@ -110,6 +120,30 @@
         //reorder icon [lists page]
         #btn-list-edit-lists {
             color: $White;
+        }
+    }
+}
+
+#info-wrapper {
+
+    //season
+    .season-links {
+        color: $White;
+
+        //seasons/episodes
+        .links {
+            ul {
+                li {
+                    a {
+                        color: $White;
+
+                        //season/episode selected
+                        &.selected {
+                            color: $Red;
+                        }
+                    }
+                }
+            }
         }
     }
 }

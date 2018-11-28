@@ -4,6 +4,12 @@
     box-shadow: none;
     color: $White;
 
+    .logo-wrapper {
+        .base {
+            background-color: $DarkBG;
+        }
+    }
+
     .auth-services-wrapper {
         background-color: $DarkBG;
         border-top-color: $DarkBG;
