@@ -32,6 +32,7 @@
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
     "no-descending-specificity": null,
-    "selector-combinator-space-before": "never"
+    "selector-combinator-space-before": "never",
+    "selector-combinator-space-after": "never"
   }
 }
