@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-6
+@version        3.0.1-7
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -24,12 +24,27 @@
         display: none !important;
     } EOT;
 }
-@advanced       dropdown    searchbottom "Hide Bottom Search" {
-    nosearch "Yes" <<<EOT
+@advanced       dropdown    hidewatchnow "Hide Watch Now" {
+    watchnow "No" <<<EOT
+    EOT;
+    nowatchnow "Yes" <<<EOT
+    .quick-icons .actions > a.watch-now {
+        display: none;
+    }
+    #schedule-wrapper .schedule-episode .btn-watch-now {
+        display: none;
+    }
+    #info-wrapper .sidebar .streaming-links,
+    #info-wrapper .sidebar .btn-watch-now {
+        display: none;
+    } EOT;
+}
+@advanced       dropdown    showsearchbottom "Show Bottom Search" {
+    nosearch "No" <<<EOT
     #main-search {
         display: none;
     } EOT;
-    search "No" <<<EOT
+    search "Yes" <<<EOT
     EOT;
 }
 @advanced       dropdown    animations "Add Animations" {
