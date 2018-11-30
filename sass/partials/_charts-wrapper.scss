@@ -1,0 +1,31 @@
+#charts-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+    }
+
+    h3 {
+        color: darken($White, 33%);
+    }
+
+    //graphic genres
+    .genre-bars {
+        &.light {
+            .bar {
+                label {
+                    color: $White;
+
+                    //graphic count
+                    .count {
+                        a {
+                            &:not(:hover) {
+                                color: darken($White, 33%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
