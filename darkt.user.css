@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-8
+@version        3.0.1-9
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -133,7 +133,7 @@
 ==/UserStyle== */
 @-moz-document regexp("https?://trakt.tv/.*")  {
   .trakt:after {
-    content: "\A                Darkt - Version 3.0.1-8" !important;
+    content: "\A                Darkt - Version 3.0.1-9" !important;
     white-space: pre !important;
   }
 
@@ -440,5 +440,76 @@
 
   #charts-wrapper .genre-bars.light .bar label .count a:not(:hover) {
     color: #ababab;
+  }
+
+  #activity-wrapper {
+    background-color: #1D1D1D;
+  }
+
+  #activity-wrapper h2 {
+    color: #FFF;
+  }
+
+  #activity-wrapper h2 .feed-icons .feed-icon {
+    color: #FFF;
+  }
+
+  #activity-wrapper .quick-icons {
+    background-color: #3A3A3A;
+  }
+
+  #network-wrapper {
+    background-color: #1D1D1D;
+  }
+
+  #network-wrapper h2 {
+    color: #FFF;
+  }
+
+  #network-wrapper .posters .poster {
+    border: 0;
+  }
+
+  #network-wrapper .posters .action {
+    border-color: #3A3A3A;
+  }
+
+  #network-wrapper .posters .poster-under {
+    background-color: #3A3A3A;
+    color: #FFF;
+  }
+
+  #network-wrapper .posters .poster-under .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+  }
+
+  #network-wrapper .posters .activity-date {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+
+  #recommendations-wrapper {
+    background-color: #1D1D1D;
+  }
+
+  #recommendations-wrapper .quick-icons {
+    background-color: #3A3A3A;
+  }
+
+  #recommendations-wrapper .titles .titles-link h3 {
+    color: #FFF;
+  }
+
+  #recommendations-wrapper .titles .titles-link h3:hover {
+    text-decoration: underline;
+  }
+
+  #recommendations-wrapper .titles h4 .ignore {
+    color: #ababab;
+  }
+
+  #recommendations-wrapper .titles h4 .ignore:hover {
+    color: #ED1C24;
   }
 }

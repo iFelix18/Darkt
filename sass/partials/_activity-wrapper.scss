@@ -1,0 +1,19 @@
+#activity-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+
+        //feed icon
+        .feed-icons {
+            .feed-icon {
+                color: $White;
+            }
+        }
+    }
+
+    //quick icons
+    .quick-icons {
+        background-color: $Grey;
+    }
+}

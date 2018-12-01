@@ -1,0 +1,32 @@
+#recommendations-wrapper {
+    background-color: $DarkBG;
+
+    //quick icons
+    .quick-icons {
+        background-color: $Grey;
+    }
+
+    //titles
+    .titles {
+        .titles-link {
+            h3 {
+                color: $White;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        //ignore
+        h4 {
+            .ignore {
+                color: darken($White, 33%);
+
+                &:hover {
+                    color: $Red;
+                }
+            }
+        }
+    }
+}

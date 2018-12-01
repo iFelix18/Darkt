@@ -1,0 +1,39 @@
+#network-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+    }
+
+    //posters
+    .posters {
+        .poster {
+            border: 0;
+        }
+
+        //action
+        .action {
+            border-color: $Grey;
+        }
+
+        //activity
+        .poster-under {
+            background-color: $Grey;
+            color: $White;
+
+            //avatar
+            .user-avatar {
+                img {
+                    background-color: $Grey;
+                    border-color: $Grey;
+                }
+            }
+        }
+
+        //activity date
+        .activity-date {
+            background-color: $DarkBG;
+            color: $White;
+        }
+    }
+}
