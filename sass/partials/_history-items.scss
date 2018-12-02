@@ -1,0 +1,31 @@
+#history-items {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+
+        .time-spent {
+            color: darken($White, 33%);
+        }
+    }
+
+    //posters
+    .posters {
+        .poster {
+            border-color: $DarkBG;
+        }
+
+        //quick icons
+        >div {
+            .quick-icons {
+                background-color: $Grey;
+                border-color: $DarkBG;
+            }
+        }
+
+        //titles
+        .titles-link {
+            color: $White;
+        }
+    }
+}

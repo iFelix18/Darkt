@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-9
+@version        3.0.1-10
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -133,7 +133,7 @@
 ==/UserStyle== */
 @-moz-document regexp("https?://trakt.tv/.*")  {
   .trakt:after {
-    content: "\A                Darkt - Version 3.0.1-9" !important;
+    content: "\A                Darkt - Version 3.0.1-10" !important;
     white-space: pre !important;
   }
 
@@ -497,11 +497,11 @@
     background-color: #3A3A3A;
   }
 
-  #recommendations-wrapper .titles .titles-link h3 {
+  #recommendations-wrapper .titles h3 {
     color: #FFF;
   }
 
-  #recommendations-wrapper .titles .titles-link h3:hover {
+  #recommendations-wrapper .titles h3:hover {
     text-decoration: underline;
   }
 
@@ -511,5 +511,76 @@
 
   #recommendations-wrapper .titles h4 .ignore:hover {
     color: #ED1C24;
+  }
+
+  #boxes-wrapper .row .genres-stat-box {
+    background-color: #000;
+  }
+
+  #recent-wrapper {
+    background-color: #1D1D1D;
+  }
+
+  #recent-wrapper h2 {
+    color: #FFF;
+  }
+
+  #recent-wrapper .posters .poster {
+    border-color: #1D1D1D;
+  }
+
+  #recent-wrapper .posters .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+  }
+
+  #history-items {
+    background-color: #1D1D1D;
+  }
+
+  #history-items h2 {
+    color: #FFF;
+  }
+
+  #history-items h2 .time-spent {
+    color: #ababab;
+  }
+
+  #history-items .posters .poster {
+    border-color: #1D1D1D;
+  }
+
+  #history-items .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+  }
+
+  #history-items .posters .titles-link {
+    color: #FFF;
+  }
+
+  .pagination > li > a {
+    background-color: #1D1D1D;
+    color: #FFF;
+  }
+
+  .pagination > li > a:focus {
+    background-color: #1D1D1D;
+  }
+
+  .pagination > .disabled > a {
+    background-color: #1D1D1D;
+  }
+
+  .pagination > .disabled > a:hover {
+    background-color: #1D1D1D;
+  }
+
+  .pagination > .disabled > a > div {
+    color: #FFF;
+  }
+
+  .pagination > .gap > a > div {
+    color: #FFF;
   }
 }

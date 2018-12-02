@@ -1,0 +1,20 @@
+#recent-wrapper {
+    background-color: $DarkBG;
+
+    h2 {
+        color: $White;
+    }
+
+    //posters
+    .posters {
+        .poster {
+            border-color: $DarkBG;
+        }
+
+        //quick action
+        .quick-icons {
+            background-color: $Grey;
+            border-color: $DarkBG;
+        }
+    }
+}

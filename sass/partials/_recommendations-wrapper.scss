@@ -8,13 +8,11 @@
 
     //titles
     .titles {
-        .titles-link {
-            h3 {
-                color: $White;
+        h3 {
+            color: $White;
 
-                &:hover {
-                    text-decoration: underline;
-                }
+            &:hover {
+                text-decoration: underline;
             }
         }
 

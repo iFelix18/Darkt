@@ -1,0 +1,39 @@
+.pagination {
+
+    //normal
+    >li {
+        >a {
+            background-color: $DarkBG;
+            color: $White;
+
+            &:focus {
+                background-color: $DarkBG;
+            }
+        }
+    }
+
+    //disabled
+    >.disabled {
+        >a {
+            background-color: $DarkBG;
+
+            &:hover {
+                background-color: $DarkBG;
+            }
+
+            //arrow
+            >div {
+                color: $White;
+            }
+        }
+    }
+
+    //gap
+    >.gap {
+        >a {
+            >div {
+                color: $White;
+            }
+        }
+    }
+}
