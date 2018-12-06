@@ -1,6 +1,6 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-10" !important;
+        content: "\A                Darkt - Version 3.0.1-11" !important;
         white-space: pre !important;
     }
     /*[[blockads]]*/
@@ -340,5 +340,38 @@
     }
     .pagination > .gap > a > div {
         color: #FFF;
+    }
+    #progress-wrapper {
+        background-color: #1D1D1D;
+    }
+    #progress-wrapper .posters .poster {
+        border: 0;
+    }
+    #progress-wrapper .quick-icons {
+        background-color: #3A3A3A;
+    }
+    #progress-wrapper .row .main-info .percentage {
+        color: #FFF;
+    }
+    #progress-wrapper .row .main-info p {
+        color: #FFF;
+    }
+    #progress-wrapper .row .main-info .seasons {
+        background-color: #3A3A3A;
+    }
+    #progress-wrapper .row .main-info .seasons .season-toggle .fa {
+        color: #FFF;
+    }
+    #progress-wrapper .row .main-info .seasons .season-toggle .season-title {
+        color: #FFF;
+    }
+    #progress-wrapper .row .main-info .seasons .season-toggle .season {
+        color: #FFF;
+    }
+    #progress-wrapper .row .main-info .seasons .season-toggle .ignore {
+        color: #ababab;
+    }
+    #progress-wrapper .row .main-info .seasons .season-toggle .episode-count {
+        color: #ababab;
     }
 }
