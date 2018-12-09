@@ -1,5 +1,4 @@
 .subnav-wrapper {
-    //background
     background-color: $DarkBG;
 
     //buttons
@@ -18,7 +17,7 @@
     //buttons open
     .open {
 
-        > .btn-default {
+        >.btn-default {
             background-color: lighten($Grey, 10%);
             border-color: lighten($Grey, 10%);
             color: $White;
@@ -144,6 +143,16 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//widget page
+body {
+    &.widgets {
+        .subnav-wrapper {
+            border-bottom-color: $DarkBG;
+            color: $White;
         }
     }
 }

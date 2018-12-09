@@ -1,0 +1,72 @@
+section {
+    .list-rows {
+        background-color: $DarkBG;
+        -webkit-box-shadow: -200px 1px 0 1px $DarkBG, 200px 1px 0 1px $DarkBG;
+        box-shadow: -200px 1px 0 1px $DarkBG, 200px 1px 0 1px $DarkBG;
+
+        //list title
+        .comment-wrapper {
+            &.list {
+                background-color: $Grey;
+
+                //avatar
+                .user-avatar {
+                    img {
+                        background-color: $Grey;
+                        border-color: $Grey;
+                    }
+                }
+
+                //username
+                .user-name {
+                    h4 {
+                        color: $White;
+
+                        a {
+                            &.username {
+                                color: $White;
+                            }
+                        }
+                    }
+                }
+
+                //icons
+                .above-comment {
+                    .interactions {
+                        .user-actions {
+                            .btn-list-subscribe {
+                                color: $White;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .custom-list {
+            .list-info {
+
+                //description
+                .info {
+                    .overview {
+                        p {
+                            color: $White;
+                        }
+                    }
+                }
+
+                //posters
+                .posters {
+                    .poster-items-wrapper {
+                        .poster-items {
+                            .poster-item {
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

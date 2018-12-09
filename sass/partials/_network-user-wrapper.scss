@@ -1,0 +1,21 @@
+#network-user-wrapper {
+    background-color: $DarkBG;
+
+    .user {
+
+        //avatar
+        .user-avatar {
+            img {
+                background-color: $Grey;
+                border-color: $Grey;
+            }
+        }
+
+        //titles
+        a {
+            &:nth-child(2) {
+                color: $White;
+            }
+        }
+    }
+}

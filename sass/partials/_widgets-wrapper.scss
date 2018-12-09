@@ -1,0 +1,26 @@
+body {
+    &.widgets {
+        #widgets-wrapper {
+            background-color: $DarkBG;
+
+            .widget-row {
+                &.alt {
+                    background-color: $DarkBG;
+                }
+
+                iframe {
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+
+            h3 {
+                color: $White;
+            }
+
+            h4 {
+                color: darken($White, 33%);
+            }
+        }
+    }
+}

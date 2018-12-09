@@ -1,0 +1,60 @@
+#user-comments {
+    background-color: $DarkBG;
+
+    .alert-no-data {
+        background-color: $Grey;
+        color: $White;
+    }
+
+    //posters
+    .posters {
+        .poster {
+            border-color: $DarkBG;
+        }
+
+        //quick icons
+        >div {
+            .quick-icons {
+                background-color: $Grey;
+                border-color: $DarkBG;
+            }
+        }
+
+        //titles
+        .titles-link {
+            color: $White;
+        }
+    }
+
+    //comment
+    .comment-wrapper {
+        background-color: $DarkBG;
+        color: $White;
+
+        //title
+        .above-comment {
+            background-color: $Grey;
+        }
+
+        //username
+        .user-name {
+            h4 {
+                color: $White;
+            }
+        }
+
+        //date
+        .date {
+            color: $White;
+        }
+
+        //icons
+        .interactions {
+            a {
+                &.alt {
+                    color: $Red;
+                }
+            }
+        }
+    }
+}
