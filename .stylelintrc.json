@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-standard",
-  "ignoreFiles": [ "*.css", "**/*.css"],
+  "ignoreFiles": ["*.css", "**/*.css"],
   "plugins": [
     "stylelint-scss"
   ],
@@ -23,8 +23,8 @@
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": [ "after-single-line-comment", "first-nested" ],
-        "ignore": [ "after-comment", "inside-block" ],
+        "except": ["after-single-line-comment", "first-nested"],
+        "ignore": ["after-comment", "inside-block"],
         "severity": "warning"
       }
     ],
