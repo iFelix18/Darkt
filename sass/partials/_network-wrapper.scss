@@ -1,6 +1,11 @@
 #network-wrapper {
     background-color: $DarkBG;
 
+    .alert-no-data {
+        background-color: $Grey;
+        color: $White;
+    }
+
     h2 {
         color: $White;
     }

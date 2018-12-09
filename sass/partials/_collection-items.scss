@@ -1,8 +1,12 @@
-#recent-wrapper {
+#collection-items {
     background-color: $DarkBG;
 
     h2 {
         color: $White;
+
+        .time-spent {
+            color: darken($White, 33%);
+        }
     }
 
     //posters
@@ -11,10 +15,12 @@
             border-color: $DarkBG;
         }
 
-        //quick action
-        .quick-icons {
-            background-color: $Grey;
-            border-color: $DarkBG;
+        //quick icons
+        >div {
+            .quick-icons {
+                background-color: $Grey;
+                border-color: $DarkBG;
+            }
         }
 
         //titles

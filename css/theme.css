@@ -1,6 +1,6 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-11" !important;
+        content: "\A                Darkt - Version 3.0.1-12" !important;
         white-space: pre !important;
     }
     /*[[blockads]]*/
@@ -16,6 +16,15 @@
     }
     #auth-form-wrapper .logo-wrapper .base {
         background-color: #1D1D1D;
+    }
+    #auth-form-wrapper .inset-wrapper {
+        background-color: #1D1D1D;
+        border-bottom-color: #1D1D1D;
+        border-top-color: #1D1D1D;
+    }
+    #auth-form-wrapper .inset-wrapper .avatar {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
     }
     #auth-form-wrapper .auth-services-wrapper {
         background-color: #1D1D1D;
@@ -200,6 +209,10 @@
     #schedule-wrapper {
         background-color: #1D1D1D;
     }
+    #schedule-wrapper .alert-no-data {
+        background-color: #3A3A3A;
+        color: #FFF;
+    }
     #schedule-wrapper h2 {
         color: #FFF;
     }
@@ -247,6 +260,10 @@
     }
     #network-wrapper {
         background-color: #1D1D1D;
+    }
+    #network-wrapper .alert-no-data {
+        background-color: #3A3A3A;
+        color: #FFF;
     }
     #network-wrapper h2 {
         color: #FFF;
@@ -303,6 +320,9 @@
         background-color: #3A3A3A;
         border-color: #1D1D1D;
     }
+    #recent-wrapper .posters .titles-link {
+        color: #FFF;
+    }
     #history-items {
         background-color: #1D1D1D;
     }
@@ -357,7 +377,7 @@
         color: #FFF;
     }
     #progress-wrapper .row .main-info .seasons {
-        background-color: #3A3A3A;
+        background-color: #1D1D1D;
     }
     #progress-wrapper .row .main-info .seasons .season-toggle .fa {
         color: #FFF;
@@ -373,5 +393,44 @@
     }
     #progress-wrapper .row .main-info .seasons .season-toggle .episode-count {
         color: #ababab;
+    }
+    .list-description-wrapper .subnav-text {
+        background-color: #3A3A3A;
+        color: #FFF;
+    }
+    #collection-items {
+        background-color: #1D1D1D;
+    }
+    #collection-items h2 {
+        color: #FFF;
+    }
+    #collection-items h2 .time-spent {
+        color: #ababab;
+    }
+    #collection-items .posters .poster {
+        border-color: #1D1D1D;
+    }
+    #collection-items .posters > div .quick-icons {
+        background-color: #3A3A3A;
+        border-color: #1D1D1D;
+    }
+    #collection-items .posters .titles-link {
+        color: #FFF;
+    }
+    #rating-items {
+        background-color: #1D1D1D;
+    }
+    #rating-items h2 {
+        color: #FFF;
+    }
+    #rating-items .posters .poster {
+        border-color: #1D1D1D;
+    }
+    #rating-items .posters > div .quick-icons {
+        background-color: #3A3A3A;
+        border-color: #1D1D1D;
+    }
+    #rating-items .posters .titles-link {
+        color: #FFF;
     }
 }

@@ -10,6 +10,17 @@
         }
     }
 
+    .inset-wrapper {
+        background-color: $DarkBG;
+        border-bottom-color: $DarkBG;
+        border-top-color: $DarkBG;
+
+        .avatar {
+            background-color: $Grey;
+            border-color: $Grey;
+        }
+    }
+
     .auth-services-wrapper {
         background-color: $DarkBG;
         border-top-color: $DarkBG;
