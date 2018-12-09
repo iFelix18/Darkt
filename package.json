@@ -1,6 +1,6 @@
 {
   "name": "darkt",
-  "version": "3.0.1-11",
+  "version": "3.0.1-12",
   "description": "A darker theme for Trakt",
   "author": "Felix",
   "license": "CC-BY-SA-4.0",
@@ -20,13 +20,13 @@
     "gulp-concat-css": "^3.1.0",
     "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.11.0",
     "run-sequence": "^2.2.1",
     "sass-lint": "^1.12.1",
     "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.4.0",
+    "stylelint-scss": "^3.4.1",
     "time-stamp": "^2.2.0",
-    "updates": "^5.4.2"
+    "updates": "^5.4.3"
   }
 }
