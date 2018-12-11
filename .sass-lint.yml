@@ -4,6 +4,8 @@ options:
 files:
   include: "**/*.s+(a|c)ss"
 rules:
+  class-name-format:
+    - 0
   empty-line-between-blocks:
     - 0
   hex-notation:

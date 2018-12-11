@@ -1,6 +1,6 @@
 {
   "name": "darkt",
-  "version": "3.0.1-13",
+  "version": "3.0.1-14",
   "description": "A darker theme for Trakt",
   "author": "Felix",
   "license": "CC-BY-SA-4.0",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "chalk": "^2.4.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-bump": "^3.1.1",
     "gulp-concat-css": "^3.1.0",
