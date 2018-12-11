@@ -1,0 +1,140 @@
+#main-settings {
+    background-color: $DarkBG;
+    color: $White;
+
+    .panel-default {
+        background-color: $DarkBG;
+        border-color: $DarkBG;
+
+        >.panel-heading {
+            background-color: $DarkBG;
+            border-color: $DarkBG;
+            color: $White;
+        }
+    }
+
+    //sidebar
+    #info-wrapper {
+        .sidebar {
+            .sections {
+                li {
+                    border-bottom-color: $White;
+
+                    a {
+                        color: $White;
+
+                        &:hover {
+                            color: $Red;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            color: $Red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //avatar
+    .user-avatar {
+        img {
+            background-color: $Grey;
+            border-color: $Grey;
+        }
+    }
+
+    //forms
+    .form-control {
+        background-color: $Grey;
+        border-color: $Grey;
+        color: $White;
+
+        &::-webkit-input-placeholder {
+            color: darken($White, 33%);
+        }
+
+        &:-ms-input-placeholder {
+            color: darken($White, 33%);
+        }
+
+        &::-ms-input-placeholder {
+            color: darken($White, 33%);
+        }
+
+        &::placeholder {
+            color: darken($White, 33%);
+        }
+
+        &:focus {
+            border-color: $Red;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+
+    .form-group {
+        .under-help {
+            color: darken($White, 33%);
+        }
+    }
+
+    .input-group-addon {
+        background-color: $Grey;
+        border-color: $Grey;
+        color: $White;
+
+        &:hover {
+            background-color: $Red;
+            border-color: $Red;
+            color: $White;
+        }
+    }
+
+    //instructions
+    h3 {
+        &.instructions {
+            background-color: $Grey;
+        }
+    }
+
+    //divider
+    hr {
+        border-top-color: $DarkBG;
+    }
+}
+
+body {
+    &.settings {
+
+        //sidebar
+        section {
+            &#main-settings {
+                #info-wrapper {
+                    .sidebar {
+                        .sections {
+                            li {
+                                &:first-child {
+                                    border-top-color: $White;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //disable account
+        .disable-account-wrapper {
+            a {
+                color: $Red;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

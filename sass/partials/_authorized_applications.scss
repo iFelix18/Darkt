@@ -1,0 +1,55 @@
+body {
+    &.authorized_applications {
+        section {
+            background-color: $DarkBG;
+        }
+
+        //no data
+        .alert-no-data {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+
+        #authorized-applications {
+            .row {
+
+                //app icon
+                .icon {
+                    img {
+                        background-color: $Grey;
+                        border-color: $Grey;
+                    }
+                }
+
+                //name
+                h4 {
+                    color: $White;
+                }
+
+                //info
+                p {
+                    color: $White;
+                }
+
+                //date
+                h5 {
+                    color: darken($White, 33%);
+                }
+
+                //divider
+                &:not(:first-child) {
+                    &:not(.no-border) {
+                        border-top-color: $DarkBG;
+                    }
+                }
+            }
+        }
+
+        //subnav-wrapper
+        .subnav-wrapper {
+            border-bottom-color: $DarkBG;
+            color: $White;
+        }
+    }
+}

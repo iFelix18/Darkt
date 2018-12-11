@@ -1,6 +1,6 @@
 @-moz-document regexp("https?://trakt.tv/.*") {
     .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-13" !important;
+        content: "\A                Darkt - Version 3.0.1-14" !important;
         white-space: pre !important;
     }
     /*[[blockads]]*/
@@ -527,5 +527,242 @@
     }
     body.widgets #widgets-wrapper h4 {
         color: #ababab;
+    }
+    #main-settings {
+        background-color: #1D1D1D;
+        color: #FFF;
+    }
+    #main-settings .panel-default {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+    }
+    #main-settings .panel-default > .panel-heading {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+        color: #FFF;
+    }
+    #main-settings #info-wrapper .sidebar .sections li {
+        border-bottom-color: #FFF;
+    }
+    #main-settings #info-wrapper .sidebar .sections li a {
+        color: #FFF;
+    }
+    #main-settings #info-wrapper .sidebar .sections li a:hover {
+        color: #ED1C24;
+    }
+    #main-settings #info-wrapper .sidebar .sections li.active a {
+        color: #ED1C24;
+    }
+    #main-settings .user-avatar img {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+    }
+    #main-settings .form-control {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    #main-settings .form-control::-webkit-input-placeholder {
+        color: #ababab;
+    }
+    #main-settings .form-control:-ms-input-placeholder {
+        color: #ababab;
+    }
+    #main-settings .form-control::-ms-input-placeholder {
+        color: #ababab;
+    }
+    #main-settings .form-control::placeholder {
+        color: #ababab;
+    }
+    #main-settings .form-control:focus {
+        border-color: #ED1C24;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    #main-settings .form-group .under-help {
+        color: #ababab;
+    }
+    #main-settings .input-group-addon {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    #main-settings .input-group-addon:hover {
+        background-color: #ED1C24;
+        border-color: #ED1C24;
+        color: #FFF;
+    }
+    #main-settings h3.instructions {
+        background-color: #3A3A3A;
+    }
+    #main-settings hr {
+        border-top-color: #1D1D1D;
+    }
+    body.settings section#main-settings #info-wrapper .sidebar .sections li:first-child {
+        border-top-color: #FFF;
+    }
+    body.settings .disable-account-wrapper a {
+        color: #ED1C24;
+    }
+    body.settings .disable-account-wrapper a:hover {
+        text-decoration: underline;
+    }
+    body.sharing section {
+        background-color: #1D1D1D;
+    }
+    body.sharing h2 {
+        color: #FFF;
+    }
+    body.sharing h3 {
+        color: #ababab;
+    }
+    body.sharing .alert-info {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.sharing .notifications-table {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.sharing .notifications-table .panel-heading {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.sharing .notifications-table .table tbody > tr:hover {
+        background-color: #3A3A3A;
+    }
+    body.sharing .notifications-table .table tbody > tr > td {
+        border-top-color: #1D1D1D;
+    }
+    body.sharing .notifications-table .table tbody > tr > td:first-child {
+        padding-left: 3em;
+    }
+    body.sharing .form-control {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.sharing .form-control::-webkit-input-placeholder {
+        color: #ababab;
+    }
+    body.sharing .form-control:-ms-input-placeholder {
+        color: #ababab;
+    }
+    body.sharing .form-control::-ms-input-placeholder {
+        color: #ababab;
+    }
+    body.sharing .form-control::placeholder {
+        color: #ababab;
+    }
+    body.sharing .form-control:focus {
+        border-color: #ED1C24;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    body.notifications section {
+        background-color: #1D1D1D;
+    }
+    body.notifications h2 {
+        color: #FFF;
+    }
+    body.notifications h3 {
+        color: #ababab;
+    }
+    body.notifications .alert-info {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.notifications .notifications-table {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.notifications .notifications-table .panel-heading {
+        background-color: #1D1D1D;
+        border-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.notifications .notifications-table .table tbody > tr:hover {
+        background-color: #3A3A3A;
+    }
+    body.notifications .notifications-table .table tbody > tr > td {
+        border-top-color: #1D1D1D;
+    }
+    body.notifications .notifications-table .table tbody > tr > td:first-child {
+        padding-left: 3em;
+    }
+    body.hidden_items section {
+        background-color: #1D1D1D;
+    }
+    body.hidden_items h2 {
+        color: #FFF;
+    }
+    body.hidden_items h3 {
+        color: #ababab;
+    }
+    body.hidden_items .alert-no-data {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.hidden_items .posters .poster {
+        border-color: #1D1D1D;
+    }
+    body.hidden_items .posters > div .quick-icons {
+        background-color: #3A3A3A;
+        border-color: #1D1D1D;
+    }
+    body.hidden_items .posters .titles-link .titles h3 {
+        color: #FFF;
+    }
+    body.hidden_items .posters .titles-link:hover {
+        color: #FFF;
+    }
+    body.hidden_items .subnav-wrapper {
+        border-bottom-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.authorized_applications section {
+        background-color: #1D1D1D;
+    }
+    body.authorized_applications .alert-no-data {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.authorized_applications #authorized-applications .row .icon img {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+    }
+    body.authorized_applications #authorized-applications .row h4 {
+        color: #FFF;
+    }
+    body.authorized_applications #authorized-applications .row p {
+        color: #FFF;
+    }
+    body.authorized_applications #authorized-applications .row h5 {
+        color: #ababab;
+    }
+    body.authorized_applications #authorized-applications .row:not(:first-child):not(.no-border) {
+        border-top-color: #1D1D1D;
+    }
+    body.authorized_applications .subnav-wrapper {
+        border-bottom-color: #1D1D1D;
+        color: #FFF;
+    }
+    body.applications section {
+        background-color: #1D1D1D;
+    }
+    body.applications .alert-no-data {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+    body.applications #authorized-applications .row:not(:first-child):not(.no-border) {
+        border-top-color: #1D1D1D;
     }
 }

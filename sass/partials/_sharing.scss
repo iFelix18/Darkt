@@ -1,0 +1,81 @@
+body {
+    &.sharing {
+        section {
+            background-color: $DarkBG;
+        }
+
+        h2 {
+            color: $White;
+        }
+
+        h3 {
+            color: darken($White, 33%);
+        }
+
+        .alert-info {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+
+        //table
+        .notifications-table {
+            background-color: $DarkBG;
+            border-color: $DarkBG;
+            color: $White;
+
+            .panel-heading {
+                background-color: $DarkBG;
+                border-color: $DarkBG;
+                color: $White;
+            }
+
+            .table {
+                tbody {
+                    >tr {
+                        &:hover {
+                            background-color: $Grey;
+                        }
+
+                        >td {
+                            border-top-color: $DarkBG;
+
+                            &:first-child {
+                                padding-left: 3em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //forms
+        .form-control {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+
+            &::-webkit-input-placeholder {
+                color: darken($White, 33%);
+            }
+
+            &:-ms-input-placeholder {
+                color: darken($White, 33%);
+            }
+
+            &::-ms-input-placeholder {
+                color: darken($White, 33%);
+            }
+
+            &::placeholder {
+                color: darken($White, 33%);
+            }
+
+            &:focus {
+                border-color: $Red;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
