@@ -1,37 +1,35 @@
-@-moz-document regexp("https?://trakt.tv/.*") {
-    @import "partials/variables";
-    @import "partials/version";
-    /*[[blockads]]*/
-    /*[[hidewatchnow]]*/
-    /*[[showsearchbottom]]*/
-    /*[[animations]]*/
-    /*[[lastwatchedbg]]*/
-    @import "partials/auth";
-    @import "partials/subnav-wrapper";
-    @import "partials/hucksters";
-    @import "partials/ondeck-wrapper";
-    @import "partials/schedule-wrapper";
-    @import "partials/charts-wrapper";
-    @import "partials/activity-wrapper";
-    @import "partials/network-wrapper";
-    @import "partials/recommendations-wrapper";
-    @import "partials/boxes-wrapper";
-    @import "partials/recent-wrapper";
-    @import "partials/history-items";
-    @import "partials/pagination";
-    @import "partials/progress-wrapper";
-    @import "partials/list-description-wrapper";
-    @import "partials/collection-items";
-    @import "partials/rating-items";
-    @import "partials/list-rows";
-    @import "partials/user-comments";
-    @import "partials/network-user-wrapper";
-    @import "partials/subnav-text";
-    @import "partials/widgets-wrapper";
-    @import "partials/main-settings";
-    @import "partials/sharing";
-    @import "partials/notifications";
-    @import "partials/hidden_items";
-    @import "partials/authorized_applications";
-    @import "partials/applications";
-}
+@import "partials/variables";
+@import "partials/version";
+/*[[blockads]]*/
+/*[[hidewatchnow]]*/
+/*[[showsearchbottom]]*/
+/*[[animations]]*/
+/*[[lastwatchedbg]]*/
+@import "partials/auth";
+@import "partials/subnav-wrapper";
+@import "partials/hucksters";
+@import "partials/ondeck-wrapper";
+@import "partials/schedule-wrapper";
+@import "partials/charts-wrapper";
+@import "partials/activity-wrapper";
+@import "partials/network-wrapper";
+@import "partials/recommendations-wrapper";
+@import "partials/boxes-wrapper";
+@import "partials/recent-wrapper";
+@import "partials/history-items";
+@import "partials/pagination";
+@import "partials/progress-wrapper";
+@import "partials/list-description-wrapper";
+@import "partials/collection-items";
+@import "partials/rating-items";
+@import "partials/list-rows";
+@import "partials/user-comments";
+@import "partials/network-user-wrapper";
+@import "partials/subnav-text";
+@import "partials/widgets-wrapper";
+@import "partials/main-settings";
+@import "partials/sharing";
+@import "partials/notifications";
+@import "partials/hidden_items";
+@import "partials/authorized_applications";
+@import "partials/applications";

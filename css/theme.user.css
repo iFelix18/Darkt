@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-14
+@version        3.0.1-15
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -12,16 +12,14 @@
     ads "No" <<<EOT
     EOT;
     noads "Yes" <<<EOT
+    #header-shop,
     #huckster-desktop-wrapper,
-    #huckster-desktop-sidenav,
-    .huckster-vip-info,
-    div.grid-item.huckster-grid-item.col-xxlg-1.col-xlg-2.col-lg-2.col-md-3.col-sm-3.col-xs-6,
-    div.grid-item.huckster-grid-item.col-xlg-3.col-md-4.col-sm-6 {
+    .huckster-grid-item,
+    .alert-vip-required {
         display: none !important;
     }
-    #header-shop,
-    .popover-shop {
-        display: none !important;
+    #huckster-desktop-sidenav {
+        visibility: hidden !important;
     } EOT;
 }
 @advanced       dropdown    hidewatchnow "Hide Watch Now" {
@@ -131,3 +129,6 @@
     } EOT;
 }
 ==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/.*") {
+    /* theme */
+}

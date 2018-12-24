@@ -1,768 +1,990 @@
-@-moz-document regexp("https?://trakt.tv/.*") {
-    .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-14" !important;
-        white-space: pre !important;
-    }
-    /*[[blockads]]*/
-    /*[[hidewatchnow]]*/
-    /*[[showsearchbottom]]*/
-    /*[[animations]]*/
-    /*[[lastwatchedbg]]*/
-    #auth-form-wrapper {
-        background-color: #1D1D1D;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        color: #FFF;
-    }
-    #auth-form-wrapper .logo-wrapper .base {
-        background-color: #1D1D1D;
-    }
-    #auth-form-wrapper .inset-wrapper {
-        background-color: #1D1D1D;
-        border-bottom-color: #1D1D1D;
-        border-top-color: #1D1D1D;
-    }
-    #auth-form-wrapper .inset-wrapper .avatar {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    #auth-form-wrapper .auth-services-wrapper {
-        background-color: #1D1D1D;
-        border-top-color: #1D1D1D;
-    }
-    #auth-form-wrapper .bottom-wrapper {
-        background-color: #1D1D1D;
-        border-top-color: #1D1D1D;
-    }
-    #auth-form-wrapper .form-control {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #auth-form-wrapper .form-control::-webkit-input-placeholder {
-        color: #FFF;
-    }
-    #auth-form-wrapper .form-control:-ms-input-placeholder {
-        color: #FFF;
-    }
-    #auth-form-wrapper .form-control::-ms-input-placeholder {
-        color: #FFF;
-    }
-    #auth-form-wrapper .form-control::placeholder {
-        color: #FFF;
-    }
-    #auth-form-wrapper .form-control:focus {
-        border-color: #ED1C24;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .subnav-wrapper {
-        background-color: #1D1D1D;
-    }
-    .subnav-wrapper .btn-default {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    .subnav-wrapper .btn-default:hover {
-        background-color: #545454;
-        border-color: #545454;
-        color: #FFF;
-    }
-    .subnav-wrapper .open > .btn-default {
-        background-color: #545454;
-        border-color: #545454;
-        color: #FFF;
-    }
-    .subnav-wrapper .open .dropdown-menu {
-        background-color: #1D1D1D;
-    }
-    .subnav-wrapper .open .dropdown-menu li a {
-        color: #FFF;
-    }
-    .subnav-wrapper .open .dropdown-menu li a:hover {
-        background-color: #3A3A3A;
-    }
-    .subnav-wrapper .open .dropdown-menu .divider {
-        background-color: #3A3A3A;
-    }
-    .subnav-wrapper .open .dropdown-menu .dropdown-header {
-        color: gray;
-    }
-    .subnav-wrapper .comment-wrapper {
-        background-color: #1D1D1D;
-    }
-    .subnav-wrapper .comment-wrapper .above-comment .interactions a {
-        color: #ED1C24;
-    }
-    .subnav-wrapper .comment-wrapper .above-comment .interactions a .under-count {
-        color: #FFF;
-    }
-    .subnav-wrapper .trakt-icon-swap-vertical {
-        color: #FFF;
-    }
-    .subnav-wrapper .filter-dropdown {
-        color: #FFF;
-    }
-    .subnav-wrapper .filter-dropdown .trakt-icon-divider {
-        color: #FFF;
-    }
-    .subnav-wrapper .right .feed-icon {
-        color: #FFF;
-    }
-    .subnav-wrapper .right .trakt-icon-heart {
-        color: #FFF;
-    }
-    .subnav-wrapper .right #sort-direction {
-        color: #FFF;
-    }
-    .subnav-wrapper .right .trakt-icon-eye {
-        color: #FFF;
-    }
-    .subnav-wrapper .right .trakt-icon-wand {
-        color: #FFF;
-    }
-    .subnav-wrapper .left .trakt-icon-wand,
-    .subnav-wrapper .left .caret {
-        color: #FFF;
-    }
-    .subnav-wrapper .left #btn-list-edit-lists {
-        color: #FFF;
-    }
-    #info-wrapper .season-links {
-        color: #FFF;
-    }
-    #info-wrapper .season-links .links ul li a {
-        color: #FFF;
-    }
-    #info-wrapper .season-links .links ul li a.selected {
-        color: #ED1C24;
-    }
-    body.widgets .subnav-wrapper {
-        border-bottom-color: #1D1D1D;
-        color: #FFF;
-    }
-    #huckster-desktop-wrapper.dark, #huckster-desktop-wrapper.light {
-        background-color: #1D1D1D;
-    }
-    #huckster-desktop-wrapper.dark .huckster-vip-info, #huckster-desktop-wrapper.light .huckster-vip-info {
-        background-color: #1D1D1D;
-        color: #ED1C24;
-    }
-    #huckster-desktop-wrapper .huckster-dfp {
-        background-color: #3A3A3A;
-    }
-    body.users #huckster-desktop-wrapper.dark {
-        background-color: #1D1D1D;
-    }
-    body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
-        background-color: #1D1D1D;
-    }
-    #huckster-content-page {
-        background-color: #1D1D1D;
-    }
-    #huckster-content-page .huckster-vip-info {
-        background-color: #1D1D1D;
-        color: #ED1C24;
-    }
-    .watched #huckster-desktop-wrapper.add-top {
-        background-color: #1D1D1D;
-    }
-    .watched #huckster-desktop-wrapper.add-top .huckster-vip-info {
-        background-color: #1D1D1D;
-        color: #ED1C24;
-    }
-    #overview #huckster-desktop-wrapper {
-        background-color: #1D1D1D;
-    }
-    #overview #huckster-desktop-wrapper .huckster-vip-info {
-        background-color: #1D1D1D;
-        color: #ED1C24;
-    }
-    #huckster-desktop-sidenav {
-        background-color: #3A3A3A;
-    }
-    #huckster-desktop-sidenav .huckster-vip-info {
-        background-color: #1D1D1D;
-        color: #ED1C24;
-    }
-    #ondeck-wrapper {
-        background-color: #1D1D1D;
-    }
-    #ondeck-wrapper h2 {
-        color: #FFF;
-    }
-    #ondeck-wrapper h2 .feed-icons .feed-icon {
-        color: #FFF;
-    }
-    #ondeck-wrapper .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #ondeck-wrapper .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #ondeck-wrapper .posters .titles-link {
-        color: #FFF;
-    }
-    #ondeck-wrapper .ignore {
-        color: #ababab;
-    }
-    #ondeck-wrapper .ignore:hover {
-        color: #ED1C24;
-    }
-    #schedule-wrapper {
-        background-color: #1D1D1D;
-    }
-    #schedule-wrapper .alert-no-data {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #schedule-wrapper h2 {
-        color: #FFF;
-    }
-    #schedule-wrapper h2 .feed-icons .feed-icon {
-        color: #FFF;
-    }
-    #schedule-wrapper h3 {
-        color: #FFF;
-    }
-    #schedule-wrapper h5 {
-        color: #FFF;
-    }
-    #schedule-wrapper h6 {
-        color: #ababab;
-    }
-    #schedule-wrapper .schedule-episode .btn-watch-now {
-        color: #FFF;
-    }
-    #charts-wrapper {
-        background-color: #1D1D1D;
-    }
-    #charts-wrapper h2 {
-        color: #FFF;
-    }
-    #charts-wrapper h3 {
-        color: #ababab;
-    }
-    #charts-wrapper .genre-bars.light .bar label {
-        color: #FFF;
-    }
-    #charts-wrapper .genre-bars.light .bar label .count a:not(:hover) {
-        color: #ababab;
-    }
-    #activity-wrapper {
-        background-color: #1D1D1D;
-    }
-    #activity-wrapper h2 {
-        color: #FFF;
-    }
-    #activity-wrapper h2 .feed-icons .feed-icon {
-        color: #FFF;
-    }
-    #activity-wrapper .quick-icons {
-        background-color: #3A3A3A;
-    }
-    #network-wrapper {
-        background-color: #1D1D1D;
-    }
-    #network-wrapper .alert-no-data {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #network-wrapper h2 {
-        color: #FFF;
-    }
-    #network-wrapper .posters .poster {
-        border: 0;
-    }
-    #network-wrapper .posters .action {
-        border-color: #3A3A3A;
-    }
-    #network-wrapper .posters .poster-under {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #network-wrapper .posters .poster-under .user-avatar img {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    #network-wrapper .posters .activity-date {
-        background-color: #1D1D1D;
-        color: #FFF;
-    }
-    #recommendations-wrapper {
-        background-color: #1D1D1D;
-    }
-    #recommendations-wrapper .quick-icons {
-        background-color: #3A3A3A;
-    }
-    #recommendations-wrapper .titles h3 {
-        color: #FFF;
-    }
-    #recommendations-wrapper .titles h3:hover {
-        text-decoration: underline;
-    }
-    #recommendations-wrapper .titles h4 .ignore {
-        color: #ababab;
-    }
-    #recommendations-wrapper .titles h4 .ignore:hover {
-        color: #ED1C24;
-    }
-    #boxes-wrapper .row .genres-stat-box {
-        background-color: #000;
-    }
-    #recent-wrapper {
-        background-color: #1D1D1D;
-    }
-    #recent-wrapper h2 {
-        color: #FFF;
-    }
-    #recent-wrapper .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #recent-wrapper .posters .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #recent-wrapper .posters .titles-link {
-        color: #FFF;
-    }
-    #history-items {
-        background-color: #1D1D1D;
-    }
-    #history-items h2 {
-        color: #FFF;
-    }
-    #history-items h2 .time-spent {
-        color: #ababab;
-    }
-    #history-items .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #history-items .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #history-items .posters .titles-link {
-        color: #FFF;
-    }
-    .pagination > li > a {
-        background-color: #1D1D1D;
-        color: #FFF;
-    }
-    .pagination > li > a:focus {
-        background-color: #1D1D1D;
-    }
-    .pagination > .disabled > a {
-        background-color: #1D1D1D;
-    }
-    .pagination > .disabled > a:hover {
-        background-color: #1D1D1D;
-    }
-    .pagination > .disabled > a > div {
-        color: #FFF;
-    }
-    .pagination > .gap > a > div {
-        color: #FFF;
-    }
-    #progress-wrapper {
-        background-color: #1D1D1D;
-    }
-    #progress-wrapper .posters .poster {
-        border: 0;
-    }
-    #progress-wrapper .quick-icons {
-        background-color: #3A3A3A;
-    }
-    #progress-wrapper .row .main-info .percentage {
-        color: #FFF;
-    }
-    #progress-wrapper .row .main-info p {
-        color: #FFF;
-    }
-    #progress-wrapper .row .main-info .seasons {
-        background-color: #1D1D1D;
-    }
-    #progress-wrapper .row .main-info .seasons .season-toggle .fa {
-        color: #FFF;
-    }
-    #progress-wrapper .row .main-info .seasons .season-toggle .season-title {
-        color: #FFF;
-    }
-    #progress-wrapper .row .main-info .seasons .season-toggle .season {
-        color: #FFF;
-    }
-    #progress-wrapper .row .main-info .seasons .season-toggle .ignore {
-        color: #ababab;
-    }
-    #progress-wrapper .row .main-info .seasons .season-toggle .episode-count {
-        color: #ababab;
-    }
-    .list-description-wrapper .subnav-text {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #collection-items {
-        background-color: #1D1D1D;
-    }
-    #collection-items h2 {
-        color: #FFF;
-    }
-    #collection-items h2 .time-spent {
-        color: #ababab;
-    }
-    #collection-items .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #collection-items .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #collection-items .posters .titles-link {
-        color: #FFF;
-    }
-    #rating-items {
-        background-color: #1D1D1D;
-    }
-    #rating-items h2 {
-        color: #FFF;
-    }
-    #rating-items .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #rating-items .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #rating-items .posters .titles-link {
-        color: #FFF;
-    }
-    section .list-rows {
-        background-color: #1D1D1D;
-        -webkit-box-shadow: -200px 1px 0 1px #1D1D1D, 200px 1px 0 1px #1D1D1D;
-        box-shadow: -200px 1px 0 1px #1D1D1D, 200px 1px 0 1px #1D1D1D;
-    }
-    section .list-rows .comment-wrapper.list {
-        background-color: #3A3A3A;
-    }
-    section .list-rows .comment-wrapper.list .user-avatar img {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    section .list-rows .comment-wrapper.list .user-name h4 {
-        color: #FFF;
-    }
-    section .list-rows .comment-wrapper.list .user-name h4 a.username {
-        color: #FFF;
-    }
-    section .list-rows .comment-wrapper.list .above-comment .interactions .user-actions .btn-list-subscribe {
-        color: #FFF;
-    }
-    section .list-rows .custom-list .list-info .info .overview p {
-        color: #FFF;
-    }
-    section .list-rows .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    #user-comments {
-        background-color: #1D1D1D;
-    }
-    #user-comments .alert-no-data {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    #user-comments .posters .poster {
-        border-color: #1D1D1D;
-    }
-    #user-comments .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    #user-comments .posters .titles-link {
-        color: #FFF;
-    }
-    #user-comments .comment-wrapper {
-        background-color: #1D1D1D;
-        color: #FFF;
-    }
-    #user-comments .comment-wrapper .above-comment {
-        background-color: #3A3A3A;
-    }
-    #user-comments .comment-wrapper .user-name h4 {
-        color: #FFF;
-    }
-    #user-comments .comment-wrapper .date {
-        color: #FFF;
-    }
-    #user-comments .comment-wrapper .interactions a.alt {
-        color: #ED1C24;
-    }
-    #network-user-wrapper {
-        background-color: #1D1D1D;
-    }
-    #network-user-wrapper .user .user-avatar img {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    #network-user-wrapper .user a:nth-child(2) {
-        color: #FFF;
-    }
-    .subnav-text {
-        background-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.widgets #widgets-wrapper {
-        background-color: #1D1D1D;
-    }
-    body.widgets #widgets-wrapper .widget-row.alt {
-        background-color: #1D1D1D;
-    }
-    body.widgets #widgets-wrapper .widget-row iframe {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    body.widgets #widgets-wrapper h3 {
-        color: #FFF;
-    }
-    body.widgets #widgets-wrapper h4 {
-        color: #ababab;
-    }
-    #main-settings {
-        background-color: #1D1D1D;
-        color: #FFF;
-    }
-    #main-settings .panel-default {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-    }
-    #main-settings .panel-default > .panel-heading {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-        color: #FFF;
-    }
-    #main-settings #info-wrapper .sidebar .sections li {
-        border-bottom-color: #FFF;
-    }
-    #main-settings #info-wrapper .sidebar .sections li a {
-        color: #FFF;
-    }
-    #main-settings #info-wrapper .sidebar .sections li a:hover {
-        color: #ED1C24;
-    }
-    #main-settings #info-wrapper .sidebar .sections li.active a {
-        color: #ED1C24;
-    }
-    #main-settings .user-avatar img {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    #main-settings .form-control {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    #main-settings .form-control::-webkit-input-placeholder {
-        color: #ababab;
-    }
-    #main-settings .form-control:-ms-input-placeholder {
-        color: #ababab;
-    }
-    #main-settings .form-control::-ms-input-placeholder {
-        color: #ababab;
-    }
-    #main-settings .form-control::placeholder {
-        color: #ababab;
-    }
-    #main-settings .form-control:focus {
-        border-color: #ED1C24;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    #main-settings .form-group .under-help {
-        color: #ababab;
-    }
-    #main-settings .input-group-addon {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    #main-settings .input-group-addon:hover {
-        background-color: #ED1C24;
-        border-color: #ED1C24;
-        color: #FFF;
-    }
-    #main-settings h3.instructions {
-        background-color: #3A3A3A;
-    }
-    #main-settings hr {
-        border-top-color: #1D1D1D;
-    }
-    body.settings section#main-settings #info-wrapper .sidebar .sections li:first-child {
-        border-top-color: #FFF;
-    }
-    body.settings .disable-account-wrapper a {
-        color: #ED1C24;
-    }
-    body.settings .disable-account-wrapper a:hover {
-        text-decoration: underline;
-    }
-    body.sharing section {
-        background-color: #1D1D1D;
-    }
-    body.sharing h2 {
-        color: #FFF;
-    }
-    body.sharing h3 {
-        color: #ababab;
-    }
-    body.sharing .alert-info {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.sharing .notifications-table {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.sharing .notifications-table .panel-heading {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.sharing .notifications-table .table tbody > tr:hover {
-        background-color: #3A3A3A;
-    }
-    body.sharing .notifications-table .table tbody > tr > td {
-        border-top-color: #1D1D1D;
-    }
-    body.sharing .notifications-table .table tbody > tr > td:first-child {
-        padding-left: 3em;
-    }
-    body.sharing .form-control {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.sharing .form-control::-webkit-input-placeholder {
-        color: #ababab;
-    }
-    body.sharing .form-control:-ms-input-placeholder {
-        color: #ababab;
-    }
-    body.sharing .form-control::-ms-input-placeholder {
-        color: #ababab;
-    }
-    body.sharing .form-control::placeholder {
-        color: #ababab;
-    }
-    body.sharing .form-control:focus {
-        border-color: #ED1C24;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    body.notifications section {
-        background-color: #1D1D1D;
-    }
-    body.notifications h2 {
-        color: #FFF;
-    }
-    body.notifications h3 {
-        color: #ababab;
-    }
-    body.notifications .alert-info {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.notifications .notifications-table {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.notifications .notifications-table .panel-heading {
-        background-color: #1D1D1D;
-        border-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.notifications .notifications-table .table tbody > tr:hover {
-        background-color: #3A3A3A;
-    }
-    body.notifications .notifications-table .table tbody > tr > td {
-        border-top-color: #1D1D1D;
-    }
-    body.notifications .notifications-table .table tbody > tr > td:first-child {
-        padding-left: 3em;
-    }
-    body.hidden_items section {
-        background-color: #1D1D1D;
-    }
-    body.hidden_items h2 {
-        color: #FFF;
-    }
-    body.hidden_items h3 {
-        color: #ababab;
-    }
-    body.hidden_items .alert-no-data {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.hidden_items .posters .poster {
-        border-color: #1D1D1D;
-    }
-    body.hidden_items .posters > div .quick-icons {
-        background-color: #3A3A3A;
-        border-color: #1D1D1D;
-    }
-    body.hidden_items .posters .titles-link .titles h3 {
-        color: #FFF;
-    }
-    body.hidden_items .posters .titles-link:hover {
-        color: #FFF;
-    }
-    body.hidden_items .subnav-wrapper {
-        border-bottom-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.authorized_applications section {
-        background-color: #1D1D1D;
-    }
-    body.authorized_applications .alert-no-data {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.authorized_applications #authorized-applications .row .icon img {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-    }
-    body.authorized_applications #authorized-applications .row h4 {
-        color: #FFF;
-    }
-    body.authorized_applications #authorized-applications .row p {
-        color: #FFF;
-    }
-    body.authorized_applications #authorized-applications .row h5 {
-        color: #ababab;
-    }
-    body.authorized_applications #authorized-applications .row:not(:first-child):not(.no-border) {
-        border-top-color: #1D1D1D;
-    }
-    body.authorized_applications .subnav-wrapper {
-        border-bottom-color: #1D1D1D;
-        color: #FFF;
-    }
-    body.applications section {
-        background-color: #1D1D1D;
-    }
-    body.applications .alert-no-data {
-        background-color: #3A3A3A;
-        border-color: #3A3A3A;
-        color: #FFF;
-    }
-    body.applications #authorized-applications .row:not(:first-child):not(.no-border) {
-        border-top-color: #1D1D1D;
-    }
+.trakt:after {
+    content: "\A                Darkt - Version 3.0.1-15" !important;
+    white-space: pre !important;
+}
+
+/*[[blockads]]*/
+/*[[hidewatchnow]]*/
+/*[[showsearchbottom]]*/
+/*[[animations]]*/
+/*[[lastwatchedbg]]*/
+#auth-form-wrapper {
+    background-color: #1D1D1D;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #FFF;
+}
+
+#auth-form-wrapper .logo-wrapper .base {
+    background-color: #1D1D1D;
+}
+
+#auth-form-wrapper .inset-wrapper {
+    background-color: #1D1D1D;
+    border-bottom-color: #1D1D1D;
+    border-top-color: #1D1D1D;
+}
+
+#auth-form-wrapper .inset-wrapper .avatar {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+#auth-form-wrapper .auth-services-wrapper {
+    background-color: #1D1D1D;
+    border-top-color: #1D1D1D;
+}
+
+#auth-form-wrapper .bottom-wrapper {
+    background-color: #1D1D1D;
+    border-top-color: #1D1D1D;
+}
+
+#auth-form-wrapper .form-control {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#auth-form-wrapper .form-control::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+#auth-form-wrapper .form-control:-ms-input-placeholder {
+    color: #FFF;
+}
+
+#auth-form-wrapper .form-control::-ms-input-placeholder {
+    color: #FFF;
+}
+
+#auth-form-wrapper .form-control::placeholder {
+    color: #FFF;
+}
+
+#auth-form-wrapper .form-control:focus {
+    border-color: #ED1C24;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.subnav-wrapper {
+    background-color: #1D1D1D;
+}
+
+.subnav-wrapper .btn-default {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+.subnav-wrapper .btn-default:hover {
+    background-color: #545454;
+    border-color: #545454;
+    color: #FFF;
+}
+
+.subnav-wrapper .open > .btn-default {
+    background-color: #545454;
+    border-color: #545454;
+    color: #FFF;
+}
+
+.subnav-wrapper .open .dropdown-menu {
+    background-color: #1D1D1D;
+}
+
+.subnav-wrapper .open .dropdown-menu li a {
+    color: #FFF;
+}
+
+.subnav-wrapper .open .dropdown-menu li a:hover {
+    background-color: #3A3A3A;
+}
+
+.subnav-wrapper .open .dropdown-menu .divider {
+    background-color: #3A3A3A;
+}
+
+.subnav-wrapper .open .dropdown-menu .dropdown-header {
+    color: gray;
+}
+
+.subnav-wrapper .comment-wrapper {
+    background-color: #1D1D1D;
+}
+
+.subnav-wrapper .comment-wrapper .above-comment .interactions a {
+    color: #ED1C24;
+}
+
+.subnav-wrapper .comment-wrapper .above-comment .interactions a .under-count {
+    color: #FFF;
+}
+
+.subnav-wrapper .trakt-icon-swap-vertical {
+    color: #FFF;
+}
+
+.subnav-wrapper .filter-dropdown {
+    color: #FFF;
+}
+
+.subnav-wrapper .filter-dropdown .trakt-icon-divider {
+    color: #FFF;
+}
+
+.subnav-wrapper .right .feed-icon {
+    color: #FFF;
+}
+
+.subnav-wrapper .right .trakt-icon-heart {
+    color: #FFF;
+}
+
+.subnav-wrapper .right #sort-direction {
+    color: #FFF;
+}
+
+.subnav-wrapper .right .trakt-icon-eye {
+    color: #FFF;
+}
+
+.subnav-wrapper .right .trakt-icon-wand {
+    color: #FFF;
+}
+
+.subnav-wrapper .left .trakt-icon-wand,
+.subnav-wrapper .left .caret {
+    color: #FFF;
+}
+
+.subnav-wrapper .left #btn-list-edit-lists {
+    color: #FFF;
+}
+
+#info-wrapper .season-links {
+    color: #FFF;
+}
+
+#info-wrapper .season-links .links ul li a {
+    color: #FFF;
+}
+
+#info-wrapper .season-links .links ul li a.selected {
+    color: #ED1C24;
+}
+
+body.widgets .subnav-wrapper {
+    border-bottom-color: #1D1D1D;
+    color: #FFF;
+}
+
+#huckster-desktop-wrapper.dark, #huckster-desktop-wrapper.light {
+    background-color: #1D1D1D;
+}
+
+#huckster-desktop-wrapper.dark .huckster-vip-info, #huckster-desktop-wrapper.light .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+}
+
+#huckster-desktop-wrapper .huckster-dfp {
+    background-color: #3A3A3A;
+}
+
+body.users #huckster-desktop-wrapper.dark {
+    background-color: #1D1D1D;
+}
+
+body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
+    background-color: #1D1D1D;
+}
+
+#huckster-content-page {
+    background-color: #1D1D1D;
+}
+
+#huckster-content-page .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+}
+
+.watched #huckster-desktop-wrapper.add-top {
+    background-color: #1D1D1D;
+}
+
+.watched #huckster-desktop-wrapper.add-top .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+}
+
+#overview #huckster-desktop-wrapper {
+    background-color: #1D1D1D;
+}
+
+#overview #huckster-desktop-wrapper .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+}
+
+#huckster-desktop-sidenav {
+    background-color: #3A3A3A;
+}
+
+#huckster-desktop-sidenav .huckster-vip-info {
+    background-color: #1D1D1D;
+    color: #ED1C24;
+}
+
+#ondeck-wrapper {
+    background-color: #1D1D1D;
+}
+
+#ondeck-wrapper h2 {
+    color: #FFF;
+}
+
+#ondeck-wrapper h2 .feed-icons .feed-icon {
+    color: #FFF;
+}
+
+#ondeck-wrapper .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#ondeck-wrapper .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#ondeck-wrapper .posters .titles-link {
+    color: #FFF;
+}
+
+#ondeck-wrapper .ignore {
+    color: #ababab;
+}
+
+#ondeck-wrapper .ignore:hover {
+    color: #ED1C24;
+}
+
+#schedule-wrapper {
+    background-color: #1D1D1D;
+}
+
+#schedule-wrapper .alert-no-data {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#schedule-wrapper h2 {
+    color: #FFF;
+}
+
+#schedule-wrapper h2 .feed-icons .feed-icon {
+    color: #FFF;
+}
+
+#schedule-wrapper h3 {
+    color: #FFF;
+}
+
+#schedule-wrapper h5 {
+    color: #FFF;
+}
+
+#schedule-wrapper h6 {
+    color: #ababab;
+}
+
+#schedule-wrapper .schedule-episode .btn-watch-now {
+    color: #FFF;
+}
+
+#charts-wrapper {
+    background-color: #1D1D1D;
+}
+
+#charts-wrapper h2 {
+    color: #FFF;
+}
+
+#charts-wrapper h3 {
+    color: #ababab;
+}
+
+#charts-wrapper .genre-bars.light .bar label {
+    color: #FFF;
+}
+
+#charts-wrapper .genre-bars.light .bar label .count a:not(:hover) {
+    color: #ababab;
+}
+
+#activity-wrapper {
+    background-color: #1D1D1D;
+}
+
+#activity-wrapper h2 {
+    color: #FFF;
+}
+
+#activity-wrapper h2 .feed-icons .feed-icon {
+    color: #FFF;
+}
+
+#activity-wrapper .quick-icons {
+    background-color: #3A3A3A;
+}
+
+#network-wrapper {
+    background-color: #1D1D1D;
+}
+
+#network-wrapper .alert-no-data {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#network-wrapper h2 {
+    color: #FFF;
+}
+
+#network-wrapper .posters .poster {
+    border: 0;
+}
+
+#network-wrapper .posters .action {
+    border-color: #3A3A3A;
+}
+
+#network-wrapper .posters .poster-under {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#network-wrapper .posters .poster-under .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+#network-wrapper .posters .activity-date {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+#recommendations-wrapper {
+    background-color: #1D1D1D;
+}
+
+#recommendations-wrapper .quick-icons {
+    background-color: #3A3A3A;
+}
+
+#recommendations-wrapper .titles h3 {
+    color: #FFF;
+}
+
+#recommendations-wrapper .titles h3:hover {
+    text-decoration: underline;
+}
+
+#recommendations-wrapper .titles h4 .ignore {
+    color: #ababab;
+}
+
+#recommendations-wrapper .titles h4 .ignore:hover {
+    color: #ED1C24;
+}
+
+#boxes-wrapper .row .genres-stat-box {
+    background-color: #000;
+}
+
+#recent-wrapper {
+    background-color: #1D1D1D;
+}
+
+#recent-wrapper h2 {
+    color: #FFF;
+}
+
+#recent-wrapper .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#recent-wrapper .posters .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#recent-wrapper .posters .titles-link {
+    color: #FFF;
+}
+
+#history-items {
+    background-color: #1D1D1D;
+}
+
+#history-items h2 {
+    color: #FFF;
+}
+
+#history-items h2 .time-spent {
+    color: #ababab;
+}
+
+#history-items .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#history-items .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#history-items .posters .titles-link {
+    color: #FFF;
+}
+
+.pagination > li > a {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+.pagination > li > a:focus {
+    background-color: #1D1D1D;
+}
+
+.pagination > .disabled > a {
+    background-color: #1D1D1D;
+}
+
+.pagination > .disabled > a:hover {
+    background-color: #1D1D1D;
+}
+
+.pagination > .disabled > a > div {
+    color: #FFF;
+}
+
+.pagination > .gap > a > div {
+    color: #FFF;
+}
+
+#progress-wrapper {
+    background-color: #1D1D1D;
+}
+
+#progress-wrapper .posters .poster {
+    border: 0;
+}
+
+#progress-wrapper .quick-icons {
+    background-color: #3A3A3A;
+}
+
+#progress-wrapper .row .main-info .percentage {
+    color: #FFF;
+}
+
+#progress-wrapper .row .main-info p {
+    color: #FFF;
+}
+
+#progress-wrapper .row .main-info .seasons {
+    background-color: #1D1D1D;
+}
+
+#progress-wrapper .row .main-info .seasons .season-toggle .fa {
+    color: #FFF;
+}
+
+#progress-wrapper .row .main-info .seasons .season-toggle .season-title {
+    color: #FFF;
+}
+
+#progress-wrapper .row .main-info .seasons .season-toggle .season {
+    color: #FFF;
+}
+
+#progress-wrapper .row .main-info .seasons .season-toggle .ignore {
+    color: #ababab;
+}
+
+#progress-wrapper .row .main-info .seasons .season-toggle .episode-count {
+    color: #ababab;
+}
+
+.list-description-wrapper .subnav-text {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#collection-items {
+    background-color: #1D1D1D;
+}
+
+#collection-items h2 {
+    color: #FFF;
+}
+
+#collection-items h2 .time-spent {
+    color: #ababab;
+}
+
+#collection-items .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#collection-items .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#collection-items .posters .titles-link {
+    color: #FFF;
+}
+
+#rating-items {
+    background-color: #1D1D1D;
+}
+
+#rating-items h2 {
+    color: #FFF;
+}
+
+#rating-items .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#rating-items .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#rating-items .posters .titles-link {
+    color: #FFF;
+}
+
+section .list-rows {
+    background-color: #1D1D1D;
+    -webkit-box-shadow: -200px 1px 0 1px #1D1D1D, 200px 1px 0 1px #1D1D1D;
+    box-shadow: -200px 1px 0 1px #1D1D1D, 200px 1px 0 1px #1D1D1D;
+}
+
+section .list-rows .comment-wrapper.list {
+    background-color: #3A3A3A;
+}
+
+section .list-rows .comment-wrapper.list .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+section .list-rows .comment-wrapper.list .user-name h4 {
+    color: #FFF;
+}
+
+section .list-rows .comment-wrapper.list .user-name h4 a.username {
+    color: #FFF;
+}
+
+section .list-rows .comment-wrapper.list .above-comment .interactions .user-actions .btn-list-subscribe {
+    color: #FFF;
+}
+
+section .list-rows .custom-list .list-info .info .overview p {
+    color: #FFF;
+}
+
+section .list-rows .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#user-comments {
+    background-color: #1D1D1D;
+}
+
+#user-comments .alert-no-data {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+#user-comments .posters .poster {
+    border-color: #1D1D1D;
+}
+
+#user-comments .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+#user-comments .posters .titles-link {
+    color: #FFF;
+}
+
+#user-comments .comment-wrapper {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+#user-comments .comment-wrapper .above-comment {
+    background-color: #3A3A3A;
+}
+
+#user-comments .comment-wrapper .user-name h4 {
+    color: #FFF;
+}
+
+#user-comments .comment-wrapper .date {
+    color: #FFF;
+}
+
+#user-comments .comment-wrapper .interactions a.alt {
+    color: #ED1C24;
+}
+
+#network-user-wrapper {
+    background-color: #1D1D1D;
+}
+
+#network-user-wrapper .user .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+#network-user-wrapper .user a:nth-child(2) {
+    color: #FFF;
+}
+
+.subnav-text {
+    background-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.widgets #widgets-wrapper {
+    background-color: #1D1D1D;
+}
+
+body.widgets #widgets-wrapper .widget-row.alt {
+    background-color: #1D1D1D;
+}
+
+body.widgets #widgets-wrapper .widget-row iframe {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body.widgets #widgets-wrapper h3 {
+    color: #FFF;
+}
+
+body.widgets #widgets-wrapper h4 {
+    color: #ababab;
+}
+
+#main-settings {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+#main-settings .panel-default {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+}
+
+#main-settings .panel-default > .panel-heading {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+    color: #FFF;
+}
+
+#main-settings #info-wrapper .sidebar .sections li {
+    border-bottom-color: #FFF;
+}
+
+#main-settings #info-wrapper .sidebar .sections li a {
+    color: #FFF;
+}
+
+#main-settings #info-wrapper .sidebar .sections li a:hover {
+    color: #ED1C24;
+}
+
+#main-settings #info-wrapper .sidebar .sections li.active a {
+    color: #ED1C24;
+}
+
+#main-settings .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+#main-settings .form-control {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+#main-settings .form-control::-webkit-input-placeholder {
+    color: #ababab;
+}
+
+#main-settings .form-control:-ms-input-placeholder {
+    color: #ababab;
+}
+
+#main-settings .form-control::-ms-input-placeholder {
+    color: #ababab;
+}
+
+#main-settings .form-control::placeholder {
+    color: #ababab;
+}
+
+#main-settings .form-control:focus {
+    border-color: #ED1C24;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#main-settings .form-group .under-help {
+    color: #ababab;
+}
+
+#main-settings .input-group-addon {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+#main-settings .input-group-addon:hover {
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+    color: #FFF;
+}
+
+#main-settings h3.instructions {
+    background-color: #3A3A3A;
+}
+
+#main-settings hr {
+    border-top-color: #1D1D1D;
+}
+
+body.settings section#main-settings #info-wrapper .sidebar .sections li:first-child {
+    border-top-color: #FFF;
+}
+
+body.settings .disable-account-wrapper a {
+    color: #ED1C24;
+}
+
+body.settings .disable-account-wrapper a:hover {
+    text-decoration: underline;
+}
+
+body.sharing section {
+    background-color: #1D1D1D;
+}
+
+body.sharing h2 {
+    color: #FFF;
+}
+
+body.sharing h3 {
+    color: #ababab;
+}
+
+body.sharing .alert-info {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.sharing .notifications-table {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.sharing .notifications-table .panel-heading {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.sharing .notifications-table .table tbody > tr:hover {
+    background-color: #3A3A3A;
+}
+
+body.sharing .notifications-table .table tbody > tr > td {
+    border-top-color: #1D1D1D;
+}
+
+body.sharing .notifications-table .table tbody > tr > td:first-child {
+    padding-left: 3em;
+}
+
+body.sharing .form-control {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.sharing .form-control::-webkit-input-placeholder {
+    color: #ababab;
+}
+
+body.sharing .form-control:-ms-input-placeholder {
+    color: #ababab;
+}
+
+body.sharing .form-control::-ms-input-placeholder {
+    color: #ababab;
+}
+
+body.sharing .form-control::placeholder {
+    color: #ababab;
+}
+
+body.sharing .form-control:focus {
+    border-color: #ED1C24;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body.notifications section {
+    background-color: #1D1D1D;
+}
+
+body.notifications h2 {
+    color: #FFF;
+}
+
+body.notifications h3 {
+    color: #ababab;
+}
+
+body.notifications .alert-info {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.notifications .notifications-table {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.notifications .notifications-table .panel-heading {
+    background-color: #1D1D1D;
+    border-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.notifications .notifications-table .table tbody > tr:hover {
+    background-color: #3A3A3A;
+}
+
+body.notifications .notifications-table .table tbody > tr > td {
+    border-top-color: #1D1D1D;
+}
+
+body.notifications .notifications-table .table tbody > tr > td:first-child {
+    padding-left: 3em;
+}
+
+body.hidden_items section {
+    background-color: #1D1D1D;
+}
+
+body.hidden_items h2 {
+    color: #FFF;
+}
+
+body.hidden_items h3 {
+    color: #ababab;
+}
+
+body.hidden_items .alert-no-data {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.hidden_items .posters .poster {
+    border-color: #1D1D1D;
+}
+
+body.hidden_items .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+body.hidden_items .posters .titles-link .titles h3 {
+    color: #FFF;
+}
+
+body.hidden_items .posters .titles-link:hover {
+    color: #FFF;
+}
+
+body.hidden_items .subnav-wrapper {
+    border-bottom-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.authorized_applications section {
+    background-color: #1D1D1D;
+}
+
+body.authorized_applications .alert-no-data {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.authorized_applications #authorized-applications .row .icon img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+body.authorized_applications #authorized-applications .row h4 {
+    color: #FFF;
+}
+
+body.authorized_applications #authorized-applications .row p {
+    color: #FFF;
+}
+
+body.authorized_applications #authorized-applications .row h5 {
+    color: #ababab;
+}
+
+body.authorized_applications #authorized-applications .row:not(:first-child):not(.no-border) {
+    border-top-color: #1D1D1D;
+}
+
+body.authorized_applications .subnav-wrapper {
+    border-bottom-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.applications section {
+    background-color: #1D1D1D;
+}
+
+body.applications .alert-no-data {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.applications #authorized-applications .row:not(:first-child):not(.no-border) {
+    border-top-color: #1D1D1D;
 }
