@@ -33,5 +33,19 @@
         .btn-watch-now {
             color: $White;
         }
+
+        &:not(:first-of-type) {
+            border-top-color: $White;
+        }
+    }
+
+    //link
+    a {
+        color: $Red;
+
+        &:hover,
+        &:focus {
+            color: $Red;
+        }
     }
 }

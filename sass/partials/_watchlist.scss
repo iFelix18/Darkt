@@ -1,0 +1,51 @@
+body {
+    &.watchlist {
+
+        section {
+            background-color: $DarkBG;
+        }
+
+        h2 {
+            color: $White;
+        }
+
+        h3 {
+            color: darken($White, 33%);
+        }
+
+        //no data
+        .alert-no-data {
+            background-color: $Grey;
+            border-color: $Grey;
+            color: $White;
+        }
+
+        //posters
+        .posters {
+            .poster {
+                border-color: $DarkBG;
+            }
+
+            //quick icons
+            >div {
+                .quick-icons {
+                    background-color: $Grey;
+                    border-color: $DarkBG;
+                }
+            }
+
+            //titles
+            .titles-link {
+                .titles {
+                    h3 {
+                        color: $White;
+                    }
+                }
+
+                &:hover {
+                    color: $White;
+                }
+            }
+        }
+    }
+}

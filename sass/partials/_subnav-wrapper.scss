@@ -121,6 +121,22 @@
             color: $White;
         }
     }
+
+    //list
+    &.list-title-wrapper {
+        background-color: $DarkBG;
+        color: $White;
+
+        .left {
+            h2 {
+                .right {
+                    a {
+                        color: $White;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #info-wrapper {

@@ -1,5 +1,5 @@
 .trakt:after {
-    content: "\A                Darkt - Version 3.0.1-15" !important;
+    content: "\A                Darkt - Version 3.0.1-16" !important;
     white-space: pre !important;
 }
 
@@ -162,6 +162,15 @@
     color: #FFF;
 }
 
+.subnav-wrapper.list-title-wrapper {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+.subnav-wrapper.list-title-wrapper .left h2 .right a {
+    color: #FFF;
+}
+
 #info-wrapper .season-links {
     color: #FFF;
 }
@@ -236,6 +245,23 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
     color: #ED1C24;
 }
 
+#inbox-wrapper {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+#inbox-wrapper .notification-row:not(:first-of-type) {
+    border-top-color: #FFF;
+}
+
+#inbox-wrapper a {
+    color: #ED1C24;
+}
+
+#inbox-wrapper a:hover, #inbox-wrapper a:focus {
+    color: #ED1C24;
+}
+
 #ondeck-wrapper {
     background-color: #1D1D1D;
 }
@@ -300,6 +326,18 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
 
 #schedule-wrapper .schedule-episode .btn-watch-now {
     color: #FFF;
+}
+
+#schedule-wrapper .schedule-episode:not(:first-of-type) {
+    border-top-color: #FFF;
+}
+
+#schedule-wrapper a {
+    color: #ED1C24;
+}
+
+#schedule-wrapper a:hover, #schedule-wrapper a:focus {
+    color: #ED1C24;
 }
 
 #charts-wrapper {
@@ -602,6 +640,41 @@ section .list-rows .custom-list .list-info .info .overview p {
 section .list-rows .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+body.watchlist section {
+    background-color: #1D1D1D;
+}
+
+body.watchlist h2 {
+    color: #FFF;
+}
+
+body.watchlist h3 {
+    color: #ababab;
+}
+
+body.watchlist .alert-no-data {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.watchlist .posters .poster {
+    border-color: #1D1D1D;
+}
+
+body.watchlist .posters > div .quick-icons {
+    background-color: #3A3A3A;
+    border-color: #1D1D1D;
+}
+
+body.watchlist .posters .titles-link .titles h3 {
+    color: #FFF;
+}
+
+body.watchlist .posters .titles-link:hover {
+    color: #FFF;
 }
 
 #user-comments {
