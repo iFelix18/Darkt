@@ -1,4 +1,11 @@
-# Darkt [![Version][version]][1] <!-- [![Downloads][downloads]][1] [![Size][size]][1] [![Install directly with Stylus][stylus]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8] [![Badges][badges]][1] -->
+<!-- WIP -->
+**NOTICES:**
+- Rewriting in progress, some parts may not be completed yet, or have issues. At the moment it is advisable to use the [stable version].
+
+[stable version]: https://github.com/iFelix18/Darkt/tree/master
+<!-- WIP -->
+
+# Darkt [![Version][version]][1] [![Downloads][downloads]][1] [![Size][size]][1] [![Install directly from GitHub][install]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8] [![Badges][badges]][1]
 **_A darker theme for [Trakt]_**
 
 [![Preview]][Screenshots]
@@ -10,11 +17,12 @@
 * [Screenshots]
 
 ## Installation
-1. Download this add-on for your browser:
-    * Stylus: [Firefox], [Chrome], or [Opera].
-2. To install directly with Stylus, click here:</br>
+1. Download one of these add-ons for your browser:
+    * Stylus: [Chrome][STYChrome], [Firefox][STYFirefox] or [Opera][STYOpera].
+    * xStyle: [Chrome][XSTYChrome], [Firefox][XSTYFirefox].
+2. To install directly from GitHub, click here:
 
-    [![Install directly with Stylus][Darkt]][2]</br>
+    [![Install directly from GitHub][Darkt]][2]
 3. Done! From now on it will automatically update.
 
     ### Options:
@@ -32,7 +40,7 @@
             ```html
             <a target="_blank" href="https://trakt.tv/users/ifelix18"><img width="500" height="40" alt="iFelix18" src="https://widgets.trakt.tv/users/8a610d7bff8k9aacb01d6m42f47371x2/watched/thin@2x.jpg" /></a>
             ```
-        3. Copy the code after `https://widgets.trakt.tv/users/`, in the example above `8a610d7bff8k9aacb01d6m42f47371x2`
+        3. Copy the code after `https://widgets.trakt.tv/users/`, in the example above: `8a610d7bff8k9aacb01d6m42f47371x2`
         4. Paste this code into the theme settings on Stylus.
         5. Done!
     * **"Last Watched" background on user profile**:</br>
@@ -58,14 +66,12 @@ After: [![After]][Bonus]
 </details>
 
 <!-- BADGES -->
-<!-- [version]: https://flat.badgen.net/runkit/darkt-version-x50gdflybqni -->
-[version]: https://flat.badgen.net/runkit/darkt-develop-version-2hojcyz9l010
+[version]: https://flat.badgen.net/runkit/darkt-version-x50gdflybqni
 [1]: #
 [downloads]: https://flat.badgen.net/runkit/darkt-downloads-uwi9p1h6k5p3
 [size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/darkt.user.css
-[stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
-<!-- [2]: https://bit.ly/InstallDarkt -->
-[2]: https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
+[install]: https://flat.badgen.net/badge/install%20directly%20from/GitHub/00ADAD "Click here!"
+[2]: https://bit.ly/InstallDarkt
 [stars]: https://flat.badgen.net/github/stars/iFelix18/Darkt
 [3]: https://github.com/iFelix18/Darkt/stargazers
 [watchers]: https://flat.badgen.net/github/watchers/iFelix18/Darkt
@@ -93,10 +99,14 @@ After: [![After]][Bonus]
 [Bonus]: README.md#bonus
 [Screenshots]: README.md#screenshots
 
-<!-- STYLUS DOWNLOAD -->
-[Firefox]: https://addons.mozilla.org/firefox/addon/styl-us/
-[Chrome]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
-[Opera]: https://addons.opera.com/extensions/details/stylus/
+<!-- STYLUS DOWNLOADS -->
+[STYChrome]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+[STYFirefox]: https://addons.mozilla.org/firefox/addon/styl-us/
+[STYOpera]: https://addons.opera.com/extensions/details/stylus/
+
+<!-- XSTYLE DOWNLOADS -->
+[XSTYChrome]: https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj
+[XSTYFirefox]: https://addons.mozilla.org/firefox/addon/xstyle/
 
 <!-- INSTALL DARKT BADGE -->
 [Darkt]: https://flat.badgen.net/badge/Darkt/install/00ADAD "Click here!"
