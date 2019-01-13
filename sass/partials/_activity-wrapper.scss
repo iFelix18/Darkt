@@ -8,6 +8,19 @@
         .feed-icons {
             .feed-icon {
                 color: $White;
+
+                &:hover {
+                    color: $Red;
+                }
+            }
+        }
+
+        //see more
+        .see-more {
+            color: $White;
+
+            &:hover {
+                color: $Red;
             }
         }
     }

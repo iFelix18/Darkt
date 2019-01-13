@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-16
+@version        3.0.1-17
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -49,16 +49,6 @@
     noanima "No" <<<EOT
     EOT;
     anima "Yes" <<<EOT
-    /*logo*\/
-    #top-brand>a>img {
-		-webkit-transition: all .9s ease;
-        transition: all .9s ease;
-    }
-    #top-brand>a>img:hover {
-		-webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-    /*posters & fanarts*\/
     @-webkit-keyframes bounce {
         0%,
         20%,
@@ -66,19 +56,23 @@
             -webkit-transform: translateY(0);
             transform: translateY(0);
         }
+
         60% {
             -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
         }
+
         80% {
             -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
         }
+
         100% {
             -webkit-transform: translateY(2px);
             transform: translateY(2px);
         }
     }
+
     @keyframes bounce {
         0%,
         20%,
@@ -86,27 +80,44 @@
             -webkit-transform: translateY(0);
             transform: translateY(0);
         }
+
         60% {
             -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
         }
+
         80% {
             -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
         }
+
         100% {
             -webkit-transform: translateY(2px);
             transform: translateY(2px);
         }
     }
 
-    div.grid-item:hover>a>div.poster,
-    div.grid-item:hover>div.quick-icons.smaller,
-    div.grid-item:hover>div.titles>h4>div.progress,
-    div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"])>div.grid-item:hover>a>div.fanart,
-    div:not([class="row fanarts sortable"]):not([class="row posters fanarts twenty-four-cols grid-item no-overlays"])>div.grid-item:hover>div.quick-icons {
+    #ondeck-wrapper .posters > div:hover .poster,
+    #ondeck-wrapper .posters > div:hover .quick-icons,
+    #ondeck-wrapper .posters > div:hover .titles h4:last-child,
+    #activity-wrapper .fanarts > div:hover .fanart,
+    #activity-wrapper .fanarts > div:hover .quick-icons,
+    #recommendations-wrapper .posters > div:hover .poster,
+    #recommendations-wrapper .posters > div:hover .quick-icons,
+    #recent-wrapper .posters > div:hover .poster,
+    #recent-wrapper .posters > div:hover .quick-icons,
+    #history-items .posters > div:hover .poster,
+    #history-items .posters > div:hover .quick-icons,
+    #collection-items .posters > div:hover .poster,
+    #collection-items .posters > div:hover .quick-icons,
+    #rating-items .posters > div:hover .poster,
+    #rating-items .posters > div:hover .quick-icons,
+    body.watchlist section .posters > div:hover .poster,
+    body.watchlist section .posters > div:hover .quick-icons,
+    body.hidden_items section .posters > div:hover .poster,
+    body.hidden_items section .posters > div:hover .quick-icons {
         -webkit-animation: bounce .3s;
-		animation: bounce .3s;
+        animation: bounce .3s;
     } EOT;
 }
 @advanced       text        userid "UserID [see my GitHub for info]" ""
@@ -114,21 +125,30 @@
     obg "No" <<<EOT
     EOT;
     lwbg "Yes" <<<EOT
-    /*profile*\/
-    html .is-self #cover-wrapper .full-bg.enabled {
+    .is-self #cover-wrapper .full-bg {
         background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
-    }
-    /*dashboard*\/
-    html #results-top-wrapper .poster-bg {
-        background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+        background-position: 50% 10% !important;
         background-size: cover !important;
-        background-position: center 25% !important;
-		-webkit-filter: none !important;
+        opacity: .3 !important;
+        transition: none !important;
+    }
+    #results-top-wrapper .poster-bg {
+        background-image: url("https://widgets.trakt.tv/users//*[[userid]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+        background-position: 50% 10% !important;
+        background-size: cover !important;
+        opacity: .3 !important;
+        transition: none !important;
+        -webkit-filter: none !important;
         filter: none !important;
-        opacity: .7 !important;
     } EOT;
 }
 ==/UserStyle== */
-@-moz-document regexp("https?://trakt.tv/.*") {
+@-moz-document domain("trakt.tv") {
+    /*[[blockads]]*/
+    /*[[hidewatchnow]]*/
+    /*[[showsearchbottom]]*/
+    /*[[animations]]*/
+    /*[[lastwatchedbg]]*/
+
     /* theme */
 }

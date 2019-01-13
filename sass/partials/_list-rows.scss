@@ -45,8 +45,18 @@ section {
         .custom-list {
             .list-info {
 
-                //description
                 .info {
+
+                    //title
+                    h3 {
+                        color: $Red;
+
+                        &:hover {
+                            color: $Red;
+                        }
+                    }
+
+                    //description
                     .overview {
                         p {
                             color: $White;

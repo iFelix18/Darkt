@@ -3,6 +3,15 @@
 
     h2 {
         color: $White;
+
+        //see more
+        .see-more {
+            color: $White;
+
+            &:hover {
+                color: $Red;
+            }
+        }
     }
 
     h3 {

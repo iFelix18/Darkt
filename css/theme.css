@@ -1,13 +1,8 @@
 .trakt:after {
-    content: "\A                Darkt - Version 3.0.1-16" !important;
+    content: "\A                Darkt - Version 3.0.1-17" !important;
     white-space: pre !important;
 }
 
-/*[[blockads]]*/
-/*[[hidewatchnow]]*/
-/*[[showsearchbottom]]*/
-/*[[animations]]*/
-/*[[lastwatchedbg]]*/
 #auth-form-wrapper {
     background-color: #1D1D1D;
     -webkit-box-shadow: none;
@@ -274,6 +269,18 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
     color: #FFF;
 }
 
+#ondeck-wrapper h2 .feed-icons .feed-icon:hover {
+    color: #ED1C24;
+}
+
+#ondeck-wrapper h2 .see-more {
+    color: #FFF;
+}
+
+#ondeck-wrapper h2 .see-more:hover {
+    color: #ED1C24;
+}
+
 #ondeck-wrapper .posters .poster {
     border-color: #1D1D1D;
 }
@@ -312,6 +319,18 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
     color: #FFF;
 }
 
+#schedule-wrapper h2 .feed-icons .feed-icon:hover {
+    color: #ED1C24;
+}
+
+#schedule-wrapper h2 .see-more {
+    color: #FFF;
+}
+
+#schedule-wrapper h2 .see-more:hover {
+    color: #ED1C24;
+}
+
 #schedule-wrapper h3 {
     color: #FFF;
 }
@@ -348,6 +367,14 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
     color: #FFF;
 }
 
+#charts-wrapper h2 .see-more {
+    color: #FFF;
+}
+
+#charts-wrapper h2 .see-more:hover {
+    color: #ED1C24;
+}
+
 #charts-wrapper h3 {
     color: #ababab;
 }
@@ -370,6 +397,18 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
 
 #activity-wrapper h2 .feed-icons .feed-icon {
     color: #FFF;
+}
+
+#activity-wrapper h2 .feed-icons .feed-icon:hover {
+    color: #ED1C24;
+}
+
+#activity-wrapper h2 .see-more {
+    color: #FFF;
+}
+
+#activity-wrapper h2 .see-more:hover {
+    color: #ED1C24;
 }
 
 #activity-wrapper .quick-icons {
@@ -446,6 +485,14 @@ body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
 
 #recent-wrapper h2 {
     color: #FFF;
+}
+
+#recent-wrapper h2 .see-more {
+    color: #FFF;
+}
+
+#recent-wrapper h2 .see-more:hover {
+    color: #ED1C24;
 }
 
 #recent-wrapper .posters .poster {
@@ -631,6 +678,14 @@ section .list-rows .comment-wrapper.list .user-name h4 a.username {
 
 section .list-rows .comment-wrapper.list .above-comment .interactions .user-actions .btn-list-subscribe {
     color: #FFF;
+}
+
+section .list-rows .custom-list .list-info .info h3 {
+    color: #ED1C24;
+}
+
+section .list-rows .custom-list .list-info .info h3:hover {
+    color: #ED1C24;
 }
 
 section .list-rows .custom-list .list-info .info .overview p {
@@ -1060,4 +1115,226 @@ body.applications .alert-no-data {
 
 body.applications #authorized-applications .row:not(:first-child):not(.no-border) {
     border-top-color: #1D1D1D;
+}
+
+body.movies #info-wrapper {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.movies #info-wrapper .affiliate-links .section a {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.movies #info-wrapper .affiliate-links .section a:hover {
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+}
+
+body.movies #info-wrapper .sidebar .poster {
+    border-width: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body.movies #info-wrapper .sidebar .streaming-links {
+    background-color: #3A3A3A;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body.movies #info-wrapper .sidebar .btn-watch-now {
+    background-color: #3A3A3A;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #FFF;
+}
+
+body.movies #info-wrapper .sidebar .btn-watch-now .under-info {
+    color: #FFF;
+}
+
+body.movies #info-wrapper .sidebar .btn-watch-now:hover {
+    background-color: #ED1C24;
+}
+
+body.movies #info-wrapper .sidebar .sections li {
+    border-bottom-color: #FFF;
+}
+
+body.movies #info-wrapper .sidebar .sections li a {
+    color: #FFF;
+}
+
+body.movies #info-wrapper .sidebar .sections li a:hover {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper .sidebar .sections li.active a {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper .sidebar .external li a {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+    color: #FFF;
+}
+
+body.movies #info-wrapper .sidebar .external li a:hover {
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+}
+
+body.movies #info-wrapper ul.additional-stats li label {
+    color: #ababab;
+}
+
+body.movies #info-wrapper ul.additional-stats li a {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper ul.additional-stats li a:hover {
+    text-decoration: underline;
+}
+
+body.movies #info-wrapper .summary-activity {
+    background-color: #1D1D1D;
+}
+
+body.movies #info-wrapper .summary-activity .tabs .tab {
+    border: solid 1px #3A3A3A;
+    color: #FFF;
+}
+
+body.movies #info-wrapper .summary-activity .tabs .tab.selected {
+    background-color: #3A3A3A;
+}
+
+body.movies #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper {
+    background-color: #3A3A3A;
+    border: solid 1px #3A3A3A;
+}
+
+body.movies #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper .user-avatar img {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+body.movies #info-wrapper .info .action-buttons .btn-list:not(:hover),
+body.movies #info-wrapper .info .action-buttons .btn-comment:not(:hover) {
+    background-color: transparent;
+}
+
+body.movies #info-wrapper .info #actors .posters ul li .poster {
+    border: 0;
+}
+
+body.movies #info-wrapper .info #actors .posters ul li .name {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper .info #actors .posters ul li .character {
+    color: #FFF;
+}
+
+body.movies #info-wrapper .info #actors .posters ul:hover li .titles .name {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #3A3A3A;
+}
+
+body.movies #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ED1C24;
+}
+
+body.movies #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more {
+    color: #ED1C24;
+}
+
+body.movies #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more:hover {
+    text-decoration: underline;
+}
+
+body.movies #info-wrapper #recent-comments-wrapper #comments h3 {
+    color: #ababab;
+}
+
+body.movies #info-wrapper #recent-comments-wrapper #comments h3:hover {
+    text-decoration: underline;
+}
+
+body.movies #info-wrapper #recent-comments-wrapper #comments .active h3 {
+    color: #ED1C24;
+}
+
+body.movies .actor-tooltip .tooltip-inner {
+    background-color: #3A3A3A;
+    color: #ED1C24;
+}
+
+body.movies .actor-tooltip .tooltip-inner .alt {
+    color: #FFF;
+}
+
+body.movies .comment-wrapper {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+body.movies .comment-wrapper .above-comment {
+    background-color: #3A3A3A;
+}
+
+body.movies .comment-wrapper .user-name h4 {
+    color: #FFF;
+}
+
+body.movies .comment-wrapper .user-name h4 a.username {
+    color: #ED1C24;
+}
+
+body.movies .comment-wrapper .user-name h4 a.username:hover {
+    text-decoration: underline;
+}
+
+body.movies .comment-wrapper .date {
+    color: #FFF;
+}
+
+body.movies .comment-wrapper .new-reply-wrapper .reply-field textarea {
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+}
+
+body.movies .comment-wrapper.list {
+    background-color: #3A3A3A;
+}
+
+body.movies .comment-wrapper.list .user-name h4 {
+    color: #FFF;
+}
+
+body.movies .comment-wrapper.list .user-name h4 a.username {
+    color: #FFF;
+}
+
+body.movies .custom-list .list-info .info h3 {
+    color: #ED1C24;
+}
+
+body.movies .custom-list .list-info .info h3:hover {
+    color: #ED1C24;
+}
+
+body.movies .custom-list .list-info .info .overview p {
+    color: #FFF;
+}
+
+body.movies .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
