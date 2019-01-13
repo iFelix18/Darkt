@@ -26,7 +26,7 @@ After: [![After]][Screenshots]
 </details>
 
 <!-- BADGES -->
-[version]: https://flat.badgen.net/badge/version/1.1.3/ED1C24
+[version]: https://flat.badgen.net/badge/version/1.1.4/ED1C24
 [1]: #
 [downloads]: https://flat.badgen.net/runkit/ratings-on-trakt-downloads-xw1ittwiztu8
 [size]: https://flat.badgen.net/badgesize/normal/iFelix18/Darkt/master/userscripts/ratings-on-trakt.user.js

@@ -11,11 +11,11 @@
 // @copyright       2018, Felix (https://github.com/iFelix18)
 // @license         CC-BY-SA-4.0; https://creativecommons.org/licenses/by-sa/4.0/
 // @license         GPL-3.0-only; http://www.gnu.org/licenses/gpl-3.0.txt
-// @version         1.1.3
+// @version         1.1.4
 // @icon            https://api.faviconkit.com/trakt.tv/64
 // @homepageURL     https://github.com/iFelix18/Darkt/blob/master/userscripts/README.md
 // @supportURL      https://github.com/iFelix18/Darkt/issues
-// @updateURL       https://openuserjs.org/meta/iFelix18/ratings-on-trakt.meta.js
+// @updateURL       https://raw.githubusercontent.com/iFelix18/Darkt/master/userscripts/ratings-on-trakt.meta.js
 // @downloadURL     https://raw.githubusercontent.com/iFelix18/Darkt/master/userscripts/ratings-on-trakt.user.js
 // @include         https://trakt.tv/movies/*
 // @include         https://trakt.tv/shows/*
