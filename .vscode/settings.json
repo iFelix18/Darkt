@@ -1,13 +1,13 @@
 {
-    "files.insertFinalNewline": true,
-    "editor.formatOnSave": true,
-    "css.validate": false,
-    "less.validate": false,
-    "scss.validate": false,
-    "stylelint.enable": true,
-    "stylelint.configOverrides": {
-      "extends": "./.stylelintrc.json"
-    },
-    "sasslint.enable": true,
-    "sasslint.configFile": "./.sass-lint.yml",
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.configOverrides": {
+    "extends": "./.stylelintrc.json"
+  },
+  "sasslint.enable": true,
+  "sasslint.configFile": "./.sass-lint.yml",
 }

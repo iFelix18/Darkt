@@ -1,6 +1,6 @@
 {
   "name": "darkt",
-  "version": "3.0.1-16",
+  "version": "3.0.1-17",
   "description": "A darker theme for Trakt",
   "author": "Felix",
   "license": "CC-BY-SA-4.0",
@@ -13,12 +13,15 @@
     "start": "gulp default",
     "update": "updates -u & npm install"
   },
+  "dependencies": {
+    "npm": "^6.5.0"
+  },
   "devDependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-bump": "^3.1.1",
-    "gulp-cssbeautify": "^1.0.1",
+    "gulp-beautify-code": "^2.0.3",
+    "gulp-bump": "^3.1.3",
     "gulp-file-insert": "^2.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -27,8 +30,8 @@
     "sass-lint": "^1.12.1",
     "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.4.3",
+    "stylelint-scss": "^3.5.0",
     "time-stamp": "^2.2.0",
-    "updates": "^6.0.2"
+    "updates": "^6.0.3"
   }
 }

@@ -3,8 +3,8 @@
 var chalk = require("chalk");
 var gulp = require("gulp");
 var autoprefixer = require("gulp-autoprefixer");
+var beautifyCode = require("gulp-beautify-code");
 var bump = require("gulp-bump");
-var cssbeautify = require("gulp-cssbeautify");
 var gfi = require("gulp-file-insert");
 var rename = require("gulp-rename");
 var sass = require("gulp-sass");
@@ -63,6 +63,9 @@ gulp.task("bump:prerelease", () =>
 //====================================CSS=====================================//
 gulp.task("compile", () =>
     gulp.src("./sass/**/*.scss")
+    .pipe(beautifyCode({
+        newline_between_rules: true
+    }))
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
@@ -96,9 +99,6 @@ gulp.task("autoprefix", () =>
         log(error)
     )
 );
-gulp.task("sass:watch", () =>
-    gulp.watch("./sass/**/*.scss", gulp.series("compile", "autoprefix"))
-);
 //============================================================================//
 //==================================USERCSS===================================//
 gulp.task("build", () =>
@@ -106,10 +106,8 @@ gulp.task("build", () =>
     .pipe(gfi({
         "/* theme */": "./css/theme.css"
     }))
-    .pipe(cssbeautify({
-        indent: "  ",
-        openbrace: "end-of-line",
-        autosemicolon: true
+    .pipe(beautifyCode({
+        newline_between_rules: true
     }))
     .pipe(rename("darkt.user.css"))
     .pipe(gulp.dest("./"))
@@ -120,10 +118,11 @@ gulp.task("build", () =>
         log(error)
     )
 )
-gulp.task("css:watch", () =>
-    gulp.watch("./css/**/*.css", gulp.series("build"))
+//============================================================================//
+gulp.task("sass:watch", () =>
+    gulp.watch("./sass/**/*.scss", gulp.series("compile", "autoprefix", "build"))
 );
 //============================================================================//
-gulp.task("watch", gulp.parallel("sass:watch", "css:watch"));
+gulp.task("watch", gulp.parallel("sass:watch"));
 gulp.task("default", gulp.series("compile", "autoprefix", "build", "watch"));
 //============================================================================//
