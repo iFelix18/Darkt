@@ -28,9 +28,9 @@
     "gulp-sass-lint": "^1.4.0",
     "node-sass": "^4.11.0",
     "sass-lint": "^1.12.1",
-    "stylelint": "^9.9.0",
+    "stylelint": "^9.10.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.0",
+    "stylelint-scss": "^3.5.1",
     "time-stamp": "^2.2.0",
     "updates": "^6.0.3"
   }
