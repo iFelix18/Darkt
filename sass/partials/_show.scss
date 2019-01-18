@@ -1,5 +1,5 @@
 body {
-    &.movies {
+    &.show {
 
         #info-wrapper {
             background-color: $DarkBG;
@@ -27,60 +27,60 @@ body {
                     border-width: 0 !important;
                     box-shadow: none;
                 }
+            }
 
-                //watch now
-                .streaming-links {
-                    background-color: $Grey;
-                    box-shadow: none;
-                }
+            //watch now
+            .streaming-links {
+                background-color: $Grey;
+                box-shadow: none;
+            }
 
-                .btn-watch-now {
-                    background-color: $Grey;
-                    box-shadow: none;
+            .btn-watch-now {
+                background-color: $Grey;
+                box-shadow: none;
+                color: $White;
+
+                .under-info {
                     color: $White;
+                }
 
-                    .under-info {
+                &:hover {
+                    background-color: $Red;
+                }
+            }
+
+            //menu
+            .sections {
+                li {
+                    border-bottom-color: $White;
+
+                    a {
                         color: $White;
-                    }
 
-                    &:hover {
-                        background-color: $Red;
-                    }
-                }
-
-                //menu
-                .sections {
-                    li {
-                        border-bottom-color: $White;
-
-                        a {
-                            color: $White;
-
-                            &:hover {
-                                color: $Red;
-                            }
+                        &:hover {
+                            color: $Red;
                         }
+                    }
 
-                        &.active {
-                            a {
-                                color: $Red;
-                            }
+                    &.active {
+                        a {
+                            color: $Red;
                         }
                     }
                 }
+            }
 
-                //external
-                .external {
-                    li {
-                        a {
-                            background-color: $Grey;
-                            border-color: $Grey;
-                            color: $White;
+            //external
+            .external {
+                li {
+                    a {
+                        background-color: $Grey;
+                        border-color: $Grey;
+                        color: $White;
 
-                            &:hover {
-                                background-color: $Red;
-                                border-color: $Red;
-                            }
+                        &:hover {
+                            background-color: $Red;
+                            border-color: $Red;
                         }
                     }
                 }
@@ -93,15 +93,6 @@ body {
                         //labels
                         label {
                             color: darken($White, 33%);
-                        }
-
-                        //links
-                        a {
-                            color: $Red;
-
-                            &:hover {
-                                text-decoration: underline;
-                            }
                         }
                     }
                 }
@@ -139,6 +130,26 @@ body {
                             }
                         }
                     }
+                }
+            }
+
+            //recent episodes
+            #recent-episodes {
+
+                //see more
+                .see-more-link {
+                    .see-more {
+                        color: $Red;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                //quick action
+                .quick-icons {
+                    background-color: $Grey;
                 }
             }
 
@@ -205,6 +216,75 @@ body {
                             }
                         }
                     }
+                }
+            }
+
+            //seasons
+            #seasons {
+
+                //buttons
+                .btn-default {
+                    background-color: $Grey;
+                    border-color: $Grey;
+                    color: $White;
+
+                    &:hover {
+                        background-color: lighten($Grey, 10%);
+                        border-color: lighten($Grey, 10%);
+                        color: $White;
+                    }
+                }
+
+                //open
+                .open {
+                    >.btn-default {
+                        background-color: lighten($Grey, 10%);
+                        border-color: lighten($Grey, 10%);
+                        color: $White;
+                    }
+
+                    .dropdown-menu {
+                        background-color: $DarkBG;
+
+                        li {
+
+                            a {
+                                color: $White;
+
+                                &:hover {
+                                    background-color: $Grey;
+                                }
+                            }
+                        }
+                    }
+
+                    .divider {
+                        background-color: $Grey;
+                    }
+
+                    .dropdown-header {
+                        color: darken($White, 50%);
+                    }
+                }
+            }
+
+            //seasons posters
+            #seasons-episodes-sortable {
+                .poster {
+                    border-color: $DarkBG;
+                }
+
+                //quick icons
+                >div {
+                    .quick-icons {
+                        background-color: $Grey;
+                        border-color: $DarkBG;
+                    }
+                }
+
+                //titles
+                .titles-link {
+                    color: $White;
                 }
             }
 

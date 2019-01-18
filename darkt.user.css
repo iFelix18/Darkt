@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt Develop
-@version        3.0.1-17
+@version        3.0.1-18
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt
 @author         Felix
@@ -151,7 +151,7 @@
     /*[[lastwatchedbg]]*/
 
     .trakt:after {
-        content: "\A                Darkt - Version 3.0.1-17" !important;
+        content: "\A                Darkt - Version 3.0.1-18" !important;
         white-space: pre !important;
     }
 
@@ -1378,8 +1378,10 @@
         border-color: #3A3A3A;
     }
 
-    body.movies #info-wrapper .info .action-buttons .btn-list:not(:hover),
-    body.movies #info-wrapper .info .action-buttons .btn-comment:not(:hover) {
+    body.movies #info-wrapper .info .action-buttons .btn-watch:not(:hover):not(.selected),
+    body.movies #info-wrapper .info .action-buttons .btn-collect:not(:hover):not(.selected),
+    body.movies #info-wrapper .info .action-buttons .btn-list:not(:hover):not(.selected),
+    body.movies #info-wrapper .info .action-buttons .btn-comment:not(:hover):not(.selected) {
         background-color: transparent;
     }
 
@@ -1491,6 +1493,285 @@
     }
 
     body.movies .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    body.show #info-wrapper {
+        background-color: #1D1D1D;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .affiliate-links .section a {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .affiliate-links .section a:hover {
+        background-color: #ED1C24;
+        border-color: #ED1C24;
+    }
+
+    body.show #info-wrapper .sidebar .poster {
+        border-width: 0 !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    body.show #info-wrapper .streaming-links {
+        background-color: #3A3A3A;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    body.show #info-wrapper .btn-watch-now {
+        background-color: #3A3A3A;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .btn-watch-now .under-info {
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .btn-watch-now:hover {
+        background-color: #ED1C24;
+    }
+
+    body.show #info-wrapper .sections li {
+        border-bottom-color: #FFF;
+    }
+
+    body.show #info-wrapper .sections li a {
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .sections li a:hover {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper .sections li.active a {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper .external li a {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .external li a:hover {
+        background-color: #ED1C24;
+        border-color: #ED1C24;
+    }
+
+    body.show #info-wrapper ul.additional-stats li label {
+        color: #ababab;
+    }
+
+    body.show #info-wrapper .summary-activity {
+        background-color: #1D1D1D;
+    }
+
+    body.show #info-wrapper .summary-activity .tabs .tab {
+        border: solid 1px #3A3A3A;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .summary-activity .tabs .tab.selected {
+        background-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper {
+        background-color: #3A3A3A;
+        border: solid 1px #3A3A3A;
+    }
+
+    body.show #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper .user-avatar img {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper #recent-episodes .see-more-link .see-more {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper #recent-episodes .see-more-link .see-more:hover {
+        text-decoration: underline;
+    }
+
+    body.show #info-wrapper #recent-episodes .quick-icons {
+        background-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper .info .action-buttons .btn-watch:not(:hover):not(.selected),
+    body.show #info-wrapper .info .action-buttons .btn-collect:not(:hover):not(.selected),
+    body.show #info-wrapper .info .action-buttons .btn-list:not(:hover):not(.selected),
+    body.show #info-wrapper .info .action-buttons .btn-comment:not(:hover):not(.selected) {
+        background-color: transparent;
+    }
+
+    body.show #info-wrapper .info #actors .posters ul li .poster {
+        border: 0;
+    }
+
+    body.show #info-wrapper .info #actors .posters ul li .name {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper .info #actors .posters ul li .character {
+        color: #FFF;
+    }
+
+    body.show #info-wrapper .info #actors .posters ul:hover li .titles .name {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+        background-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: #ED1C24;
+    }
+
+    body.show #info-wrapper #seasons .btn-default {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper #seasons .btn-default:hover {
+        background-color: #545454;
+        border-color: #545454;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper #seasons .open>.btn-default {
+        background-color: #545454;
+        border-color: #545454;
+        color: #FFF;
+    }
+
+    body.show #info-wrapper #seasons .open .dropdown-menu {
+        background-color: #1D1D1D;
+    }
+
+    body.show #info-wrapper #seasons .open .dropdown-menu li a {
+        color: #FFF;
+    }
+
+    body.show #info-wrapper #seasons .open .dropdown-menu li a:hover {
+        background-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper #seasons .open .divider {
+        background-color: #3A3A3A;
+    }
+
+    body.show #info-wrapper #seasons .open .dropdown-header {
+        color: gray;
+    }
+
+    body.show #info-wrapper #seasons-episodes-sortable .poster {
+        border-color: #1D1D1D;
+    }
+
+    body.show #info-wrapper #seasons-episodes-sortable>div .quick-icons {
+        background-color: #3A3A3A;
+        border-color: #1D1D1D;
+    }
+
+    body.show #info-wrapper #seasons-episodes-sortable .titles-link {
+        color: #FFF;
+    }
+
+    body.show #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more {
+        color: #ED1C24;
+    }
+
+    body.show #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more:hover {
+        text-decoration: underline;
+    }
+
+    body.show #info-wrapper #recent-comments-wrapper #comments h3 {
+        color: #ababab;
+    }
+
+    body.show #info-wrapper #recent-comments-wrapper #comments h3:hover {
+        text-decoration: underline;
+    }
+
+    body.show #info-wrapper #recent-comments-wrapper #comments .active h3 {
+        color: #ED1C24;
+    }
+
+    body.show .actor-tooltip .tooltip-inner {
+        background-color: #3A3A3A;
+        color: #ED1C24;
+    }
+
+    body.show .actor-tooltip .tooltip-inner .alt {
+        color: #FFF;
+    }
+
+    body.show .comment-wrapper {
+        background-color: #1D1D1D;
+        color: #FFF;
+    }
+
+    body.show .comment-wrapper .above-comment {
+        background-color: #3A3A3A;
+    }
+
+    body.show .comment-wrapper .user-name h4 {
+        color: #FFF;
+    }
+
+    body.show .comment-wrapper .user-name h4 a.username {
+        color: #ED1C24;
+    }
+
+    body.show .comment-wrapper .user-name h4 a.username:hover {
+        text-decoration: underline;
+    }
+
+    body.show .comment-wrapper .date {
+        color: #FFF;
+    }
+
+    body.show .comment-wrapper .new-reply-wrapper .reply-field textarea {
+        background-color: #3A3A3A;
+        border-color: #3A3A3A;
+    }
+
+    body.show .comment-wrapper.list {
+        background-color: #3A3A3A;
+    }
+
+    body.show .comment-wrapper.list .user-name h4 {
+        color: #FFF;
+    }
+
+    body.show .comment-wrapper.list .user-name h4 a.username {
+        color: #FFF;
+    }
+
+    body.show .custom-list .list-info .info h3 {
+        color: #ED1C24;
+    }
+
+    body.show .custom-list .list-info .info h3:hover {
+        color: #ED1C24;
+    }
+
+    body.show .custom-list .list-info .info .overview p {
+        color: #FFF;
+    }
+
+    body.show .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
