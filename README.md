@@ -13,7 +13,6 @@
 ## Menu
 * [Installation]
     * [Options]
-* [Bonus]
 * [Screenshots]
 
 ## Installation
@@ -45,15 +44,6 @@
         5. Done!
     * **"Last Watched" background on user profile**:</br>
         If activated, shows the last movie or series watched as the background of the profile. *User ID* is required to work correctly.
-
-## Bonus:
-I created a userscript that adds the ratings from IMDb, Rotten Tomatoes and Metacritic to [Trakt], ideal in combination with Darkt.</br>
-To install it, read [here][10]. You can see a preview below:
-<details><summary>Show userscript preview</summary>
-
-Before: [![Before]][Bonus]
-After: [![After]][Bonus]
-</details>
 
 ## Screenshots
 <details><summary>Show screenshots</summary>
@@ -113,11 +103,6 @@ After: [![After]][Bonus]
 
 <!-- HOW TO LINK -->
 [9]: https://trakt.tv/widgets/watched
-
-<!-- USERSCRIPT -->
-[10]: userscripts/README.md
-[Before]: https://i.imgur.com/60VLj5m.png "Before"
-[After]: https://i.imgur.com/xi2QUCm.png "After"
 
 <!-- SCREENSHOTS -->
 [Dashboard]: https://i.imgur.com/ms58jKT.png "Dashboard"
