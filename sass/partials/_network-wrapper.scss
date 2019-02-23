@@ -1,44 +1,44 @@
 #network-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    .alert-no-data {
-        background-color: $Grey;
-        color: $White;
+  .alert-no-data {
+    background-color: $grey;
+    color: $white;
+  }
+
+  h2 {
+    color: $white;
+  }
+
+  //posters
+  .posters {
+    .poster {
+      border: 0;
     }
 
-    h2 {
-        color: $White;
+    //action
+    .action {
+      border-color: $grey;
     }
 
-    //posters
-    .posters {
-        .poster {
-            border: 0;
-        }
+    //activity
+    .poster-under {
+      background-color: $grey;
+      color: $white;
 
-        //action
-        .action {
-            border-color: $Grey;
+      //avatar
+      .user-avatar {
+        img {
+          background-color: $grey;
+          border-color: $grey;
         }
-
-        //activity
-        .poster-under {
-            background-color: $Grey;
-            color: $White;
-
-            //avatar
-            .user-avatar {
-                img {
-                    background-color: $Grey;
-                    border-color: $Grey;
-                }
-            }
-        }
-
-        //activity date
-        .activity-date {
-            background-color: $DarkBG;
-            color: $White;
-        }
+      }
     }
+
+    //activity date
+    .activity-date {
+      background-color: $dark;
+      color: $white;
+    }
+  }
 }

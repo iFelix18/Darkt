@@ -1,40 +1,40 @@
 #charts-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    h2 {
-        color: $White;
+  h2 {
+    color: $white;
 
-        //see more
-        .see-more {
-            color: $White;
+    //see more
+    .see-more {
+      color: $white;
 
-            &:hover {
-                color: $Red;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  h3 {
+    color: darken($white, 33%);
+  }
+
+  //graphic genres
+  .genre-bars {
+    &.light {
+      .bar {
+        label {
+          color: $white;
+
+          //graphic count
+          .count {
+            a {
+              &:not(:hover) {
+                color: darken($white, 33%);
+              }
             }
+          }
         }
+      }
     }
-
-    h3 {
-        color: darken($White, 33%);
-    }
-
-    //graphic genres
-    .genre-bars {
-        &.light {
-            .bar {
-                label {
-                    color: $White;
-
-                    //graphic count
-                    .count {
-                        a {
-                            &:not(:hover) {
-                                color: darken($White, 33%);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }

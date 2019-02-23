@@ -1,30 +1,30 @@
 #recommendations-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    //quick icons
-    .quick-icons {
-        background-color: $Grey;
+  //quick icons
+  .quick-icons {
+    background-color: $grey;
+  }
+
+  //titles
+  .titles {
+    h3 {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    //titles
-    .titles {
-        h3 {
-            color: $White;
+    //ignore
+    h4 {
+      .ignore {
+        color: darken($white, 33%);
 
-            &:hover {
-                text-decoration: underline;
-            }
+        &:hover {
+          color: $red;
         }
-
-        //ignore
-        h4 {
-            .ignore {
-                color: darken($White, 33%);
-
-                &:hover {
-                    color: $Red;
-                }
-            }
-        }
+      }
     }
+  }
 }

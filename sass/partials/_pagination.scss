@@ -1,39 +1,39 @@
 .pagination {
 
-    //normal
-    >li {
-        >a {
-            background-color: $DarkBG;
-            color: $White;
+  //normal
+  >li {
+    >a {
+      background-color: $dark;
+      color: $white;
 
-            &:focus {
-                background-color: $DarkBG;
-            }
-        }
+      &:focus {
+        background-color: $dark;
+      }
     }
+  }
 
-    //disabled
-    >.disabled {
-        >a {
-            background-color: $DarkBG;
+  //disabled
+  >.disabled {
+    >a {
+      background-color: $dark;
 
-            &:hover {
-                background-color: $DarkBG;
-            }
+      &:hover {
+        background-color: $dark;
+      }
 
-            //arrow
-            >div {
-                color: $White;
-            }
-        }
+      //arrow
+      >div {
+        color: $white;
+      }
     }
+  }
 
-    //gap
-    >.gap {
-        >a {
-            >div {
-                color: $White;
-            }
-        }
+  //gap
+  >.gap {
+    >a {
+      >div {
+        color: $white;
+      }
     }
+  }
 }

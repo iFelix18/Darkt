@@ -1,34 +1,34 @@
 #recent-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    h2 {
-        color: $White;
+  h2 {
+    color: $white;
 
-        //see more
-        .see-more {
-            color: $White;
+    //see more
+    .see-more {
+      color: $white;
 
-            &:hover {
-                color: $Red;
-            }
-        }
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  //posters
+  .posters {
+    .poster {
+      border-color: $dark;
     }
 
-    //posters
-    .posters {
-        .poster {
-            border-color: $DarkBG;
-        }
-
-        //quick action
-        .quick-icons {
-            background-color: $Grey;
-            border-color: $DarkBG;
-        }
-
-        //titles
-        .titles-link {
-            color: $White;
-        }
+    //quick action
+    .quick-icons {
+      background-color: $grey;
+      border-color: $dark;
     }
+
+    //titles
+    .titles-link {
+      color: $white;
+    }
+  }
 }

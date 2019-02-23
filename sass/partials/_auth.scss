@@ -1,58 +1,46 @@
 #auth-form-wrapper {
-    background-color: $DarkBG;
-    box-shadow: none;
-    color: $White;
+  background-color: $dark;
+  box-shadow: none;
+  color: $white;
 
-    .logo-wrapper {
-        .base {
-            background-color: $DarkBG;
-        }
+  .logo-wrapper {
+    .base {
+      background-color: $dark;
+    }
+  }
+
+  .inset-wrapper {
+    background-color: $dark;
+    border-bottom-color: $dark;
+    border-top-color: $dark;
+
+    .avatar {
+      background-color: $grey;
+      border-color: $grey;
+    }
+  }
+
+  .auth-services-wrapper {
+    background-color: $dark;
+    border-top-color: $dark;
+  }
+
+  .bottom-wrapper {
+    background-color: $dark;
+    border-top-color: $dark;
+  }
+
+  .form-control {
+    background-color: $grey;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
     }
 
-    .inset-wrapper {
-        background-color: $DarkBG;
-        border-bottom-color: $DarkBG;
-        border-top-color: $DarkBG;
-
-        .avatar {
-            background-color: $Grey;
-            border-color: $Grey;
-        }
+    &:focus {
+      border-color: $red;
+      box-shadow: none;
     }
-
-    .auth-services-wrapper {
-        background-color: $DarkBG;
-        border-top-color: $DarkBG;
-    }
-
-    .bottom-wrapper {
-        background-color: $DarkBG;
-        border-top-color: $DarkBG;
-    }
-
-    .form-control {
-        background-color: $Grey;
-        color: $White;
-
-        &::-webkit-input-placeholder {
-            color: $White;
-        }
-
-        &:-ms-input-placeholder {
-            color: $White;
-        }
-
-        &::-ms-input-placeholder {
-            color: $White;
-        }
-
-        &::placeholder {
-            color: $White;
-        }
-
-        &:focus {
-            border-color: $Red;
-            box-shadow: none;
-        }
-    }
+  }
 }

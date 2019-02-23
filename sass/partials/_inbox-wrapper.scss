@@ -1,21 +1,21 @@
 #inbox-wrapper {
-    background-color: $DarkBG;
-    color: $White;
+  background-color: $dark;
+  color: $white;
 
-    //border
-    .notification-row {
-        &:not(:first-of-type) {
-            border-top-color: $White;
-        }
+  //border
+  .notification-row {
+    &:not(:first-of-type) {
+      border-top-color: $white;
     }
+  }
 
-    //link
-    a {
-        color: $Red;
+  //link
+  a {
+    color: $red;
 
-        &:hover,
-        &:focus {
-            color: $Red;
-        }
+    &:hover,
+    &:focus {
+      color: $red;
     }
+  }
 }

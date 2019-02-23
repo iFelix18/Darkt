@@ -1,32 +1,32 @@
 #activity-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    h2 {
-        color: $White;
+  h2 {
+    color: $white;
 
-        //feed icon
-        .feed-icons {
-            .feed-icon {
-                color: $White;
+    //feed icon
+    .feed-icons {
+      .feed-icon {
+        color: $white;
 
-                &:hover {
-                    color: $Red;
-                }
-            }
+        &:hover {
+          color: $red;
         }
-
-        //see more
-        .see-more {
-            color: $White;
-
-            &:hover {
-                color: $Red;
-            }
-        }
+      }
     }
 
-    //quick icons
-    .quick-icons {
-        background-color: $Grey;
+    //see more
+    .see-more {
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
     }
+  }
+
+  //quick icons
+  .quick-icons {
+    background-color: $grey;
+  }
 }

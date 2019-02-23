@@ -1,80 +1,80 @@
 section {
-    .list-rows {
-        background-color: $DarkBG;
-        box-shadow: -200px 1px 0 1px $DarkBG, 200px 1px 0 1px $DarkBG;
+  .list-rows {
+    background-color: $dark;
+    box-shadow: -200px 1px 0 1px $dark, 200px 1px 0 1px $dark;
 
-        //list title
-        .comment-wrapper {
-            &.list {
-                background-color: $Grey;
+    //list title
+    .comment-wrapper {
+      &.list {
+        background-color: $grey;
 
-                //avatar
-                .user-avatar {
-                    img {
-                        background-color: $Grey;
-                        border-color: $Grey;
-                    }
-                }
-
-                //username
-                .user-name {
-                    h4 {
-                        color: $White;
-
-                        a {
-                            &.username {
-                                color: $White;
-                            }
-                        }
-                    }
-                }
-
-                //icons
-                .above-comment {
-                    .interactions {
-                        .user-actions {
-                            .btn-list-subscribe {
-                                color: $White;
-                            }
-                        }
-                    }
-                }
-            }
+        //avatar
+        .user-avatar {
+          img {
+            background-color: $grey;
+            border-color: $grey;
+          }
         }
 
-        .custom-list {
-            .list-info {
+        //username
+        .user-name {
+          h4 {
+            color: $white;
 
-                .info {
-
-                    //title
-                    h3 {
-                        color: $Red;
-
-                        &:hover {
-                            color: $Red;
-                        }
-                    }
-
-                    //description
-                    .overview {
-                        p {
-                            color: $White;
-                        }
-                    }
-                }
-
-                //posters
-                .posters {
-                    .poster-items-wrapper {
-                        .poster-items {
-                            .poster-item {
-                                box-shadow: none;
-                            }
-                        }
-                    }
-                }
+            a {
+              &.username {
+                color: $white;
+              }
             }
+          }
         }
+
+        //icons
+        .above-comment {
+          .interactions {
+            .user-actions {
+              .btn-list-subscribe {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
     }
+
+    .custom-list {
+      .list-info {
+
+        .info {
+
+          //title
+          h3 {
+            color: $red;
+
+            &:hover {
+              color: $red;
+            }
+          }
+
+          //description
+          .overview {
+            p {
+              color: $white;
+            }
+          }
+        }
+
+        //posters
+        .posters {
+          .poster-items-wrapper {
+            .poster-items {
+              .poster-item {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

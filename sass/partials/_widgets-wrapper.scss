@@ -1,25 +1,25 @@
 body {
-    &.widgets {
-        #widgets-wrapper {
-            background-color: $DarkBG;
+  &.widgets {
+    #widgets-wrapper {
+      background-color: $dark;
 
-            .widget-row {
-                &.alt {
-                    background-color: $DarkBG;
-                }
-
-                iframe {
-                    box-shadow: none;
-                }
-            }
-
-            h3 {
-                color: $White;
-            }
-
-            h4 {
-                color: darken($White, 33%);
-            }
+      .widget-row {
+        &.alt {
+          background-color: $dark;
         }
+
+        iframe {
+          box-shadow: none;
+        }
+      }
+
+      h3 {
+        color: $white;
+      }
+
+      h4 {
+        color: darken($white, 33%);
+      }
     }
+  }
 }

@@ -1,27 +1,27 @@
 #rating-items {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    h2 {
-        color: $White;
+  h2 {
+    color: $white;
+  }
+
+  //posters
+  .posters {
+    .poster {
+      border-color: $dark;
     }
 
-    //posters
-    .posters {
-        .poster {
-            border-color: $DarkBG;
-        }
-
-        //quick icons
-        >div {
-            .quick-icons {
-                background-color: $Grey;
-                border-color: $DarkBG;
-            }
-        }
-
-        //titles
-        .titles-link {
-            color: $White;
-        }
+    //quick icons
+    >div {
+      .quick-icons {
+        background-color: $grey;
+        border-color: $dark;
+      }
     }
+
+    //titles
+    .titles-link {
+      color: $white;
+    }
+  }
 }

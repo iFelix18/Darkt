@@ -1,26 +1,26 @@
 body {
-    &.applications {
-        section {
-            background-color: $DarkBG;
-        }
-
-        //no data
-        .alert-no-data {
-            background-color: $Grey;
-            border-color: $Grey;
-            color: $White;
-        }
-
-        #authorized-applications {
-            .row {
-
-                //divider
-                &:not(:first-child) {
-                    &:not(.no-border) {
-                        border-top-color: $DarkBG;
-                    }
-                }
-            }
-        }
+  &.applications {
+    section {
+      background-color: $dark;
     }
+
+    //no data
+    .alert-no-data {
+      background-color: $grey;
+      border-color: $grey;
+      color: $white;
+    }
+
+    #authorized-applications {
+      .row {
+
+        //divider
+        &:not(:first-child) {
+          &:not(.no-border) {
+            border-top-color: $dark;
+          }
+        }
+      }
+    }
+  }
 }

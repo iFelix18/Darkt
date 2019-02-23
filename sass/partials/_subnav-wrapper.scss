@@ -1,174 +1,174 @@
 .subnav-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    //buttons
-    .btn-default {
-        background-color: $Grey;
-        border-color: $Grey;
-        color: $White;
+  //buttons
+  .btn-default {
+    background-color: $grey;
+    border-color: $grey;
+    color: $white;
 
-        &:hover {
-            background-color: lighten($Grey, 10%);
-            border-color: lighten($Grey, 10%);
-            color: $White;
-        }
+    &:hover {
+      background-color: lighten($grey, 10%);
+      border-color: lighten($grey, 10%);
+      color: $white;
+    }
+  }
+
+  //buttons open
+  .open {
+
+    >.btn-default {
+      background-color: lighten($grey, 10%);
+      border-color: lighten($grey, 10%);
+      color: $white;
     }
 
-    //buttons open
-    .open {
+    .dropdown-menu {
+      background-color: $dark;
 
-        >.btn-default {
-            background-color: lighten($Grey, 10%);
-            border-color: lighten($Grey, 10%);
-            color: $White;
+      li {
+
+        a {
+          color: $white;
+
+          &:hover {
+            background-color: $grey;
+          }
         }
+      }
 
-        .dropdown-menu {
-            background-color: $DarkBG;
+      .divider {
+        background-color: $grey;
+      }
 
-            li {
+      .dropdown-header {
+        color: darken($white, 50%);
+      }
+    }
+  }
 
-                a {
-                    color: $White;
+  //counts
+  .comment-wrapper {
+    background-color: $dark;
 
-                    &:hover {
-                        background-color: $Grey;
-                    }
-                }
-            }
+    .above-comment {
 
-            .divider {
-                background-color: $Grey;
-            }
+      .interactions {
 
-            .dropdown-header {
-                color: darken($White, 50%);
-            }
+        a {
+          color: $red;
+
+          .under-count {
+            color: $white;
+          }
         }
+      }
+    }
+  }
+
+  //order icon
+  .trakt-icon-swap-vertical {
+    color: $white;
+  }
+
+  //filter icon
+  .filter-dropdown {
+    color: $white;
+
+    .trakt-icon-divider {
+      color: $white;
+    }
+  }
+
+  .right {
+
+    //feed-calendar-export icon
+    .feed-icon {
+      color: $white;
     }
 
-    //counts
-    .comment-wrapper {
-        background-color: $DarkBG;
-
-        .above-comment {
-
-            .interactions {
-
-                a {
-                    color: $Red;
-
-                    .under-count {
-                        color: $White;
-                    }
-                }
-            }
-        }
+    //heart icon [ratigs page]
+    .trakt-icon-heart {
+      color: $white;
     }
 
-    //order icon
-    .trakt-icon-swap-vertical {
-        color: $White;
+    //direction icon [lists page]
+    #sort-direction {
+      color: $white;
     }
 
-    //filter icon
-    .filter-dropdown {
-        color: $White;
-
-        .trakt-icon-divider {
-            color: $White;
-        }
+    //eye [widget page]
+    .trakt-icon-eye {
+      color: $white;
     }
 
-    .right {
-
-        //feed-calendar-export icon
-        .feed-icon {
-            color: $White;
-        }
-
-        //heart icon [ratigs page]
-        .trakt-icon-heart {
-            color: $White;
-        }
-
-        //direction icon [lists page]
-        #sort-direction {
-            color: $White;
-        }
-
-        //eye [widget page]
-        .trakt-icon-eye {
-            color: $White;
-        }
-
-        //wand [widget page]
-        .trakt-icon-wand {
-            color: $White;
-        }
+    //wand [widget page]
+    .trakt-icon-wand {
+      color: $white;
     }
+  }
+
+  .left {
+
+    //metdata icon [collection page]
+    .trakt-icon-wand,
+    .caret {
+      color: $white;
+    }
+
+    //reorder icon [lists page]
+    #btn-list-edit-lists {
+      color: $white;
+    }
+  }
+
+  //list
+  &.list-title-wrapper {
+    background-color: $dark;
+    color: $white;
 
     .left {
-
-        //metdata icon [collection page]
-        .trakt-icon-wand,
-        .caret {
-            color: $White;
+      h2 {
+        .right {
+          a {
+            color: $white;
+          }
         }
-
-        //reorder icon [lists page]
-        #btn-list-edit-lists {
-            color: $White;
-        }
+      }
     }
-
-    //list
-    &.list-title-wrapper {
-        background-color: $DarkBG;
-        color: $White;
-
-        .left {
-            h2 {
-                .right {
-                    a {
-                        color: $White;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 #info-wrapper {
 
-    //season
-    .season-links {
-        color: $White;
+  //season
+  .season-links {
+    color: $white;
 
-        //seasons/episodes
-        .links {
-            ul {
-                li {
-                    a {
-                        color: $White;
+    //seasons/episodes
+    .links {
+      ul {
+        li {
+          a {
+            color: $white;
 
-                        //season/episode selected
-                        &.selected {
-                            color: $Red;
-                        }
-                    }
-                }
+            //season/episode selected
+            &.selected {
+              color: $red;
             }
+          }
         }
+      }
     }
+  }
 }
 
 //widget page
 body {
-    &.widgets {
-        .subnav-wrapper {
-            border-bottom-color: $DarkBG;
-            color: $White;
-        }
+  &.widgets {
+    .subnav-wrapper {
+      border-bottom-color: $dark;
+      color: $white;
     }
+  }
 }

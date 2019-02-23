@@ -1,64 +1,64 @@
 #schedule-wrapper {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    .alert-no-data {
-        background-color: $Grey;
-        color: $White;
-    }
+  .alert-no-data {
+    background-color: $grey;
+    color: $white;
+  }
 
-    h2 {
-        color: $White;
+  h2 {
+    color: $white;
 
-        //feed icon
-        .feed-icons {
-            .feed-icon {
-                color: $White;
+    //feed icon
+    .feed-icons {
+      .feed-icon {
+        color: $white;
 
-                &:hover {
-                    color: $Red;
-                }
-            }
+        &:hover {
+          color: $red;
         }
-
-        //see more
-        .see-more {
-            color: $White;
-
-            &:hover {
-                color: $Red;
-            }
-        }
+      }
     }
 
-    h3 {
-        color: $White;
+    //see more
+    .see-more {
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  h5 {
+    color: $white;
+  }
+
+  h6 {
+    color: darken($white, 33%);
+  }
+
+  .schedule-episode {
+    .btn-watch-now {
+      color: $white;
     }
 
-    h5 {
-        color: $White;
+    &:not(:first-of-type) {
+      border-top-color: $white;
     }
+  }
 
-    h6 {
-        color: darken($White, 33%);
+  //link
+  a {
+    color: $red;
+
+    &:hover,
+    &:focus {
+      color: $red;
     }
-
-    .schedule-episode {
-        .btn-watch-now {
-            color: $White;
-        }
-
-        &:not(:first-of-type) {
-            border-top-color: $White;
-        }
-    }
-
-    //link
-    a {
-        color: $Red;
-
-        &:hover,
-        &:focus {
-            color: $Red;
-        }
-    }
+  }
 }

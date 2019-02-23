@@ -1,84 +1,84 @@
 //dashboard
 #huckster-desktop-wrapper {
 
-    &.dark,
-    &.light {
-        background-color: $DarkBG;
+  &.dark,
+  &.light {
+    background-color: $dark;
 
-        .huckster-vip-info {
-            background-color: $DarkBG;
-            color: $Red;
-        }
+    .huckster-vip-info {
+      background-color: $dark;
+      color: $red;
     }
+  }
 
-    .huckster-dfp {
-        background-color: $Grey;
-    }
+  .huckster-dfp {
+    background-color: $grey;
+  }
 }
 
 //profile
 body {
 
-    &.users {
+  &.users {
 
-        #huckster-desktop-wrapper {
+    #huckster-desktop-wrapper {
 
-            &.dark {
-                background-color: $DarkBG;
+      &.dark {
+        background-color: $dark;
 
-                .huckster-vip-info {
-                    background-color: $DarkBG;
-                }
-            }
+        .huckster-vip-info {
+          background-color: $dark;
         }
+      }
     }
+  }
 }
 
 //history
 #huckster-content-page {
-    background-color: $DarkBG;
+  background-color: $dark;
 
-    .huckster-vip-info {
-        background-color: $DarkBG;
-        color: $Red;
-    }
+  .huckster-vip-info {
+    background-color: $dark;
+    color: $red;
+  }
 }
 
 //progress
 .watched {
 
-    #huckster-desktop-wrapper {
+  #huckster-desktop-wrapper {
 
-        &.add-top {
-            background-color: $DarkBG;
+    &.add-top {
+      background-color: $dark;
 
-            .huckster-vip-info {
-                background-color: $DarkBG;
-                color: $Red;
-            }
-        }
+      .huckster-vip-info {
+        background-color: $dark;
+        color: $red;
+      }
     }
+  }
 }
 
 //movies
 #overview {
 
-    #huckster-desktop-wrapper {
-        background-color: $DarkBG;
+  #huckster-desktop-wrapper {
+    background-color: $dark;
 
-        .huckster-vip-info {
-            background-color: $DarkBG;
-            color: $Red;
-        }
+    .huckster-vip-info {
+      background-color: $dark;
+      color: $red;
     }
+  }
 }
 
 //search
 #huckster-desktop-sidenav {
-    background-color: $Grey;
+  background-color: $grey;
 
-    .huckster-vip-info {
-        background-color: $DarkBG;
-        color: $Red;
-    }
+  .huckster-vip-info {
+    background-color: $dark;
+    color: $red;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-  &.movies {
+  &.shows {
 
     #info-wrapper {
       background-color: $dark;
@@ -27,60 +27,60 @@ body {
           border-width: 0 !important;
           box-shadow: none;
         }
+      }
 
-        //watch now
-        .streaming-links {
-          background-color: $grey;
-          box-shadow: none;
-        }
+      //watch now
+      .streaming-links {
+        background-color: $grey;
+        box-shadow: none;
+      }
 
-        .btn-watch-now {
-          background-color: $grey;
-          box-shadow: none;
+      .btn-watch-now {
+        background-color: $grey;
+        box-shadow: none;
+        color: $white;
+
+        .under-info {
           color: $white;
+        }
 
-          .under-info {
+        &:hover {
+          background-color: $red;
+        }
+      }
+
+      //menu
+      .sections {
+        li {
+          border-bottom-color: $white;
+
+          a {
             color: $white;
-          }
 
-          &:hover {
-            background-color: $red;
-          }
-        }
-
-        //menu
-        .sections {
-          li {
-            border-bottom-color: $white;
-
-            a {
-              color: $white;
-
-              &:hover {
-                color: $red;
-              }
+            &:hover {
+              color: $red;
             }
+          }
 
-            &.active {
-              a {
-                color: $red;
-              }
+          &.active {
+            a {
+              color: $red;
             }
           }
         }
+      }
 
-        //external
-        .external {
-          li {
-            a {
-              background-color: $grey;
-              border-color: $grey;
-              color: $white;
+      //external
+      .external {
+        li {
+          a {
+            background-color: $grey;
+            border-color: $grey;
+            color: $white;
 
-              &:hover {
-                background-color: $red;
-                border-color: $red;
-              }
+            &:hover {
+              background-color: $red;
+              border-color: $red;
             }
           }
         }
@@ -93,15 +93,6 @@ body {
             //labels
             label {
               color: darken($white, 33%);
-            }
-
-            //links
-            a {
-              color: $red;
-
-              &:hover {
-                text-decoration: underline;
-              }
             }
           }
         }
@@ -139,6 +130,26 @@ body {
               }
             }
           }
+        }
+      }
+
+      //recent episodes
+      #recent-episodes {
+
+        //see more
+        .see-more-link {
+          .see-more {
+            color: $red;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        //quick action
+        .quick-icons {
+          background-color: $grey;
         }
       }
 
@@ -205,6 +216,75 @@ body {
               }
             }
           }
+        }
+      }
+
+      //seasons
+      #seasons {
+
+        //buttons
+        .btn-default {
+          background-color: $grey;
+          border-color: $grey;
+          color: $white;
+
+          &:hover {
+            background-color: lighten($grey, 10%);
+            border-color: lighten($grey, 10%);
+            color: $white;
+          }
+        }
+
+        //open
+        .open {
+          >.btn-default {
+            background-color: lighten($grey, 10%);
+            border-color: lighten($grey, 10%);
+            color: $white;
+          }
+
+          .dropdown-menu {
+            background-color: $dark;
+
+            li {
+
+              a {
+                color: $white;
+
+                &:hover {
+                  background-color: $grey;
+                }
+              }
+            }
+          }
+
+          .divider {
+            background-color: $grey;
+          }
+
+          .dropdown-header {
+            color: darken($white, 50%);
+          }
+        }
+      }
+
+      //seasons posters
+      #seasons-episodes-sortable {
+        .poster {
+          border-color: $dark;
+        }
+
+        //quick icons
+        >div {
+          .quick-icons {
+            background-color: $grey;
+            border-color: $dark;
+          }
+        }
+
+        //titles
+        .titles-link {
+          color: $white;
         }
       }
 

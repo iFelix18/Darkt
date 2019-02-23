@@ -1,51 +1,51 @@
 body {
-    &.watchlist {
+  &.watchlist {
 
-        section {
-            background-color: $DarkBG;
-        }
-
-        h2 {
-            color: $White;
-        }
-
-        h3 {
-            color: darken($White, 33%);
-        }
-
-        //no data
-        .alert-no-data {
-            background-color: $Grey;
-            border-color: $Grey;
-            color: $White;
-        }
-
-        //posters
-        .posters {
-            .poster {
-                border-color: $DarkBG;
-            }
-
-            //quick icons
-            >div {
-                .quick-icons {
-                    background-color: $Grey;
-                    border-color: $DarkBG;
-                }
-            }
-
-            //titles
-            .titles-link {
-                .titles {
-                    h3 {
-                        color: $White;
-                    }
-                }
-
-                &:hover {
-                    color: $White;
-                }
-            }
-        }
+    section {
+      background-color: $dark;
     }
+
+    h2 {
+      color: $white;
+    }
+
+    h3 {
+      color: darken($white, 33%);
+    }
+
+    //no data
+    .alert-no-data {
+      background-color: $grey;
+      border-color: $grey;
+      color: $white;
+    }
+
+    //posters
+    .posters {
+      .poster {
+        border-color: $dark;
+      }
+
+      //quick icons
+      >div {
+        .quick-icons {
+          background-color: $grey;
+          border-color: $dark;
+        }
+      }
+
+      //titles
+      .titles-link {
+        .titles {
+          h3 {
+            color: $white;
+          }
+        }
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 }
