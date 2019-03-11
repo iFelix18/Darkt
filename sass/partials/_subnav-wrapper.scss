@@ -1,174 +1,23 @@
 .subnav-wrapper {
   background-color: $dark;
 
-  //buttons
-  .btn-default {
-    background-color: $grey;
-    border-color: $grey;
-    color: $white;
-
-    &:hover {
-      background-color: lighten($grey, 10%);
-      border-color: lighten($grey, 10%);
-      color: $white;
-    }
-  }
-
-  //buttons open
-  .open {
-
-    >.btn-default {
-      background-color: lighten($grey, 10%);
-      border-color: lighten($grey, 10%);
-      color: $white;
-    }
-
-    .dropdown-menu {
-      background-color: $dark;
-
-      li {
-
-        a {
-          color: $white;
-
-          &:hover {
-            background-color: $grey;
-          }
-        }
-      }
-
-      .divider {
-        background-color: $grey;
-      }
-
-      .dropdown-header {
-        color: darken($white, 50%);
-      }
-    }
-  }
-
-  //counts
-  .comment-wrapper {
-    background-color: $dark;
-
-    .above-comment {
-
-      .interactions {
-
-        a {
-          color: $red;
-
-          .under-count {
-            color: $white;
-          }
-        }
-      }
-    }
-  }
-
-  //order icon
-  .trakt-icon-swap-vertical {
+  .right .feed-icon {
     color: $white;
   }
 
-  //filter icon
-  .filter-dropdown {
-    color: $white;
-
-    .trakt-icon-divider {
-      color: $white;
-    }
-  }
-
-  .right {
-
-    //feed-calendar-export icon
-    .feed-icon {
-      color: $white;
-    }
-
-    //heart icon [ratigs page]
-    .trakt-icon-heart {
-      color: $white;
-    }
-
-    //direction icon [lists page]
-    #sort-direction {
-      color: $white;
-    }
-
-    //eye [widget page]
-    .trakt-icon-eye {
-      color: $white;
-    }
-
-    //wand [widget page]
-    .trakt-icon-wand {
-      color: $white;
-    }
-  }
-
-  .left {
-
-    //metdata icon [collection page]
-    .trakt-icon-wand,
-    .caret {
-      color: $white;
-    }
-
-    //reorder icon [lists page]
-    #btn-list-edit-lists {
-      color: $white;
-    }
-  }
-
-  //list
   &.list-title-wrapper {
     background-color: $dark;
-    color: $white;
+  }
 
-    .left {
-      h2 {
-        .right {
-          a {
-            color: $white;
-          }
-        }
-      }
-    }
+  .left h2 .right a {
+    color: $white;
   }
 }
 
-#info-wrapper {
-
-  //season
-  .season-links {
-    color: $white;
-
-    //seasons/episodes
-    .links {
-      ul {
-        li {
-          a {
-            color: $white;
-
-            //season/episode selected
-            &.selected {
-              color: $red;
-            }
-          }
-        }
-      }
-    }
-  }
+.filter-dropdown .icon.trakt-icon-divider {
+  color: $white;
 }
 
-//widget page
-body {
-  &.widgets {
-    .subnav-wrapper {
-      border-bottom-color: $dark;
-      color: $white;
-    }
-  }
+.subnav-text {
+  background-color: $dark;
 }

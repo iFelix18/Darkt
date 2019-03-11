@@ -1,739 +1,314 @@
 .trakt::after {
-  content: '\A                Darkt - Version 3.0.1-19' !important;
-  white-space: pre !important;
+  content: '\A                Darkt - Version 3.0.1-20';
+  white-space: pre;
 }
 
-#activity-wrapper {
-  background-color: #1d1d1d;
-}
-
-#activity-wrapper h2 {
+.actor-tooltip .tooltip-inner {
+  background-color: #151515;
   color: #fff;
 }
 
-#activity-wrapper h2 .feed-icons .feed-icon {
-  color: #fff;
-}
-
-#activity-wrapper h2 .feed-icons .feed-icon:hover {
+.actor-tooltip .tooltip-inner .alt {
   color: #ed1c24;
+  font-weight: bold;
 }
 
-#activity-wrapper h2 .see-more {
+.alert-no-data {
+  background-color: #333;
   color: #fff;
 }
 
-#activity-wrapper h2 .see-more:hover {
-  color: #ed1c24;
-}
-
-#activity-wrapper .quick-icons {
-  background-color: #3a3a3a;
-}
-
-body.applications section {
+.subnav-text .text blockquote,
+.custom-list .list-info .info .overview blockquote {
   background-color: #1d1d1d;
+  border-left-color: #333;
 }
 
-body.applications .alert-no-data {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  background-color: #262626;
+  border-color: #262626;
   color: #fff;
 }
 
-body.applications #authorized-applications .row:not(:first-child):not(.no-border) {
-  border-top-color: #1d1d1d;
+.btn:focus {
+  outline: none;
 }
 
-#auth-form-wrapper {
-  background-color: #1d1d1d;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.btn:active:focus {
+  outline: none;
+}
+
+.btn.active:focus {
+  outline: none;
+}
+
+.btn-default {
+  background-color: #333;
+  border-color: #333;
   color: #fff;
 }
 
-#auth-form-wrapper .logo-wrapper .base {
-  background-color: #1d1d1d;
-}
-
-#auth-form-wrapper .inset-wrapper {
-  background-color: #1d1d1d;
-  border-bottom-color: #1d1d1d;
-  border-top-color: #1d1d1d;
-}
-
-#auth-form-wrapper .inset-wrapper .avatar {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-#auth-form-wrapper .auth-services-wrapper {
-  background-color: #1d1d1d;
-  border-top-color: #1d1d1d;
-}
-
-#auth-form-wrapper .bottom-wrapper {
-  background-color: #1d1d1d;
-  border-top-color: #1d1d1d;
-}
-
-#auth-form-wrapper .form-control {
-  background-color: #3a3a3a;
+.btn-list-edit-items,
+#btn-list-edit-lists {
   color: #fff;
-}
-
-#auth-form-wrapper .form-control::-webkit-input-placeholder {
-  color: #fff;
-}
-
-#auth-form-wrapper .form-control:-ms-input-placeholder {
-  color: #fff;
-}
-
-#auth-form-wrapper .form-control::-ms-input-placeholder {
-  color: #fff;
-}
-
-#auth-form-wrapper .form-control::placeholder {
-  color: #fff;
-}
-
-#auth-form-wrapper .form-control:focus {
-  border-color: #ed1c24;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.authorized_applications section {
-  background-color: #1d1d1d;
-}
-
-body.authorized_applications .alert-no-data {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.authorized_applications #authorized-applications .row .icon img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-body.authorized_applications #authorized-applications .row h4 {
-  color: #fff;
-}
-
-body.authorized_applications #authorized-applications .row p {
-  color: #fff;
-}
-
-body.authorized_applications #authorized-applications .row h5 {
-  color: #ababab;
-}
-
-body.authorized_applications #authorized-applications .row:not(:first-child):not(.no-border) {
-  border-top-color: #1d1d1d;
-}
-
-body.authorized_applications .subnav-wrapper {
-  border-bottom-color: #1d1d1d;
-  color: #fff;
-}
-
-#boxes-wrapper .row .genres-stat-box {
-  background-color: #000;
-}
-
-#charts-wrapper {
-  background-color: #1d1d1d;
-}
-
-#charts-wrapper h2 {
-  color: #fff;
-}
-
-#charts-wrapper h2 .see-more {
-  color: #fff;
-}
-
-#charts-wrapper h2 .see-more:hover {
-  color: #ed1c24;
 }
 
 #charts-wrapper h3 {
   color: #ababab;
 }
 
-#charts-wrapper .genre-bars.light .bar label {
-  color: #fff;
+#charts-wrapper h3 .plays {
+  color: gray;
 }
 
-#charts-wrapper .genre-bars.light .bar label .count a:not(:hover) {
+body:not(.dark-knight) .genre-bars.light .bar label {
   color: #ababab;
 }
 
-#collection-items {
+.genre-bars .bar label .count {
+  color: gray;
+}
+
+code {
   background-color: #1d1d1d;
+  border-color: #1d1d1d;
+  color: #ed1c24;
 }
 
-#collection-items h2 {
-  color: #fff;
+.comment-wrapper {
+  background-color: #151515;
 }
 
-#collection-items h2 .time-spent {
+.comment-wrapper .interactions a.alt {
+  color: #ed1c24;
+}
+
+.comment-wrapper .interactions a .text-wrapper .under-count {
   color: #ababab;
 }
 
-#collection-items .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#collection-items .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#collection-items .posters .titles-link {
+.comment-wrapper.list .above-comment .user-name h4 a.username {
   color: #fff;
 }
 
-body.hidden_items section {
-  background-color: #1d1d1d;
+.comment-wrapper.featured .above-comment {
+  background-color: #333;
 }
 
-body.hidden_items h2 {
+.comment-wrapper .above-comment {
+  background-color: #333;
+}
+
+.comment-wrapper .above-comment .date {
   color: #fff;
 }
 
-body.hidden_items h3 {
+#main-comment .interactions a.alt {
+  color: #ed1c24;
+}
+
+#main-comment .interactions a .text-wrapper .under-count {
   color: #ababab;
 }
 
-body.hidden_items .alert-no-data {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
+.info .comment-wrapper {
+  background-color: #1d1d1d;
+}
+
+.custom-list .list-info .user-actions .icon.btn-list-clone {
   color: #fff;
 }
 
-body.hidden_items .posters .poster {
-  border-color: #1d1d1d;
-}
-
-body.hidden_items .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-body.hidden_items .posters .titles-link .titles h3 {
+.custom-list .list-info .user-actions .icon.btn-list-subscribe {
   color: #fff;
 }
 
-body.hidden_items .posters .titles-link:hover {
+.custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu .divider {
+  background-color: #151515;
+}
+
+.dropdown-menu > li > a {
   color: #fff;
 }
 
-body.hidden_items .subnav-wrapper {
-  border-bottom-color: #1d1d1d;
+.dropdown-menu > li > a:hover {
+  background-color: #151515;
   color: #fff;
 }
 
-#history-items {
-  background-color: #1d1d1d;
-}
-
-#history-items h2 {
+.dropdown-menu > li > a:focus {
+  background-color: #151515;
   color: #fff;
 }
 
-#history-items h2 .time-spent {
-  color: #ababab;
-}
-
-#history-items .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#history-items .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#history-items .posters .titles-link {
+.filter-dropdown .metadata .trakt-icon-wand {
   color: #fff;
 }
 
-#huckster-desktop-wrapper.dark, #huckster-desktop-wrapper.light {
-  background-color: #1d1d1d;
+.filter-dropdown .metadata .caret {
+  color: #fff;
 }
 
-#huckster-desktop-wrapper.dark .huckster-vip-info, #huckster-desktop-wrapper.light .huckster-vip-info {
-  background-color: #1d1d1d;
-  color: #ed1c24;
+body header#top-nav #header-search #header-search-query {
+  background-color: #333;
+  color: #fff;
 }
 
-#huckster-desktop-wrapper .huckster-dfp {
-  background-color: #3a3a3a;
+body header#top-nav #header-search #header-search-type .dropdown-toggle {
+  border-color: #151515;
 }
 
-body.users #huckster-desktop-wrapper.dark {
-  background-color: #1d1d1d;
+body header#top-nav #header-search #header-search-type a {
+  color: #fff;
 }
 
-body.users #huckster-desktop-wrapper.dark .huckster-vip-info {
-  background-color: #1d1d1d;
+#huckster-content-page,
+#huckster-desktop-wrapper,
+#huckster-mobile-wrappe,
+.huckster-grid-item {
+  display: none;
 }
 
-#huckster-content-page {
-  background-color: #1d1d1d;
-}
-
-#huckster-content-page .huckster-vip-info {
-  background-color: #1d1d1d;
-  color: #ed1c24;
-}
-
-.watched #huckster-desktop-wrapper.add-top {
-  background-color: #1d1d1d;
-}
-
-.watched #huckster-desktop-wrapper.add-top .huckster-vip-info {
-  background-color: #1d1d1d;
-  color: #ed1c24;
-}
-
-#overview #huckster-desktop-wrapper {
-  background-color: #1d1d1d;
-}
-
-#overview #huckster-desktop-wrapper .huckster-vip-info {
-  background-color: #1d1d1d;
-  color: #ed1c24;
-}
-
+#huckster-desktop-wrapper.visible,
 #huckster-desktop-sidenav {
-  background-color: #3a3a3a;
+  visibility: hidden;
 }
 
-#huckster-desktop-sidenav .huckster-vip-info {
-  background-color: #1d1d1d;
-  color: #ed1c24;
-}
-
-#inbox-wrapper {
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-#inbox-wrapper .notification-row:not(:first-of-type) {
-  border-top-color: #fff;
-}
-
-#inbox-wrapper a {
-  color: #ed1c24;
-}
-
-#inbox-wrapper a:hover, #inbox-wrapper a:focus {
-  color: #ed1c24;
-}
-
-.list-description-wrapper .subnav-text {
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
-section .list-rows {
-  background-color: #1d1d1d;
-  -webkit-box-shadow: -200px 1px 0 1px #1d1d1d, 200px 1px 0 1px #1d1d1d;
-  box-shadow: -200px 1px 0 1px #1d1d1d, 200px 1px 0 1px #1d1d1d;
-}
-
-section .list-rows .comment-wrapper.list {
-  background-color: #3a3a3a;
-}
-
-section .list-rows .comment-wrapper.list .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-section .list-rows .comment-wrapper.list .user-name h4 {
-  color: #fff;
-}
-
-section .list-rows .comment-wrapper.list .user-name h4 a.username {
-  color: #fff;
-}
-
-section .list-rows .comment-wrapper.list .above-comment .interactions .user-actions .btn-list-subscribe {
-  color: #fff;
-}
-
-section .list-rows .custom-list .list-info .info h3 {
-  color: #ed1c24;
-}
-
-section .list-rows .custom-list .list-info .info h3:hover {
-  color: #ed1c24;
-}
-
-section .list-rows .custom-list .list-info .info .overview p {
-  color: #fff;
-}
-
-section .list-rows .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+#info-wrapper .sidebar .poster {
+  border: 0 !important;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-#main-settings {
+#info-wrapper .sidebar .streaming-links {
   background-color: #1d1d1d;
-  color: #fff;
-}
-
-#main-settings .panel-default {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-}
-
-#main-settings .panel-default > .panel-heading {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-  color: #fff;
-}
-
-#main-settings #info-wrapper .sidebar .sections li {
-  border-bottom-color: #fff;
-}
-
-#main-settings #info-wrapper .sidebar .sections li a {
-  color: #fff;
-}
-
-#main-settings #info-wrapper .sidebar .sections li a:hover {
-  color: #ed1c24;
-}
-
-#main-settings #info-wrapper .sidebar .sections li.active a {
-  color: #ed1c24;
-}
-
-#main-settings .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-#main-settings .form-control {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-#main-settings .form-control::-webkit-input-placeholder {
-  color: #ababab;
-}
-
-#main-settings .form-control:-ms-input-placeholder {
-  color: #ababab;
-}
-
-#main-settings .form-control::-ms-input-placeholder {
-  color: #ababab;
-}
-
-#main-settings .form-control::placeholder {
-  color: #ababab;
-}
-
-#main-settings .form-control:focus {
-  border-color: #ed1c24;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-#main-settings .form-group .under-help {
-  color: #ababab;
+#info-wrapper .sidebar .btn-watch-now {
+  background-color: #333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-#main-settings .input-group-addon {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
+#info-wrapper .sidebar .sections li a {
   color: #fff;
 }
 
-#main-settings .input-group-addon:hover {
-  background-color: #ed1c24;
-  border-color: #ed1c24;
-  color: #fff;
-}
-
-#main-settings h3.instructions {
-  background-color: #3a3a3a;
-}
-
-#main-settings hr {
-  border-top-color: #1d1d1d;
-}
-
-body.settings section#main-settings #info-wrapper .sidebar .sections li:first-child {
-  border-top-color: #fff;
-}
-
-body.settings .disable-account-wrapper a {
+#info-wrapper .sidebar .sections li a:hover {
   color: #ed1c24;
 }
 
-body.settings .disable-account-wrapper a:hover {
-  text-decoration: underline;
+#info-wrapper .sidebar .sections li a.see-more-link:hover, #info-wrapper .sidebar .sections li a.see-more-link:focus {
+  color: #ed1c24;
 }
 
-body.movies #info-wrapper {
-  background-color: #1d1d1d;
+#info-wrapper .sidebar .external li a {
+  background-color: #333;
+  border-color: #333;
   color: #fff;
 }
 
-body.movies #info-wrapper .affiliate-links .section a {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.movies #info-wrapper .affiliate-links .section a:hover {
+#info-wrapper .sidebar .external li a:hover {
   background-color: #ed1c24;
   border-color: #ed1c24;
 }
 
-body.movies #info-wrapper .sidebar .poster {
-  border-width: 0 !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.movies #info-wrapper .sidebar .streaming-links {
-  background-color: #3a3a3a;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.movies #info-wrapper .sidebar .btn-watch-now {
-  background-color: #3a3a3a;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+#info-wrapper .affiliate-links .section a {
+  background-color: #333;
+  border-color: #333;
   color: #fff;
 }
 
-body.movies #info-wrapper .sidebar .btn-watch-now .under-info {
-  color: #fff;
-}
-
-body.movies #info-wrapper .sidebar .btn-watch-now:hover {
-  background-color: #ed1c24;
-}
-
-body.movies #info-wrapper .sidebar .sections li {
-  border-bottom-color: #fff;
-}
-
-body.movies #info-wrapper .sidebar .sections li a {
-  color: #fff;
-}
-
-body.movies #info-wrapper .sidebar .sections li a:hover {
-  color: #ed1c24;
-}
-
-body.movies #info-wrapper .sidebar .sections li.active a {
-  color: #ed1c24;
-}
-
-body.movies #info-wrapper .sidebar .external li a {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.movies #info-wrapper .sidebar .external li a:hover {
+#info-wrapper .affiliate-links .section a:hover {
   background-color: #ed1c24;
   border-color: #ed1c24;
 }
 
-body.movies #info-wrapper ul.additional-stats li label {
-  color: #ababab;
+#info-wrapper .info .action-buttons > .btn:not(.btn-checkin):not(.selected):not(:hover) {
+  background-color: #151515;
 }
 
-body.movies #info-wrapper ul.additional-stats li a {
-  color: #ed1c24;
-}
-
-body.movies #info-wrapper ul.additional-stats li a:hover {
-  text-decoration: underline;
-}
-
-body.movies #info-wrapper .summary-activity {
+#info-wrapper .info .action-buttons > .btn .side-btn {
   background-color: #1d1d1d;
-}
-
-body.movies #info-wrapper .summary-activity .tabs .tab {
-  border: solid 1px #3a3a3a;
   color: #fff;
 }
 
-body.movies #info-wrapper .summary-activity .tabs .tab.selected {
-  background-color: #3a3a3a;
-}
-
-body.movies #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper {
-  background-color: #3a3a3a;
-  border: solid 1px #3a3a3a;
-}
-
-body.movies #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-body.movies #info-wrapper .info .action-buttons .btn-watch:not(:hover):not(.selected),
-body.movies #info-wrapper .info .action-buttons .btn-collect:not(:hover):not(.selected),
-body.movies #info-wrapper .info .action-buttons .btn-list:not(:hover):not(.selected),
-body.movies #info-wrapper .info .action-buttons .btn-comment:not(:hover):not(.selected) {
-  background-color: transparent;
-}
-
-body.movies #info-wrapper .info #actors .posters ul li .poster {
-  border: 0;
-}
-
-body.movies #info-wrapper .info #actors .posters ul li .name {
-  color: #ed1c24;
-}
-
-body.movies #info-wrapper .info #actors .posters ul li .character {
+#info-wrapper .info #actors .posters ul li .name {
   color: #fff;
 }
 
-body.movies #info-wrapper .info #actors .posters ul:hover li .titles .name {
+#info-wrapper .info #actors .posters ul li .character {
   color: #ed1c24;
 }
 
-body.movies #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
-  background-color: #3a3a3a;
+#info-wrapper .season-links .links ul li a.selected {
+  color: #ed1c24;
 }
 
-body.movies #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+#main-search {
+  background-color: #333;
+}
+
+#main-search input.footer-search {
+  background-color: #151515;
+  border: 1px solid #151515;
+}
+
+#main-search input.footer-search:focus {
+  border: 1px solid #ed1c24;
+  -webkit-box-shadow: 0 0 15px rgba(237, 28, 36, 0.5);
+  box-shadow: 0 0 15px rgba(237, 28, 36, 0.5);
+}
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #ed1c24;
 }
 
-body.movies #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more {
-  color: #ed1c24;
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more:hover {
-  text-decoration: underline;
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies #info-wrapper #recent-comments-wrapper #comments h3 {
-  color: #ababab;
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies #info-wrapper #recent-comments-wrapper #comments h3:hover {
-  text-decoration: underline;
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #333;
 }
 
-body.movies #info-wrapper #recent-comments-wrapper #comments .active h3 {
-  color: #ed1c24;
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies .actor-tooltip .tooltip-inner {
-  background-color: #3a3a3a;
-  color: #ed1c24;
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies .actor-tooltip .tooltip-inner .alt {
-  color: #fff;
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
-body.movies .comment-wrapper {
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-body.movies .comment-wrapper .above-comment {
-  background-color: #3a3a3a;
-}
-
-body.movies .comment-wrapper .user-name h4 {
-  color: #fff;
-}
-
-body.movies .comment-wrapper .user-name h4 a.username {
-  color: #ed1c24;
-}
-
-body.movies .comment-wrapper .user-name h4 a.username:hover {
-  text-decoration: underline;
-}
-
-body.movies .comment-wrapper .date {
-  color: #fff;
-}
-
-body.movies .comment-wrapper .new-reply-wrapper .reply-field textarea {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-body.movies .comment-wrapper.list {
-  background-color: #3a3a3a;
-}
-
-body.movies .comment-wrapper.list .user-name h4 {
-  color: #fff;
-}
-
-body.movies .comment-wrapper.list .user-name h4 a.username {
-  color: #fff;
-}
-
-body.movies .custom-list .list-info .info h3 {
-  color: #ed1c24;
-}
-
-body.movies .custom-list .list-info .info h3:hover {
-  color: #ed1c24;
-}
-
-body.movies .custom-list .list-info .info .overview p {
-  color: #fff;
-}
-
-body.movies .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-#network-user-wrapper {
-  background-color: #1d1d1d;
-}
-
-#network-user-wrapper .user .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-#network-user-wrapper .user a:nth-child(2) {
-  color: #fff;
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #ed1c24;
 }
 
 #network-wrapper {
-  background-color: #1d1d1d;
-}
-
-#network-wrapper .alert-no-data {
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
-#network-wrapper h2 {
-  color: #fff;
+  background-color: #151515;
 }
 
 #network-wrapper .posters .poster {
@@ -741,154 +316,177 @@ body.movies .custom-list .list-info .posters .poster-items-wrapper .poster-items
 }
 
 #network-wrapper .posters .action {
-  border-color: #3a3a3a;
+  background-color: #333;
+  border-color: #333;
 }
 
 #network-wrapper .posters .poster-under {
-  background-color: #3a3a3a;
-  color: #fff;
+  background-color: #333;
 }
 
 #network-wrapper .posters .poster-under .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
+  background-color: #333;
+  border-color: #333;
+}
+
+#network-wrapper .posters .poster-under .text a.username {
+  font-weight: normal;
 }
 
 #network-wrapper .posters .activity-date {
-  background-color: #1d1d1d;
+  background-color: #333;
   color: #fff;
-}
-
-body.notifications section {
-  background-color: #1d1d1d;
-}
-
-body.notifications h2 {
-  color: #fff;
-}
-
-body.notifications h3 {
-  color: #ababab;
-}
-
-body.notifications .alert-info {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.notifications .notifications-table {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-  color: #fff;
-}
-
-body.notifications .notifications-table .panel-heading {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-  color: #fff;
-}
-
-body.notifications .notifications-table .table tbody > tr:hover {
-  background-color: #3a3a3a;
-}
-
-body.notifications .notifications-table .table tbody > tr > td {
-  border-top-color: #1d1d1d;
-}
-
-body.notifications .notifications-table .table tbody > tr > td:first-child {
-  padding-left: 3em;
 }
 
 #ondeck-wrapper {
-  background-color: #1d1d1d;
-}
-
-#ondeck-wrapper h2 {
-  color: #fff;
-}
-
-#ondeck-wrapper h2 .feed-icons .feed-icon {
-  color: #fff;
-}
-
-#ondeck-wrapper h2 .feed-icons .feed-icon:hover {
-  color: #ed1c24;
-}
-
-#ondeck-wrapper h2 .see-more {
-  color: #fff;
-}
-
-#ondeck-wrapper h2 .see-more:hover {
-  color: #ed1c24;
-}
-
-#ondeck-wrapper .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#ondeck-wrapper .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#ondeck-wrapper .posters .titles-link {
-  color: #fff;
+  background-color: #151515;
 }
 
 #ondeck-wrapper .ignore {
-  color: #ababab;
+  color: #fff;
 }
 
 #ondeck-wrapper .ignore:hover {
   color: #ed1c24;
 }
 
-.pagination > li > a {
-  background-color: #1d1d1d;
+#ondeck-wrapper .posters .titles-link {
   color: #fff;
 }
 
-.pagination > li > a:focus {
-  background-color: #1d1d1d;
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  background-color: #151515;
+  border-color: #151515;
+  color: gray;
 }
 
-.pagination > .disabled > a {
-  background-color: #1d1d1d;
-}
-
-.pagination > .disabled > a:hover {
-  background-color: #1d1d1d;
-}
-
-.pagination > .disabled > a > div {
+ul.pagination li a {
   color: #fff;
 }
 
-.pagination > .gap > a > div {
+ul.pagination li a:hover {
+  color: #ed1c24;
+}
+
+ul.pagination li:not(.active) a {
+  background-color: inherit;
+}
+
+ul.pagination .disabled a {
+  color: gray;
+}
+
+ul.pagination .gap a {
   color: #fff;
 }
 
-#progress-wrapper {
-  background-color: #1d1d1d;
-}
-
-#progress-wrapper .posters .poster {
-  border: 0;
-}
-
-#progress-wrapper .quick-icons {
-  background-color: #3a3a3a;
-}
-
-#progress-wrapper .row .main-info .percentage {
+ul.pagination .gap a:hover {
   color: #fff;
 }
 
-#progress-wrapper .row .main-info p {
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline td, .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th {
+  background-color: #333;
+  border-color: #fff;
   color: #fff;
+  font-weight: normal;
+}
+
+.popover {
+  background-color: #333;
+  color: #fff !important;
+}
+
+.popover .data-wrapper {
+  background-color: #333;
+}
+
+.popover .data-wrapper .form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+  background-color: #333;
+  border-top-color: #333;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline td.xdsoft_current {
+  color: #fff;
+  font-weight: normal;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th {
+  color: #ed1c24;
+  font-weight: normal;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th.xdsoft_current {
+  color: #fff;
+  font-weight: normal;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_month {
+  color: #fff;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_year {
+  color: #fff;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_timepicker .xdsoft_time_box {
+  border-color: #fff;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_timepicker .xdsoft_time_box > div > div {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+  font-weight: normal;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled:hover {
+  color: #fff !important;
+}
+
+.popover.bottom > .arrow::after {
+  border-bottom-color: #333;
+}
+
+.popover-title {
+  background-color: #333;
+  border-bottom-color: #333;
+}
+
+.xdsoft_datetimepicker .xdsoft_prev {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_next {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_today_button {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
+.posters .poster {
+  border-color: #151515;
+}
+
+.posters > div .quick-icons {
+  border-color: #151515;
+}
+
+.quick-icons {
+  background-color: #333;
 }
 
 #progress-wrapper .row .main-info .seasons {
@@ -899,723 +497,177 @@ body.notifications .notifications-table .table tbody > tr > td:first-child {
   color: #fff;
 }
 
-#progress-wrapper .row .main-info .seasons .season-toggle .season-title {
-  color: #fff;
-}
-
 #progress-wrapper .row .main-info .seasons .season-toggle .season {
   color: #fff;
 }
 
-#progress-wrapper .row .main-info .seasons .season-toggle .ignore {
-  color: #ababab;
-}
-
-#progress-wrapper .row .main-info .seasons .season-toggle .episode-count {
-  color: #ababab;
-}
-
-#rating-items {
-  background-color: #1d1d1d;
-}
-
-#rating-items h2 {
+#progress-wrapper .row .main-info .seasons .all-toggle .fa {
   color: #fff;
 }
 
-#rating-items .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#rating-items .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#rating-items .posters .titles-link {
-  color: #fff;
-}
-
-#recent-wrapper {
-  background-color: #1d1d1d;
-}
-
-#recent-wrapper h2 {
-  color: #fff;
-}
-
-#recent-wrapper h2 .see-more {
-  color: #fff;
-}
-
-#recent-wrapper h2 .see-more:hover {
-  color: #ed1c24;
-}
-
-#recent-wrapper .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#recent-wrapper .posters .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#recent-wrapper .posters .titles-link {
-  color: #fff;
+#progress-wrapper .posters .poster {
+  border: 0;
 }
 
 #recommendations-wrapper {
-  background-color: #1d1d1d;
+  background-color: #151515;
 }
 
-#recommendations-wrapper .quick-icons {
-  background-color: #3a3a3a;
-}
-
-#recommendations-wrapper .titles h3 {
+#recommendations-wrapper .grid-item h4 a {
   color: #fff;
 }
 
-#recommendations-wrapper .titles h3:hover {
-  text-decoration: underline;
-}
-
-#recommendations-wrapper .titles h4 .ignore {
-  color: #ababab;
-}
-
-#recommendations-wrapper .titles h4 .ignore:hover {
+#recommendations-wrapper .grid-item h4:hover a {
   color: #ed1c24;
 }
 
 #schedule-wrapper {
+  background-color: #151515;
+}
+
+#seasons-episodes-sortable .under-info .titles {
   background-color: #1d1d1d;
 }
 
-#schedule-wrapper .alert-no-data {
-  background-color: #3a3a3a;
+#seasons-episodes-sortable .under-info h3 a {
   color: #fff;
 }
 
-#schedule-wrapper h2 {
-  color: #fff;
-}
-
-#schedule-wrapper h2 .feed-icons .feed-icon {
-  color: #fff;
-}
-
-#schedule-wrapper h2 .feed-icons .feed-icon:hover {
-  color: #ed1c24;
-}
-
-#schedule-wrapper h2 .see-more {
-  color: #fff;
-}
-
-#schedule-wrapper h2 .see-more:hover {
-  color: #ed1c24;
-}
-
-#schedule-wrapper h3 {
-  color: #fff;
-}
-
-#schedule-wrapper h5 {
-  color: #fff;
-}
-
-#schedule-wrapper h6 {
-  color: #ababab;
-}
-
-#schedule-wrapper .schedule-episode .btn-watch-now {
-  color: #fff;
-}
-
-#schedule-wrapper .schedule-episode:not(:first-of-type) {
-  border-top-color: #fff;
-}
-
-#schedule-wrapper a {
-  color: #ed1c24;
-}
-
-#schedule-wrapper a:hover, #schedule-wrapper a:focus {
-  color: #ed1c24;
-}
-
-body.sharing section {
+#seasons-episodes-sortable .episode-stats {
   background-color: #1d1d1d;
 }
 
-body.sharing h2 {
-  color: #fff;
+section {
+  background-color: #151515;
 }
 
-body.sharing h3 {
-  color: #ababab;
+.custom-list .list-info .info .overview[data-readmore][aria-expanded='false'] .shade,
+.subnav-text .text[data-readmore][aria-expanded='false'] .shade {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 243, 243, 0)), to(#151515));
+  background-image: -webkit-linear-gradient(top, rgba(243, 243, 243, 0) 0%, #151515 100%);
+  background-image: linear-gradient(to bottom, rgba(243, 243, 243, 0) 0%, #151515 100%);
 }
 
-body.sharing .alert-info {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.sharing .notifications-table {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-  color: #fff;
-}
-
-body.sharing .notifications-table .panel-heading {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
-  color: #fff;
-}
-
-body.sharing .notifications-table .table tbody > tr:hover {
-  background-color: #3a3a3a;
-}
-
-body.sharing .notifications-table .table tbody > tr > td {
-  border-top-color: #1d1d1d;
-}
-
-body.sharing .notifications-table .table tbody > tr > td:first-child {
-  padding-left: 3em;
-}
-
-body.sharing .form-control {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.sharing .form-control::-webkit-input-placeholder {
-  color: #ababab;
-}
-
-body.sharing .form-control:-ms-input-placeholder {
-  color: #ababab;
-}
-
-body.sharing .form-control::-ms-input-placeholder {
-  color: #ababab;
-}
-
-body.sharing .form-control::placeholder {
-  color: #ababab;
-}
-
-body.sharing .form-control:focus {
-  border-color: #ed1c24;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.shows #info-wrapper {
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-body.shows #info-wrapper .affiliate-links .section a {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.shows #info-wrapper .affiliate-links .section a:hover {
-  background-color: #ed1c24;
-  border-color: #ed1c24;
-}
-
-body.shows #info-wrapper .sidebar .poster {
-  border-width: 0 !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.shows #info-wrapper .streaming-links {
-  background-color: #3a3a3a;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.shows #info-wrapper .btn-watch-now {
-  background-color: #3a3a3a;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #fff;
-}
-
-body.shows #info-wrapper .btn-watch-now .under-info {
-  color: #fff;
-}
-
-body.shows #info-wrapper .btn-watch-now:hover {
-  background-color: #ed1c24;
-}
-
-body.shows #info-wrapper .sections li {
-  border-bottom-color: #fff;
-}
-
-body.shows #info-wrapper .sections li a {
-  color: #fff;
-}
-
-body.shows #info-wrapper .sections li a:hover {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper .sections li.active a {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper .external li a {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.shows #info-wrapper .external li a:hover {
-  background-color: #ed1c24;
-  border-color: #ed1c24;
-}
-
-body.shows #info-wrapper ul.additional-stats li label {
-  color: #ababab;
-}
-
-body.shows #info-wrapper .summary-activity {
+#boxes-wrapper .row .genres-stat-box {
   background-color: #1d1d1d;
 }
 
-body.shows #info-wrapper .summary-activity .tabs .tab {
-  border: solid 1px #3a3a3a;
-  color: #fff;
-}
-
-body.shows #info-wrapper .summary-activity .tabs .tab.selected {
-  background-color: #3a3a3a;
-}
-
-body.shows #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper {
-  background-color: #3a3a3a;
-  border: solid 1px #3a3a3a;
-}
-
-body.shows #info-wrapper .summary-activity .tab-content .tab-pane .users-wrapper .user-avatar img {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-body.shows #info-wrapper #recent-episodes .see-more-link .see-more {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper #recent-episodes .see-more-link .see-more:hover {
-  text-decoration: underline;
-}
-
-body.shows #info-wrapper #recent-episodes .quick-icons {
-  background-color: #3a3a3a;
-}
-
-body.shows #info-wrapper .info .action-buttons .btn-watch:not(:hover):not(.selected),
-body.shows #info-wrapper .info .action-buttons .btn-collect:not(:hover):not(.selected),
-body.shows #info-wrapper .info .action-buttons .btn-list:not(:hover):not(.selected),
-body.shows #info-wrapper .info .action-buttons .btn-comment:not(:hover):not(.selected) {
-  background-color: transparent;
-}
-
-body.shows #info-wrapper .info #actors .posters ul li .poster {
-  border: 0;
-}
-
-body.shows #info-wrapper .info #actors .posters ul li .name {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper .info #actors .posters ul li .character {
-  color: #fff;
-}
-
-body.shows #info-wrapper .info #actors .posters ul:hover li .titles .name {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
-  background-color: #3a3a3a;
-}
-
-body.shows #info-wrapper .info #actors .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #ed1c24;
-}
-
-body.shows #info-wrapper #seasons .btn-default {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-body.shows #info-wrapper #seasons .btn-default:hover {
-  background-color: #545454;
-  border-color: #545454;
-  color: #fff;
-}
-
-body.shows #info-wrapper #seasons .open > .btn-default {
-  background-color: #545454;
-  border-color: #545454;
-  color: #fff;
-}
-
-body.shows #info-wrapper #seasons .open .dropdown-menu {
+#bottom-stats-wrapper .col-stat.alt {
   background-color: #1d1d1d;
-}
-
-body.shows #info-wrapper #seasons .open .dropdown-menu li a {
-  color: #fff;
-}
-
-body.shows #info-wrapper #seasons .open .dropdown-menu li a:hover {
-  background-color: #3a3a3a;
-}
-
-body.shows #info-wrapper #seasons .open .divider {
-  background-color: #3a3a3a;
-}
-
-body.shows #info-wrapper #seasons .open .dropdown-header {
-  color: gray;
-}
-
-body.shows #info-wrapper #seasons-episodes-sortable .poster {
-  border-color: #1d1d1d;
-}
-
-body.shows #info-wrapper #seasons-episodes-sortable > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-body.shows #info-wrapper #seasons-episodes-sortable .titles-link {
-  color: #fff;
-}
-
-body.shows #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more {
-  color: #ed1c24;
-}
-
-body.shows #info-wrapper #recent-comments-wrapper #comments .see-more-link .see-more:hover {
-  text-decoration: underline;
-}
-
-body.shows #info-wrapper #recent-comments-wrapper #comments h3 {
-  color: #ababab;
-}
-
-body.shows #info-wrapper #recent-comments-wrapper #comments h3:hover {
-  text-decoration: underline;
-}
-
-body.shows #info-wrapper #recent-comments-wrapper #comments .active h3 {
-  color: #ed1c24;
-}
-
-body.shows .actor-tooltip .tooltip-inner {
-  background-color: #3a3a3a;
-  color: #ed1c24;
-}
-
-body.shows .actor-tooltip .tooltip-inner .alt {
-  color: #fff;
-}
-
-body.shows .comment-wrapper {
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-body.shows .comment-wrapper .above-comment {
-  background-color: #3a3a3a;
-}
-
-body.shows .comment-wrapper .user-name h4 {
-  color: #fff;
-}
-
-body.shows .comment-wrapper .user-name h4 a.username {
-  color: #ed1c24;
-}
-
-body.shows .comment-wrapper .user-name h4 a.username:hover {
-  text-decoration: underline;
-}
-
-body.shows .comment-wrapper .date {
-  color: #fff;
-}
-
-body.shows .comment-wrapper .new-reply-wrapper .reply-field textarea {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-}
-
-body.shows .comment-wrapper.list {
-  background-color: #3a3a3a;
-}
-
-body.shows .comment-wrapper.list .user-name h4 {
-  color: #fff;
-}
-
-body.shows .comment-wrapper.list .user-name h4 a.username {
-  color: #fff;
-}
-
-body.shows .custom-list .list-info .info h3 {
-  color: #ed1c24;
-}
-
-body.shows .custom-list .list-info .info h3:hover {
-  color: #ed1c24;
-}
-
-body.shows .custom-list .list-info .info .overview p {
-  color: #fff;
-}
-
-body.shows .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.subnav-text {
-  background-color: #3a3a3a;
-  color: #fff;
 }
 
 .subnav-wrapper {
-  background-color: #1d1d1d;
-}
-
-.subnav-wrapper .btn-default {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
-  color: #fff;
-}
-
-.subnav-wrapper .btn-default:hover {
-  background-color: #545454;
-  border-color: #545454;
-  color: #fff;
-}
-
-.subnav-wrapper .open > .btn-default {
-  background-color: #545454;
-  border-color: #545454;
-  color: #fff;
-}
-
-.subnav-wrapper .open .dropdown-menu {
-  background-color: #1d1d1d;
-}
-
-.subnav-wrapper .open .dropdown-menu li a {
-  color: #fff;
-}
-
-.subnav-wrapper .open .dropdown-menu li a:hover {
-  background-color: #3a3a3a;
-}
-
-.subnav-wrapper .open .dropdown-menu .divider {
-  background-color: #3a3a3a;
-}
-
-.subnav-wrapper .open .dropdown-menu .dropdown-header {
-  color: gray;
-}
-
-.subnav-wrapper .comment-wrapper {
-  background-color: #1d1d1d;
-}
-
-.subnav-wrapper .comment-wrapper .above-comment .interactions a {
-  color: #ed1c24;
-}
-
-.subnav-wrapper .comment-wrapper .above-comment .interactions a .under-count {
-  color: #fff;
-}
-
-.subnav-wrapper .trakt-icon-swap-vertical {
-  color: #fff;
-}
-
-.subnav-wrapper .filter-dropdown {
-  color: #fff;
-}
-
-.subnav-wrapper .filter-dropdown .trakt-icon-divider {
-  color: #fff;
+  background-color: #151515;
 }
 
 .subnav-wrapper .right .feed-icon {
   color: #fff;
 }
 
-.subnav-wrapper .right .trakt-icon-heart {
-  color: #fff;
-}
-
-.subnav-wrapper .right #sort-direction {
-  color: #fff;
-}
-
-.subnav-wrapper .right .trakt-icon-eye {
-  color: #fff;
-}
-
-.subnav-wrapper .right .trakt-icon-wand {
-  color: #fff;
-}
-
-.subnav-wrapper .left .trakt-icon-wand,
-.subnav-wrapper .left .caret {
-  color: #fff;
-}
-
-.subnav-wrapper .left #btn-list-edit-lists {
-  color: #fff;
-}
-
 .subnav-wrapper.list-title-wrapper {
-  background-color: #1d1d1d;
+  background-color: #151515;
+}
+
+.subnav-wrapper .left h2 .right a {
   color: #fff;
 }
 
-.subnav-wrapper.list-title-wrapper .left h2 .right a {
+.filter-dropdown .icon.trakt-icon-divider {
   color: #fff;
 }
 
-#info-wrapper .season-links {
+.subnav-text {
+  background-color: #151515;
+}
+
+.users-wrapper {
+  background-color: #333;
+  border-color: #333;
+}
+
+.summary-activity .tabs .tab {
+  border-color: #333;
   color: #fff;
 }
 
-#info-wrapper .season-links .links ul li a {
+.summary-activity .tabs .tab.selected {
+  background-color: #333;
+  border-bottom-color: #333;
+}
+
+body {
   color: #fff;
 }
 
-#info-wrapper .season-links .links ul li a.selected {
+a {
   color: #ed1c24;
 }
 
-body.widgets .subnav-wrapper {
-  border-bottom-color: #1d1d1d;
-  color: #fff;
-}
-
-#user-comments {
-  background-color: #1d1d1d;
-}
-
-#user-comments .alert-no-data {
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
-#user-comments .posters .poster {
-  border-color: #1d1d1d;
-}
-
-#user-comments .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-#user-comments .posters .titles-link {
-  color: #fff;
-}
-
-#user-comments .comment-wrapper {
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-#user-comments .comment-wrapper .above-comment {
-  background-color: #3a3a3a;
-}
-
-#user-comments .comment-wrapper .user-name h4 {
-  color: #fff;
-}
-
-#user-comments .comment-wrapper .date {
-  color: #fff;
-}
-
-#user-comments .comment-wrapper .interactions a.alt {
+a:hover {
   color: #ed1c24;
 }
 
-body.watchlist section {
-  background-color: #1d1d1d;
-}
-
-body.watchlist h2 {
+h2 .feed-icons .feed-icon {
   color: #fff;
 }
 
-body.watchlist h3 {
+header#top-nav .navbar-nav.navbar-user #user-menu {
+  background-color: #333;
+}
+
+header#top-nav .navbar-nav.navbar-user #user-menu ul li.separator {
+  border-top-color: #151515;
+}
+
+header#top-nav .navbar-nav.navbar-user #user-menu ul li:hover a:hover {
+  background-color: #151515 !important;
+}
+
+header#top-nav .navbar-nav.navbar-user #user-menu ul li.dark-knight a {
+  display: none;
+}
+
+header#top-nav .navbar-nav.navbar-user:hover #user-menu {
+  background-color: #333;
+}
+
+#MyConfigs {
+  background-color: #1d1d1d;
+  border-color: #333 !important;
+}
+
+#MyConfigs .section_header {
+  background-color: #333;
+  border-color: #333;
+}
+
+#MyConfigs .section_desc {
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
   color: #ababab;
 }
 
-body.watchlist .alert-no-data {
-  background-color: #3a3a3a;
-  border-color: #3a3a3a;
+#MyConfigs input {
+  background-color: #333;
+  border: 1px solid #333;
   color: #fff;
 }
 
-body.watchlist .posters .poster {
-  border-color: #1d1d1d;
+#MyConfigs input:focus {
+  border: 1px solid #ed1c24;
+  outline: none;
 }
 
-body.watchlist .posters > div .quick-icons {
-  background-color: #3a3a3a;
-  border-color: #1d1d1d;
-}
-
-body.watchlist .posters .titles-link .titles h3 {
+#MyConfigs .saveclose_buttons {
+  background-color: #333;
+  border: 1px solid #333;
   color: #fff;
 }
 
-body.watchlist .posters .titles-link:hover {
-  color: #fff;
+#MyConfigs .saveclose_buttons:hover {
+  background-color: #404040;
 }
 
-body.widgets #widgets-wrapper {
-  background-color: #1d1d1d;
-}
-
-body.widgets #widgets-wrapper .widget-row.alt {
-  background-color: #1d1d1d;
-}
-
-body.widgets #widgets-wrapper .widget-row iframe {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-body.widgets #widgets-wrapper h3 {
-  color: #fff;
-}
-
-body.widgets #widgets-wrapper h4 {
-  color: #ababab;
+#MyConfigs .reset {
+  color: gray;
 }

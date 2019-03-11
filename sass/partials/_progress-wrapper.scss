@@ -1,63 +1,23 @@
 #progress-wrapper {
-  background-color: $dark;
+  .row .main-info .seasons {
+    background-color: $darkgrey;
 
-  //poster
-  .posters {
-    .poster {
-      border: 0;
-    }
-  }
-
-  //quick icons
-  .quick-icons {
-    background-color: $grey;
-  }
-
-  .row {
-    .main-info {
-
-      //percentage
-      .percentage {
+    .season-toggle {
+      .fa {
         color: $white;
       }
 
-      //text
-      p {
+      .season {
         color: $white;
       }
-
-      //seasons progress
-      .seasons {
-        background-color: $dark;
-
-        .season-toggle {
-
-          //+-
-          .fa {
-            color: $white;
-          }
-
-          //season title
-          .season-title {
-            color: $white;
-          }
-
-          //season
-          .season {
-            color: $white;
-          }
-
-          //ignore
-          .ignore {
-            color: darken($white, 33%);
-          }
-
-          //episode count
-          .episode-count {
-            color: darken($white, 33%);
-          }
-        }
-      }
     }
+
+    .all-toggle .fa {
+      color: $white;
+    }
+  }
+
+  .posters .poster {
+    border: 0;
   }
 }

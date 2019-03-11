@@ -1,0 +1,41 @@
+.mCS-rounded-dark.mCSB_scrollTools {
+  .mCSB_dragger {
+    .mCSB_dragger_bar {
+      background-color: $red;
+    }
+
+    &:hover .mCSB_dragger_bar {
+      background-color: $red;
+    }
+
+    &:active .mCSB_dragger_bar {
+      background-color: $red;
+    }
+
+    &.mCSB_dragger_onDrag .mCSB_dragger_bar {
+      background-color: $red;
+    }
+  }
+
+  .mCSB_draggerRail {
+    background-color: $grey;
+  }
+}
+
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger {
+  .mCSB_dragger_bar {
+    background-color: $red;
+  }
+
+  &:hover .mCSB_dragger_bar {
+    background-color: $red;
+  }
+
+  &:active .mCSB_dragger_bar {
+    background-color: $red;
+  }
+
+  &.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: $red;
+  }
+}

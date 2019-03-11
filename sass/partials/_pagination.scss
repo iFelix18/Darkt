@@ -1,39 +1,61 @@
-.pagination {
+%pagination {
+  background-color: $dark;
+  border-color: $dark;
+  color: darken($white, 50%);
+}
 
-  //normal
-  >li {
-    >a {
-      background-color: $dark;
+ul {
+  &.pagination {
+    li {
+      a {
+        color: $white;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
+      &:not(.active) a {
+        background-color: inherit;
+      }
+    }
+
+    .disabled a {
+      color: darken($white, 50%);
+    }
+
+    .gap a {
       color: $white;
 
-      &:focus {
-        background-color: $dark;
-      }
-    }
-  }
-
-  //disabled
-  >.disabled {
-    >a {
-      background-color: $dark;
-
       &:hover {
-        background-color: $dark;
-      }
-
-      //arrow
-      >div {
         color: $white;
       }
     }
   }
+}
 
-  //gap
-  >.gap {
-    >a {
-      >div {
-        color: $white;
-      }
+.pagination>.disabled {
+  >span {
+    @extend %pagination;
+
+    &:hover {
+      @extend %pagination;
+    }
+
+    &:focus {
+      @extend %pagination;
+    }
+  }
+
+  >a {
+    @extend %pagination;
+
+    &:hover {
+      @extend %pagination;
+    }
+
+    &:focus {
+      @extend %pagination;
     }
   }
 }

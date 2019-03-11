@@ -1,0 +1,14 @@
+.users-wrapper {
+  background-color: $grey;
+  border-color: $grey;
+}
+
+.summary-activity .tabs .tab {
+  border-color: $grey;
+  color: $white;
+
+  &.selected {
+    background-color: $grey;
+    border-bottom-color: $grey;
+  }
+}

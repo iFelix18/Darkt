@@ -1,0 +1,45 @@
+.comment-wrapper {
+  background-color: $dark;
+
+  .interactions a {
+    &.alt {
+      color: $red;
+    }
+
+    .text-wrapper .under-count {
+      color: darken($white, 33%);
+    }
+  }
+
+  &.list .above-comment .user-name h4 a {
+    &.username {
+      color: $white;
+    }
+  }
+
+  &.featured .above-comment {
+    background-color: $grey;
+  }
+
+  .above-comment {
+    background-color: $grey;
+
+    .date {
+      color: $white;
+    }
+  }
+}
+
+#main-comment .interactions a {
+  &.alt {
+    color: $red;
+  }
+
+  .text-wrapper .under-count {
+    color: darken($white, 33%);
+  }
+}
+
+.info .comment-wrapper {
+  background-color: $darkgrey;
+}

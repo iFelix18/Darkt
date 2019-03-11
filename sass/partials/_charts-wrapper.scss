@@ -1,40 +1,15 @@
-#charts-wrapper {
-  background-color: $dark;
+#charts-wrapper h3 {
+  color: darken($white, 33%);
 
-  h2 {
-    color: $white;
-
-    //see more
-    .see-more {
-      color: $white;
-
-      &:hover {
-        color: $red;
-      }
-    }
+  .plays {
+    color: darken($white, 50%);
   }
+}
 
-  h3 {
-    color: darken($white, 33%);
-  }
+body:not(.dark-knight) .genre-bars.light .bar label {
+  color: darken($white, 33%);
+}
 
-  //graphic genres
-  .genre-bars {
-    &.light {
-      .bar {
-        label {
-          color: $white;
-
-          //graphic count
-          .count {
-            a {
-              &:not(:hover) {
-                color: darken($white, 33%);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+.genre-bars .bar label .count {
+  color: darken($white, 50%);
 }

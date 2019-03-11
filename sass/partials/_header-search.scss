@@ -1,0 +1,18 @@
+body header {
+  &#top-nav #header-search {
+    #header-search-query {
+      background-color: $grey;
+      color: $white;
+    }
+
+    #header-search-type {
+      .dropdown-toggle {
+        border-color: $dark;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

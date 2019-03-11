@@ -1,0 +1,9 @@
+.actor-tooltip .tooltip-inner {
+  background-color: $dark;
+  color: $white;
+
+  .alt {
+    color: $red;
+    font-weight: bold;
+  }
+}

@@ -1,43 +1,33 @@
 #network-wrapper {
   background-color: $dark;
 
-  .alert-no-data {
-    background-color: $grey;
-    color: $white;
-  }
-
-  h2 {
-    color: $white;
-  }
-
-  //posters
   .posters {
     .poster {
       border: 0;
     }
 
-    //action
     .action {
+      background-color: $grey;
       border-color: $grey;
     }
 
-    //activity
     .poster-under {
       background-color: $grey;
-      color: $white;
 
-      //avatar
-      .user-avatar {
-        img {
-          background-color: $grey;
-          border-color: $grey;
+      .user-avatar img {
+        background-color: $grey;
+        border-color: $grey;
+      }
+
+      .text a {
+        &.username {
+          font-weight: normal;
         }
       }
     }
 
-    //activity date
     .activity-date {
-      background-color: $dark;
+      background-color: $grey;
       color: $white;
     }
   }

@@ -1,0 +1,15 @@
+#main-search {
+  background-color: $grey;
+
+  input {
+    &.footer-search {
+      background-color: $dark;
+      border: 1px solid $dark;
+
+      &:focus {
+        border: 1px solid $red;
+        box-shadow: 0 0 15px rgba($red, .5);
+      }
+    }
+  }
+}

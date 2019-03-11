@@ -1,0 +1,11 @@
+#huckster-content-page,
+#huckster-desktop-wrapper,
+#huckster-mobile-wrappe,
+.huckster-grid-item {
+  display: none;
+}
+
+#huckster-desktop-wrapper.visible,
+#huckster-desktop-sidenav {
+  visibility: hidden;
+}

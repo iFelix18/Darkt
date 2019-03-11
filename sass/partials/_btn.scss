@@ -1,0 +1,51 @@
+%btn {
+  background-color: darken($grey, 5%);
+  border-color: darken($grey, 5%);
+  color: $white;
+}
+
+
+.btn {
+  &:focus {
+    outline: none;
+  }
+
+  &:active:focus {
+    outline: none;
+  }
+
+  &.active:focus {
+    outline: none;
+  }
+}
+
+.btn-default {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
+
+  &:hover {
+    @extend %btn;
+  }
+
+  &:focus {
+    @extend %btn;
+  }
+
+  &:active {
+    @extend %btn;
+  }
+
+  &.active {
+    @extend %btn;
+  }
+}
+
+.open>.btn-default.dropdown-toggle {
+  @extend %btn;
+}
+
+.btn-list-edit-items,
+#btn-list-edit-lists {
+  color: $white;
+}

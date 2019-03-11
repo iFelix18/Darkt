@@ -1,0 +1,21 @@
+.dropdown-menu {
+  background-color: $grey;
+
+  .divider {
+    background-color: $dark;
+  }
+
+  >li>a {
+    color: $white;
+
+    &:hover {
+      background-color: $dark;
+      color: $white;
+    }
+
+    &:focus {
+      background-color: $dark;
+      color: $white;
+    }
+  }
+}

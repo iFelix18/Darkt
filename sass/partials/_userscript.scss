@@ -1,0 +1,40 @@
+#MyConfigs {
+  background-color: $darkgrey;
+  border-color: $grey !important;
+
+  .section_header {
+    background-color: $grey;
+    border-color: $grey;
+  }
+
+  .section_desc {
+    background-color: $darkgrey;
+    border-color: $darkgrey;
+    color: darken($white, 33%);
+  }
+
+  input {
+    background-color: $grey;
+    border: 1px solid $grey;
+    color: $white;
+
+    &:focus {
+      border: 1px solid $red;
+      outline: none;
+    }
+  }
+
+  .saveclose_buttons {
+    background-color: $grey;
+    border: 1px solid $grey;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($grey, 5%);
+    }
+  }
+
+  .reset {
+    color: darken($white, 50%);
+  }
+}

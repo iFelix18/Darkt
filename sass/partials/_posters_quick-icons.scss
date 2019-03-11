@@ -1,0 +1,13 @@
+.posters {
+  .poster {
+    border-color: $dark;
+  }
+
+  >div .quick-icons {
+    border-color: $dark;
+  }
+}
+
+.quick-icons {
+  background-color: $grey;
+}
