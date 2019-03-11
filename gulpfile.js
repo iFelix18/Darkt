@@ -1,6 +1,7 @@
 'use strict'
 
 let autoprefixer = require('gulp-autoprefixer')
+let beautify = require('gulp-beautify')
 let gulp = require('gulp')
 let insert = require('gulp-file-insert')
 let rename = require('gulp-rename')
@@ -26,15 +27,18 @@ gulp.task('usercss', function () {
       '/* theme */': './css/theme.css'
     }))
     .pipe(rename('darkt.user.css'))
+    .pipe(beautify.css({
+      end_with_newline: true,
+      indent_size: 2,
+      preserve_newlines: false
+    }))
     .pipe(gulp.dest('./'))
 })
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
-      outputStyle: 'expanded',
-      indentType: 'space',
-      indentWidth: 2
+      outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(gulp.dest('./css'))
 })

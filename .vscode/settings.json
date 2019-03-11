@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "beautify.ignore": ["css/theme.css", "css/theme.user.css", "darkt.user.css"],
   "files.insertFinalNewline": true,
+  "beautify.ignore": ["css/theme.css", "darkt.user.css"],
   "javascript.validate.enable": false,
   "standard.enable": true,
   "standard.autoFixOnSave": true,
