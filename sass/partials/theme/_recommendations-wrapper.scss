@@ -1,9 +1,11 @@
 #recommendations-wrapper {
-  background-color: $dark;
+  .quick-icons {
+    background-color: $grey;
+  }
 
   .grid-item h4 {
     a {
-      color: $white;
+      color: $whitedark;
     }
 
     &:hover a {

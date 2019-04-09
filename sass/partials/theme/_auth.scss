@@ -1,0 +1,19 @@
+#auth-form-wrapper,
+.checkin-modal {
+  background-color: $dark;
+  box-shadow: none;
+
+  .auth-services-wrapper {
+    background-color: $dark;
+    border-color: $grey;
+  }
+
+  .bottom-wrapper {
+    background-color: $dark;
+    border-color: $grey;
+  }
+
+  .logo-wrapper .base {
+    background-color: $dark;
+  }
+}

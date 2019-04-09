@@ -1,0 +1,9 @@
+hr {
+  border-top-color: $grey;
+}
+
+#user-menu ul li {
+  &.dark-knight a {
+    display: none;
+  }
+}

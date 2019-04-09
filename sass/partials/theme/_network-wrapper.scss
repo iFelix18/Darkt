@@ -1,34 +1,33 @@
 #network-wrapper {
-  background-color: $dark;
-
   .posters {
     .poster {
       border: 0;
     }
 
-    .action {
-      background-color: $grey;
-      border-color: $grey;
-    }
-
     .poster-under {
       background-color: $grey;
+
+      .text {
+        color: $whitedark;
+      }
 
       .user-avatar img {
         background-color: $grey;
         border-color: $grey;
       }
+    }
 
-      .text a {
-        &.username {
-          font-weight: normal;
-        }
-      }
+    .action {
+      border-color: $grey;
     }
 
     .activity-date {
       background-color: $grey;
       color: $white;
     }
+  }
+
+  a:not(.username) {
+    color: $white;
   }
 }

@@ -1,0 +1,19 @@
+h2 .feed-icons .feed-icon {
+  color: $whitedark;
+}
+
+.filter-dropdown .icon.trakt-icon-divider {
+  color: $white;
+}
+
+.btn-list-edit-items {
+  color: $white;
+}
+
+#btn-list-edit-lists {
+  color: $white;
+}
+
+.btn-summary:not(.selected):not(:hover):not(.btn-checkin) {
+  background-color: $dark;
+}

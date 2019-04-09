@@ -1,0 +1,17 @@
+.form-control {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
+
+  &[disabled],
+  &[readonly] {
+    background-color: $grey;
+    border-color: $grey;
+    color: $white;
+  }
+
+  &:focus {
+    border-color: $red;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,13 @@
+#progress-wrapper .row .main-info .seasons {
+  background-color: $darkgrey;
+
+  >div .season-toggle {
+    .fa {
+      color: $white;
+    }
+
+    .season {
+      color: $white;
+    }
+  }
+}

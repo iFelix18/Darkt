@@ -1,0 +1,11 @@
+.applications,
+.authorized_applications,
+.settings,
+.widgets {
+  h3 {
+    &.instructions {
+      background-color: $darkgrey;
+      border-bottom: solid 1px $grey;
+    }
+  }
+}

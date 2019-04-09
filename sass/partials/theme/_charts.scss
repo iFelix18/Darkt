@@ -1,0 +1,11 @@
+#charts-wrapper h3 {
+  color: $whitedark;
+}
+
+body:not(.dark-knight) .genre-bars.light .bar label {
+  color: $white;
+
+  .count a {
+    color: $whitedark;
+  }
+}

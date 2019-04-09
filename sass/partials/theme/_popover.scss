@@ -1,0 +1,94 @@
+%popover-title {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
+}
+
+%popover-table {
+  background-color: $grey;
+  border-color: $whitedark;
+  color: $white;
+  font-weight: normal;
+}
+
+
+.popover {
+  background-color: $darkgrey;
+
+  .data-wrapper {
+    background-color: $grey;
+
+    input {
+      color: $white;
+    }
+
+    .xdsoft_datetimepicker {
+      color: $white;
+
+      &.xdsoft_inline {
+        background-color: $darkgrey;
+        border-top-color: $grey;
+
+        td {
+          @extend %popover-table;
+        }
+
+        th {
+          @extend %popover-table;
+        }
+
+        .xdsoft_timepicker .xdsoft_time_box {
+          border-color: $whitedark;
+
+          >div>div {
+            background-color: $grey;
+            border-color: $whitedark;
+            color: $white;
+            font-weight: normal;
+          }
+        }
+
+        .xdsoft_label>.xdsoft_select {
+          background-color: $grey;
+          border-color: $whitedark;
+          color: $white;
+        }
+      }
+
+      .xdsoft_prev {
+        filter: invert(100%);
+      }
+
+      .xdsoft_next {
+        filter: invert(100%);
+      }
+
+      .xdsoft_today_button {
+        filter: invert(100%);
+      }
+
+      .xdsoft_label i {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &.remove .popover-title {
+    color: $white !important;
+  }
+
+  &.bottom>.arrow {
+    &::after {
+      border-bottom-color: $grey;
+      border-top-color: $grey;
+    }
+  }
+}
+
+.popover-title {
+  @extend %popover-title;
+}
+
+.frame-wrapper .sidenav .feeds .popover .popover-title {
+  @extend %popover-title;
+}

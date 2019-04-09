@@ -1,0 +1,20 @@
+#ondeck-wrapper {
+  .posters {
+    .poster {
+      border: 0;
+    }
+
+    .titles-link {
+      color: $white;
+    }
+  }
+
+  .grid-item .quick-icons {
+    background-color: $grey;
+    border: 0;
+  }
+
+  .ignore:hover {
+    color: $red;
+  }
+}

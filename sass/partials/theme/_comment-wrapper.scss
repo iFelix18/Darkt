@@ -1,0 +1,51 @@
+.comment-wrapper {
+  background-color: $darkgrey;
+
+  &.featured {
+    background-color: $darkgrey;
+
+    .above-comment {
+      background-color: $grey;
+    }
+  }
+
+  &.list {
+    &:not(.subnav) {
+      background-color: $grey;
+      padding-bottom: 0;
+    }
+
+    .above-comment .user-name h4 a {
+      &.username {
+        color: $white;
+      }
+    }
+  }
+
+  .pill {
+    background-color: $red;
+    color: $white;
+  }
+
+  .above-comment {
+    background-color: $grey;
+
+    .date {
+      color: $white;
+    }
+  }
+
+  .comment mark {
+    background-color: $dark;
+    border-radius: 3px;
+    color: $red;
+    padding: 2px 4px;
+  }
+}
+
+body {
+  &.comments #info-wrapper .pill {
+    background-color: $red;
+    color: $white;
+  }
+}

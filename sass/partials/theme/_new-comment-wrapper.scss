@@ -1,0 +1,49 @@
+%comment {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
+}
+
+.new-comment-wrapper {
+  textarea {
+    @extend %comment;
+
+    &:focus {
+      border-color: $red;
+    }
+  }
+
+  &.update {
+    textarea {
+      @extend %comment;
+
+      &:focus {
+        border-color: $red;
+      }
+    }
+
+    .emojionearea .emojionearea-editor {
+      @extend %comment;
+
+      &:focus {
+        border-color: $red;
+      }
+    }
+
+    .under-help .checkboxes .btn-group .btn {
+      @extend %comment;
+    }
+  }
+
+  .emojionearea .emojionearea-editor {
+    @extend %comment;
+
+    &:focus {
+      border-color: $red;
+    }
+  }
+
+  .under-help .checkboxes .btn-group .btn {
+    @extend %comment;
+  }
+}

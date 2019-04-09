@@ -1,0 +1,10 @@
+.panel {
+  background-color: $darkgrey;
+  border-color: $grey;
+
+  .panel-heading {
+    background-color: $grey;
+    border-color: $grey;
+    color: $white;
+  }
+}

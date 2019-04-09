@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkt
-@version        3.0.1-20
+@version        3.1.0
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt.tv
 @author         Felix
@@ -28,180 +28,18 @@
 */
 @-moz-document domain("trakt.tv") {
   .trakt::after {
-    content: '\A                Darkt - Version 3.0.1-20';
+    content: '\A                Darkt - Version 3.1.0';
     white-space: pre;
   }
 
   .actor-tooltip .tooltip-inner {
-    background-color: #151515;
+    background-color: #333;
     color: #fff;
   }
 
   .actor-tooltip .tooltip-inner .alt {
     color: #ed1c24;
     font-weight: bold;
-  }
-
-  .alert-no-data {
-    background-color: #333;
-    color: #fff;
-  }
-
-  .subnav-text .text blockquote,
-  .custom-list .list-info .info .overview blockquote {
-    background-color: #1d1d1d;
-    border-left-color: #333;
-  }
-
-  .btn-default:hover,
-  .btn-default:focus,
-  .btn-default:active,
-  .btn-default.active,
-  .open>.btn-default.dropdown-toggle {
-    background-color: #262626;
-    border-color: #262626;
-    color: #fff;
-  }
-
-  .btn:focus {
-    outline: none;
-  }
-
-  .btn:active:focus {
-    outline: none;
-  }
-
-  .btn.active:focus {
-    outline: none;
-  }
-
-  .btn-default {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
-  }
-
-  .btn-list-edit-items,
-  #btn-list-edit-lists {
-    color: #fff;
-  }
-
-  #charts-wrapper h3 {
-    color: #ababab;
-  }
-
-  #charts-wrapper h3 .plays {
-    color: gray;
-  }
-
-  body:not(.dark-knight) .genre-bars.light .bar label {
-    color: #ababab;
-  }
-
-  .genre-bars .bar label .count {
-    color: gray;
-  }
-
-  code {
-    background-color: #1d1d1d;
-    border-color: #1d1d1d;
-    color: #ed1c24;
-  }
-
-  .comment-wrapper {
-    background-color: #151515;
-  }
-
-  .comment-wrapper .interactions a.alt {
-    color: #ed1c24;
-  }
-
-  .comment-wrapper .interactions a .text-wrapper .under-count {
-    color: #ababab;
-  }
-
-  .comment-wrapper.list .above-comment .user-name h4 a.username {
-    color: #fff;
-  }
-
-  .comment-wrapper.featured .above-comment {
-    background-color: #333;
-  }
-
-  .comment-wrapper .above-comment {
-    background-color: #333;
-  }
-
-  .comment-wrapper .above-comment .date {
-    color: #fff;
-  }
-
-  #main-comment .interactions a.alt {
-    color: #ed1c24;
-  }
-
-  #main-comment .interactions a .text-wrapper .under-count {
-    color: #ababab;
-  }
-
-  .info .comment-wrapper {
-    background-color: #1d1d1d;
-  }
-
-  .custom-list .list-info .user-actions .icon.btn-list-clone {
-    color: #fff;
-  }
-
-  .custom-list .list-info .user-actions .icon.btn-list-subscribe {
-    color: #fff;
-  }
-
-  .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .dropdown-menu {
-    background-color: #333;
-  }
-
-  .dropdown-menu .divider {
-    background-color: #151515;
-  }
-
-  .dropdown-menu>li>a {
-    color: #fff;
-  }
-
-  .dropdown-menu>li>a:hover {
-    background-color: #151515;
-    color: #fff;
-  }
-
-  .dropdown-menu>li>a:focus {
-    background-color: #151515;
-    color: #fff;
-  }
-
-  .filter-dropdown .metadata .trakt-icon-wand {
-    color: #fff;
-  }
-
-  .filter-dropdown .metadata .caret {
-    color: #fff;
-  }
-
-  body header#top-nav #header-search #header-search-query {
-    background-color: #333;
-    color: #fff;
-  }
-
-  body header#top-nav #header-search #header-search-type .dropdown-toggle {
-    border-color: #151515;
-  }
-
-  body header#top-nav #header-search #header-search-type a {
-    color: #fff;
   }
 
   #huckster-content-page,
@@ -216,6 +54,194 @@
     visibility: hidden;
   }
 
+  .alert-no-data {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #auth-form-wrapper,
+  .checkin-modal {
+    background-color: #151515;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #auth-form-wrapper .auth-services-wrapper,
+  .checkin-modal .auth-services-wrapper {
+    background-color: #151515;
+    border-color: #333;
+  }
+
+  #auth-form-wrapper .bottom-wrapper,
+  .checkin-modal .bottom-wrapper {
+    background-color: #151515;
+    border-color: #333;
+  }
+
+  #auth-form-wrapper .logo-wrapper .base,
+  .checkin-modal .logo-wrapper .base {
+    background-color: #151515;
+  }
+
+  #charts-wrapper h3 {
+    color: #bbb;
+  }
+
+  body:not(.dark-knight) .genre-bars.light .bar label {
+    color: #fff;
+  }
+
+  body:not(.dark-knight) .genre-bars.light .bar label .count a {
+    color: #bbb;
+  }
+
+  .comment-wrapper {
+    background-color: #1d1d1d;
+  }
+
+  .comment-wrapper.featured {
+    background-color: #1d1d1d;
+  }
+
+  .comment-wrapper.featured .above-comment {
+    background-color: #333;
+  }
+
+  .comment-wrapper.list:not(.subnav) {
+    background-color: #333;
+    padding-bottom: 0;
+  }
+
+  .comment-wrapper.list .above-comment .user-name h4 a.username {
+    color: #fff;
+  }
+
+  .comment-wrapper .pill {
+    background-color: #ed1c24;
+    color: #fff;
+  }
+
+  .comment-wrapper .above-comment {
+    background-color: #333;
+  }
+
+  .comment-wrapper .above-comment .date {
+    color: #fff;
+  }
+
+  .comment-wrapper .comment mark {
+    background-color: #151515;
+    border-radius: 3px;
+    color: #ed1c24;
+    padding: 2px 4px;
+  }
+
+  body.comments #info-wrapper .pill {
+    background-color: #ed1c24;
+    color: #fff;
+  }
+
+  .custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .custom-list .list-info .user-actions .icon.btn-list-subscribe {
+    color: #fff;
+  }
+
+  .dropdown .dropdown-menu,
+  .dropdown:not(.filter-dropdown) .dropdown-toggle,
+  .dropdown.open:not(.filter-dropdown)>.dropdown-toggle {
+    background-color: #333;
+    border-color: #1d1d1d;
+    color: #fff;
+  }
+
+  .dropdown .dropdown-menu>li>a {
+    color: #fff;
+  }
+
+  .dropdown .dropdown-menu>li>a:hover {
+    background-color: #1d1d1d;
+  }
+
+  .filter-dropdown .metadata .trakt-icon-wand {
+    color: #fff;
+  }
+
+  .filter-dropdown .metadata .caret {
+    color: #fff;
+  }
+
+  .form-control {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .form-control[disabled],
+  .form-control[readonly] {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .form-control:focus {
+    border-color: #ed1c24;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  header#top-nav #header-search #header-search-query {
+    background-color: #333;
+    color: #fff;
+  }
+
+  header a {
+    color: #fff;
+  }
+
+  h2 .feed-icons .feed-icon {
+    color: #bbb;
+  }
+
+  .filter-dropdown .icon.trakt-icon-divider {
+    color: #fff;
+  }
+
+  .btn-list-edit-items {
+    color: #fff;
+  }
+
+  #btn-list-edit-lists {
+    color: #fff;
+  }
+
+  .btn-summary:not(.selected):not(:hover):not(.btn-checkin) {
+    background-color: #151515;
+  }
+
+  #info-wrapper .sidebar .external li a,
+  #info-wrapper .affiliate-links .section a {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+
+  #info-wrapper .info #actors .posters ul li .name {
+    color: #fff;
+  }
+
+  #info-wrapper .info #actors .posters ul li .character {
+    color: #bbb;
+  }
+
+  #info-wrapper .info .action-buttons>.btn:not(.selected):not(:hover) .side-btn {
+    background-color: #000;
+    color: #fff;
+  }
+
   #info-wrapper .sidebar .poster {
     border: 0 !important;
     -webkit-box-shadow: none;
@@ -223,7 +249,7 @@
   }
 
   #info-wrapper .sidebar .streaming-links {
-    background-color: #1d1d1d;
+    background-color: #333;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -234,34 +260,9 @@
     box-shadow: none;
   }
 
-  #info-wrapper .sidebar .sections li a {
-    color: #fff;
-  }
-
-  #info-wrapper .sidebar .sections li a:hover {
-    color: #ed1c24;
-  }
-
-  #info-wrapper .sidebar .sections li a.see-more-link:hover,
-  #info-wrapper .sidebar .sections li a.see-more-link:focus {
-    color: #ed1c24;
-  }
-
-  #info-wrapper .sidebar .external li a {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
-  }
-
   #info-wrapper .sidebar .external li a:hover {
     background-color: #ed1c24;
     border-color: #ed1c24;
-  }
-
-  #info-wrapper .affiliate-links .section a {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
   }
 
   #info-wrapper .affiliate-links .section a:hover {
@@ -269,93 +270,36 @@
     border-color: #ed1c24;
   }
 
-  #info-wrapper .info .action-buttons>.btn:not(.btn-checkin):not(.selected):not(:hover) {
-    background-color: #151515;
-  }
-
-  #info-wrapper .info .action-buttons>.btn .side-btn {
-    background-color: #1d1d1d;
-    color: #fff;
-  }
-
-  #info-wrapper .info #actors .posters ul li .name {
-    color: #fff;
-  }
-
-  #info-wrapper .info #actors .posters ul li .character {
-    color: #ed1c24;
-  }
-
   #info-wrapper .season-links .links ul li a.selected {
     color: #ed1c24;
   }
 
-  #main-search {
-    background-color: #333;
+  .applications h3.instructions,
+  .authorized_applications h3.instructions,
+  .settings h3.instructions,
+  .widgets h3.instructions {
+    background-color: #1d1d1d;
+    border-bottom: solid 1px #333;
   }
 
-  #main-search input.footer-search {
-    background-color: #151515;
-    border: 1px solid #151515;
+  hr {
+    border-top-color: #333;
   }
 
-  #main-search input.footer-search:focus {
-    border: 1px solid #ed1c24;
-    -webkit-box-shadow: 0 0 15px rgba(237, 28, 36, 0.5);
-    box-shadow: 0 0 15px rgba(237, 28, 36, 0.5);
-  }
-
-  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
-    background-color: #333;
-  }
-
-  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-    background-color: #ed1c24;
-  }
-
-  #network-wrapper {
-    background-color: #151515;
+  #user-menu ul li.dark-knight a {
+    display: none;
   }
 
   #network-wrapper .posters .poster {
     border: 0;
   }
 
-  #network-wrapper .posters .action {
-    background-color: #333;
-    border-color: #333;
-  }
-
   #network-wrapper .posters .poster-under {
     background-color: #333;
+  }
+
+  #network-wrapper .posters .poster-under .text {
+    color: #bbb;
   }
 
   #network-wrapper .posters .poster-under .user-avatar img {
@@ -363,8 +307,8 @@
     border-color: #333;
   }
 
-  #network-wrapper .posters .poster-under .text a.username {
-    font-weight: normal;
+  #network-wrapper .posters .action {
+    border-color: #333;
   }
 
   #network-wrapper .posters .activity-date {
@@ -372,31 +316,52 @@
     color: #fff;
   }
 
-  #ondeck-wrapper {
-    background-color: #151515;
-  }
-
-  #ondeck-wrapper .ignore {
+  #network-wrapper a:not(.username) {
     color: #fff;
   }
 
-  #ondeck-wrapper .ignore:hover {
-    color: #ed1c24;
+  .new-comment-wrapper textarea,
+  .new-comment-wrapper.update textarea,
+  .new-comment-wrapper.update .emojionearea .emojionearea-editor,
+  .new-comment-wrapper.update .under-help .checkboxes .btn-group .btn,
+  .new-comment-wrapper .emojionearea .emojionearea-editor,
+  .new-comment-wrapper .under-help .checkboxes .btn-group .btn {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .new-comment-wrapper textarea:focus {
+    border-color: #ed1c24;
+  }
+
+  .new-comment-wrapper.update textarea:focus {
+    border-color: #ed1c24;
+  }
+
+  .new-comment-wrapper.update .emojionearea .emojionearea-editor:focus {
+    border-color: #ed1c24;
+  }
+
+  .new-comment-wrapper .emojionearea .emojionearea-editor:focus {
+    border-color: #ed1c24;
+  }
+
+  #ondeck-wrapper .posters .poster {
+    border: 0;
   }
 
   #ondeck-wrapper .posters .titles-link {
     color: #fff;
   }
 
-  .pagination>.disabled>span,
-  .pagination>.disabled>span:hover,
-  .pagination>.disabled>span:focus,
-  .pagination>.disabled>a,
-  .pagination>.disabled>a:hover,
-  .pagination>.disabled>a:focus {
-    background-color: #151515;
-    border-color: #151515;
-    color: gray;
+  #ondeck-wrapper .grid-item .quick-icons {
+    background-color: #333;
+    border: 0;
+  }
+
+  #ondeck-wrapper .ignore:hover {
+    color: #ed1c24;
   }
 
   ul.pagination li a {
@@ -408,124 +373,129 @@
   }
 
   ul.pagination li:not(.active) a {
-    background-color: inherit;
+    background-color: #151515;
   }
 
-  ul.pagination .disabled a {
-    color: gray;
+  ul.pagination li .disabled a {
+    color: #bbb;
+  }
+
+  ul.pagination>.disabled>a {
+    background-color: #151515;
+    color: #bbb;
+  }
+
+  ul.pagination>.disabled>a:hover {
+    background-color: #151515;
+    color: #bbb;
   }
 
   ul.pagination .gap a {
     color: #fff;
   }
 
-  ul.pagination .gap a:hover {
+  .panel {
+    background-color: #1d1d1d;
+    border-color: #333;
+  }
+
+  .panel .panel-heading {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .popover-title,
+  .frame-wrapper .sidenav .feeds .popover .popover-title {
+    background-color: #333;
+    border-color: #333;
     color: #fff;
   }
 
   .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline td,
   .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th {
     background-color: #333;
-    border-color: #fff;
+    border-color: #bbb;
     color: #fff;
     font-weight: normal;
   }
 
   .popover {
-    background-color: #333;
-    color: #fff !important;
+    background-color: #1d1d1d;
   }
 
   .popover .data-wrapper {
     background-color: #333;
   }
 
-  .popover .data-wrapper .form-control {
-    background-color: #333;
+  .popover .data-wrapper input {
+    color: #fff;
+  }
+
+  .popover .data-wrapper .xdsoft_datetimepicker {
     color: #fff;
   }
 
   .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
-    background-color: #333;
+    background-color: #1d1d1d;
     border-top-color: #333;
   }
 
-  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline td.xdsoft_current {
-    color: #fff;
-    font-weight: normal;
-  }
-
-  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th {
-    color: #ed1c24;
-    font-weight: normal;
-  }
-
-  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline th.xdsoft_current {
-    color: #fff;
-    font-weight: normal;
-  }
-
-  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_month {
-    color: #fff;
-  }
-
-  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_year {
-    color: #fff;
-  }
-
   .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_timepicker .xdsoft_time_box {
-    border-color: #fff;
+    border-color: #bbb;
   }
 
   .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_timepicker .xdsoft_time_box>div>div {
     background-color: #333;
-    border-color: #fff;
+    border-color: #bbb;
     color: #fff;
     font-weight: normal;
   }
 
-  .popover .data-wrapper .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled:hover {
+  .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_label>.xdsoft_select {
+    background-color: #333;
+    border-color: #bbb;
+    color: #fff;
+  }
+
+  .popover .data-wrapper .xdsoft_datetimepicker .xdsoft_prev {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .popover .data-wrapper .xdsoft_datetimepicker .xdsoft_next {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .popover .data-wrapper .xdsoft_datetimepicker .xdsoft_today_button {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .popover .data-wrapper .xdsoft_datetimepicker .xdsoft_label i {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .popover.remove .popover-title {
     color: #fff !important;
   }
 
   .popover.bottom>.arrow::after {
     border-bottom-color: #333;
-  }
-
-  .popover-title {
-    background-color: #333;
-    border-bottom-color: #333;
-  }
-
-  .xdsoft_datetimepicker .xdsoft_prev {
-    -webkit-filter: invert(100%) !important;
-    filter: invert(100%) !important;
-  }
-
-  .xdsoft_datetimepicker .xdsoft_next {
-    -webkit-filter: invert(100%) !important;
-    filter: invert(100%) !important;
-  }
-
-  .xdsoft_datetimepicker .xdsoft_today_button {
-    -webkit-filter: invert(100%) !important;
-    filter: invert(100%) !important;
-  }
-
-  .xdsoft_datetimepicker .xdsoft_label i {
-    -webkit-filter: invert(100%) !important;
-    filter: invert(100%) !important;
+    border-top-color: #333;
   }
 
   .posters .poster {
-    border-color: #151515;
+    border: 0;
   }
 
   .posters>div .quick-icons {
-    border-color: #151515;
+    border: 0;
   }
 
-  .quick-icons {
+  section>.container>.posters>.grid-item .quick-icons {
     background-color: #333;
   }
 
@@ -533,39 +503,63 @@
     background-color: #1d1d1d;
   }
 
-  #progress-wrapper .row .main-info .seasons .season-toggle .fa {
+  #progress-wrapper .row .main-info .seasons>div .season-toggle .fa {
     color: #fff;
   }
 
-  #progress-wrapper .row .main-info .seasons .season-toggle .season {
+  #progress-wrapper .row .main-info .seasons>div .season-toggle .season {
     color: #fff;
   }
 
-  #progress-wrapper .row .main-info .seasons .all-toggle .fa {
-    color: #fff;
+  #recently-watched-wrapper .quick-icons {
+    background-color: #333;
   }
 
-  #progress-wrapper .posters .poster {
-    border: 0;
-  }
-
-  #recommendations-wrapper {
-    background-color: #151515;
+  #recommendations-wrapper .quick-icons {
+    background-color: #333;
   }
 
   #recommendations-wrapper .grid-item h4 a {
-    color: #fff;
+    color: #bbb;
   }
 
   #recommendations-wrapper .grid-item h4:hover a {
     color: #ed1c24;
   }
 
-  #schedule-wrapper {
-    background-color: #151515;
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #333;
+  }
+
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ed1c24;
+  }
+
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+    background-color: #ed1c24;
+  }
+
+  .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:active {
+    background-color: #ed1c24;
+  }
+
+  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ed1c24;
+  }
+
+  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+    background-color: #ed1c24;
+  }
+
+  .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:active {
+    background-color: #ed1c24;
   }
 
   #seasons-episodes-sortable .under-info .titles {
+    background-color: #333;
+  }
+
+  #seasons-episodes-sortable .under-info .episode-stats {
     background-color: #1d1d1d;
   }
 
@@ -573,56 +567,24 @@
     color: #fff;
   }
 
-  #seasons-episodes-sortable .episode-stats {
-    background-color: #1d1d1d;
-  }
-
-  section {
+  section,
+  #ondeck-wrapper,
+  #schedule-wrapper,
+  #network-wrapper,
+  #recommendations-wrapper {
     background-color: #151515;
-  }
-
-  .custom-list .list-info .info .overview[data-readmore][aria-expanded='false'] .shade,
-  .subnav-text .text[data-readmore][aria-expanded='false'] .shade {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 243, 243, 0)), to(#151515));
-    background-image: -webkit-linear-gradient(top, rgba(243, 243, 243, 0) 0%, #151515 100%);
-    background-image: linear-gradient(to bottom, rgba(243, 243, 243, 0) 0%, #151515 100%);
-  }
-
-  #boxes-wrapper .row .genres-stat-box {
-    background-color: #1d1d1d;
-  }
-
-  #bottom-stats-wrapper .col-stat.alt {
-    background-color: #1d1d1d;
   }
 
   .subnav-wrapper {
     background-color: #151515;
   }
 
-  .subnav-wrapper .right .feed-icon {
-    color: #fff;
-  }
-
-  .subnav-wrapper.list-title-wrapper {
+  .subnav-wrapper .comment-wrapper {
     background-color: #151515;
-  }
-
-  .subnav-wrapper .left h2 .right a {
-    color: #fff;
-  }
-
-  .filter-dropdown .icon.trakt-icon-divider {
-    color: #fff;
   }
 
   .subnav-text {
     background-color: #151515;
-  }
-
-  .users-wrapper {
-    background-color: #333;
-    border-color: #333;
   }
 
   .summary-activity .tabs .tab {
@@ -635,81 +597,17 @@
     border-bottom-color: #333;
   }
 
-  body {
-    color: #fff;
-  }
-
-  a {
-    color: #ed1c24;
-  }
-
-  a:hover {
-    color: #ed1c24;
-  }
-
-  h2 .feed-icons .feed-icon {
-    color: #fff;
-  }
-
-  header#top-nav .navbar-nav.navbar-user #user-menu {
-    background-color: #333;
-  }
-
-  header#top-nav .navbar-nav.navbar-user #user-menu ul li.separator {
-    border-top-color: #151515;
-  }
-
-  header#top-nav .navbar-nav.navbar-user #user-menu ul li:hover a:hover {
-    background-color: #151515 !important;
-  }
-
-  header#top-nav .navbar-nav.navbar-user #user-menu ul li.dark-knight a {
-    display: none;
-  }
-
-  header#top-nav .navbar-nav.navbar-user:hover #user-menu {
-    background-color: #333;
-  }
-
-  #MyConfigs {
-    background-color: #1d1d1d;
-    border-color: #333 !important;
-  }
-
-  #MyConfigs .section_header {
+  .users-wrapper {
     background-color: #333;
     border-color: #333;
   }
 
-  #MyConfigs .section_desc {
-    background-color: #1d1d1d;
-    border-color: #1d1d1d;
-    color: #ababab;
-  }
-
-  #MyConfigs input {
-    background-color: #333;
-    border: 1px solid #333;
+  body {
     color: #fff;
   }
 
-  #MyConfigs input:focus {
-    border: 1px solid #ed1c24;
-    outline: none;
-  }
-
-  #MyConfigs .saveclose_buttons {
-    background-color: #333;
-    border: 1px solid #333;
+  .grid-item .titles-link {
     color: #fff;
-  }
-
-  #MyConfigs .saveclose_buttons:hover {
-    background-color: #404040;
-  }
-
-  #MyConfigs .reset {
-    color: gray;
   }
 
   /*[[hidewatchnow]]*/

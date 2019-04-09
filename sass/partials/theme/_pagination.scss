@@ -1,0 +1,35 @@
+ul {
+  &.pagination {
+    li {
+      a {
+        color: $white;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
+      &:not(.active) a {
+        background-color: $dark;
+      }
+
+      .disabled a {
+        color: $whitedark;
+      }
+    }
+
+    >.disabled>a {
+      background-color: $dark;
+      color: $whitedark;
+
+      &:hover {
+        background-color: $dark;
+        color: $whitedark;
+      }
+    }
+
+    .gap a {
+      color: $white;
+    }
+  }
+}

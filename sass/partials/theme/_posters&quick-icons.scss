@@ -1,13 +1,13 @@
 .posters {
   .poster {
-    border-color: $dark;
+    border: 0;
   }
 
   >div .quick-icons {
-    border-color: $dark;
+    border: 0;
   }
 }
 
-.quick-icons {
+section>.container>.posters>.grid-item .quick-icons {
   background-color: $grey;
 }

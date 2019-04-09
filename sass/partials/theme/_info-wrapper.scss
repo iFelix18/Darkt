@@ -1,0 +1,66 @@
+%info {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
+}
+
+
+#info-wrapper {
+  .info {
+    #actors .posters ul li {
+      .name {
+        color: $white;
+      }
+
+      .character {
+        color: $whitedark;
+      }
+    }
+
+    .action-buttons>.btn:not(.selected):not(:hover) .side-btn {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  .sidebar {
+    .poster {
+      border: 0 !important;
+      box-shadow: none;
+    }
+
+    .streaming-links {
+      background-color: $grey;
+      box-shadow: none;
+    }
+
+    .btn-watch-now {
+      background-color: $grey;
+      box-shadow: none;
+    }
+
+    .external li a {
+      @extend %info;
+
+      &:hover {
+        background-color: $red;
+        border-color: $red;
+      }
+    }
+  }
+
+  .affiliate-links .section a {
+    @extend %info;
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+  }
+
+  .season-links .links ul li a {
+    &.selected {
+      color: $red;
+    }
+  }
+}

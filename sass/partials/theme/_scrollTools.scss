@@ -1,0 +1,29 @@
+.mCS-rounded-dark.mCSB_scrollTools {
+  .mCSB_draggerRail {
+    background-color: $grey;
+  }
+
+  .mCSB_dragger .mCSB_dragger_bar {
+    background-color: $red;
+
+    &:hover {
+      background-color: $red;
+    }
+
+    &:active {
+      background-color: $red;
+    }
+  }
+}
+
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: $red;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  &:active {
+    background-color: $red;
+  }
+}
