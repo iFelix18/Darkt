@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Darkt
-@version        3.1.0
+@version        3.1.1
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Trakt.tv
 @author         Felix
 @homepageURL    https://git.io/Darkt
 @supportURL     https://github.com/iFelix18/Darkt/issues/
-@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/develop/darkt.user.css
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkt/master/darkt.user.css
 @license        CC-BY-SA-4.0
 @advanced       dropdown    hidewatchnow "Hide Watch Now" {
   watchnow "No" <<<EOT
