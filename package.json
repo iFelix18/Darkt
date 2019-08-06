@@ -19,7 +19,7 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-beautify": "^3.0.0",
     "gulp-file-insert": "^2.0.0",
     "gulp-rename": "^1.4.0",
