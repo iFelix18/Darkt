@@ -30,4 +30,9 @@
   a:not(.username) {
     color: $white;
   }
+
+  .alert-no-data {
+    background-color: $grey;
+    color: $white;
+  }
 }

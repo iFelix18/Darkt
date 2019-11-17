@@ -1,5 +1,5 @@
 .trakt::after {
-  content: '\A                Darkt - Version 3.1.1';
+  content: "\A                Darkt - Version 3.1.2";
   white-space: pre;
 }
 
@@ -13,16 +13,10 @@
   font-weight: bold;
 }
 
-#huckster-content-page,
-#huckster-desktop-wrapper,
-#huckster-mobile-wrappe,
-.huckster-grid-item {
+#hu-ck-ster-content-page,
+#hu-ck-ster-desk-top-wrapper,
+#hu-ck-ster-mob-ile-wrapper {
   display: none;
-}
-
-#huckster-desktop-wrapper.visible,
-#huckster-desktop-sidenav {
-  visibility: hidden;
 }
 
 .alert-no-data {
@@ -284,6 +278,11 @@ hr {
 }
 
 #network-wrapper a:not(.username) {
+  color: #fff;
+}
+
+#network-wrapper .alert-no-data {
+  background-color: #333;
   color: #fff;
 }
 
