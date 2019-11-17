@@ -14,7 +14,7 @@
     "update": "updates -u & npm install"
   },
   "dependencies": {
-    "npm": "^6.11.2"
+    "npm": "^6.13.0"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
