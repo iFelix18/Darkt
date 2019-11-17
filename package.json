@@ -11,10 +11,10 @@
   },
   "scripts": {
     "start": "gulp default",
-    "update": "updates -u & npm install"
+    "update": "updates -u & yarn install"
   },
   "dependencies": {
-    "npm": "^6.13.0"
+    "yarn": "^1.19.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
@@ -28,5 +28,9 @@
     "sass-lint": "^1.13.1",
     "standard": "^14.3.1",
     "updates": "^9.0.1"
-  }
+  },
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions"
+  ]
 }
