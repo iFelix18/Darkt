@@ -1,5 +1,5 @@
 .trakt::after {
-  content: "\A                Darkt - Version 3.1.2";
+  content: "\A                Darkt - Version 3.1.3";
   white-space: pre;
 }
 
@@ -567,4 +567,8 @@ body {
 
 .grid-item .titles-link {
   color: #fff;
+}
+
+#main-search input.footer-search {
+  color: #000;
 }
